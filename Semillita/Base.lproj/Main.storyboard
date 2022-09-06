@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iuy-Du-JGp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -30,13 +30,41 @@
                     <view key="view" contentMode="scaleToFill" id="VgG-ZB-Yxl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-K7-Vvf" userLabel="Pantalla">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2022-09-06 at 16.59.50" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-dm-S12">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-qV-zHK" userLabel="Buscador">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XhE-dm-S12" firstAttribute="height" secondItem="Yqp-K7-Vvf" secondAttribute="height" id="Ipu-Fc-U1y"/>
+                                    <constraint firstItem="XhE-dm-S12" firstAttribute="centerY" secondItem="Yqp-K7-Vvf" secondAttribute="centerY" id="UMe-Qb-phk"/>
+                                    <constraint firstItem="XhE-dm-S12" firstAttribute="centerX" secondItem="Yqp-K7-Vvf" secondAttribute="centerX" id="s4H-st-Ha7"/>
+                                    <constraint firstItem="XhE-dm-S12" firstAttribute="width" secondItem="Yqp-K7-Vvf" secondAttribute="width" id="sQ0-kD-J0W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fHt-6n-x7K"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fHt-6n-x7K" firstAttribute="top" secondItem="Yqp-K7-Vvf" secondAttribute="top" id="Dov-Mz-isN"/>
+                            <constraint firstItem="Yqp-K7-Vvf" firstAttribute="width" secondItem="fHt-6n-x7K" secondAttribute="width" id="Fn8-GQ-vDS"/>
+                            <constraint firstItem="Yqp-K7-Vvf" firstAttribute="centerX" secondItem="fHt-6n-x7K" secondAttribute="centerX" id="UeR-Mn-l6z"/>
+                            <constraint firstItem="Yqp-K7-Vvf" firstAttribute="height" secondItem="fHt-6n-x7K" secondAttribute="height" id="lvS-bj-PrU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEU-cW-ivj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="104"/>
+            <point key="canvasLocation" x="879.71014492753625" y="103.79464285714285"/>
         </scene>
         <!--Detalle Planta-->
         <scene sceneID="v6R-iy-Mbw">
@@ -46,7 +74,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="dEv-xy-HcV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rz1-IR-p69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,6 +128,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2022-09-06 at 16.59.50" width="259" height="553"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
