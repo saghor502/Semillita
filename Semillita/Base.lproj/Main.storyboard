@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iuy-Du-JGp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
@@ -174,6 +175,7 @@
         <!--Catalogo-->
         <scene sceneID="N1u-0o-sX8">
             <objects>
+
                 <viewController modalPresentationStyle="fullScreen" id="iuy-Du-JGp" customClass="Catalogo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VgG-ZB-Yxl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -669,7 +671,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="MHQ-ME-MNt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bEU-cW-ivj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="103.79464285714285"/>
         </scene>
@@ -1256,6 +1257,7 @@ Cg
                 <viewController id="JYR-s4-MER" customClass="Contabilidad" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9RB-If-rmv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGT-ok-U6i" userLabel="TituloPlantasPopulares">
@@ -1319,13 +1321,27 @@ Cg
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="mJ3-t2-BMV"/>
-                        <color key="backgroundColor" red="1" green="0.96078431372549022" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+
+                        <viewLayoutGuide key="safeArea" id="DG6-a7-4g7"/>
+                        <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XOg-mb-kP7" firstAttribute="width" secondItem="5fl-xX-WQL" secondAttribute="width" multiplier="1.00725" id="8tI-eS-jga"/>
+                            <constraint firstItem="rRG-hY-Itc" firstAttribute="centerX" secondItem="DG6-a7-4g7" secondAttribute="centerX" id="8vR-rf-TMH"/>
+                            <constraint firstItem="DG6-a7-4g7" firstAttribute="bottom" secondItem="XOg-mb-kP7" secondAttribute="bottom" id="BPP-a2-pZg"/>
+                            <constraint firstItem="rRG-hY-Itc" firstAttribute="width" secondItem="5fl-xX-WQL" secondAttribute="width" multiplier="0.903382" id="DHB-ZK-syu"/>
+                            <constraint firstItem="rRG-hY-Itc" firstAttribute="height" secondItem="5fl-xX-WQL" secondAttribute="height" multiplier="0.74442" id="DPR-99-xzV"/>
+                            <constraint firstItem="DG6-a7-4g7" firstAttribute="bottom" secondItem="rRG-hY-Itc" secondAttribute="bottom" constant="44" id="GhG-oh-Z0b"/>
+                            <constraint firstItem="XOg-mb-kP7" firstAttribute="centerX" secondItem="DG6-a7-4g7" secondAttribute="centerX" id="b0k-N4-zm4"/>
+                            <constraint firstItem="XOg-mb-kP7" firstAttribute="height" secondItem="5fl-xX-WQL" secondAttribute="height" multiplier="0.0680804" id="x8z-hx-j4S"/>
+                        </constraints>
+
+
                     </view>
                     <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTU-1j-ura" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="3821.739130434783" y="103.79464285714285"/>
         </scene>
     </scenes>
@@ -1339,14 +1355,17 @@ Cg
         <image name="Tabla1" width="723" height="433"/>
         <image name="Tabla2" width="540" height="322"/>
         <image name="Top3" width="611" height="542"/>
+
         <image name="about" width="204" height="191"/>
         <image name="atras" width="50" height="70"/>
         <image name="basura" width="162" height="187"/>
         <image name="buscador" width="1347" height="259"/>
         <image name="buscarqr" width="117" height="119"/>
         <image name="editar" width="202" height="197"/>
+
         <image name="form" width="829" height="301"/>
         <image name="ingresar" width="1170" height="213"/>
+
         <image name="mapa" width="1425" height="625"/>
         <image name="mas" width="288" height="363"/>
         <image name="p1" width="295" height="367"/>
@@ -1355,7 +1374,11 @@ Cg
         <image name="p4" width="291" height="365"/>
         <image name="planta" width="511" height="488"/>
         <image name="print" width="98" height="113"/>
+
+        
+        <image name="ingresar" width="1170" height="213"/>
         <image name="qr" width="492" height="453"/>
+
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
