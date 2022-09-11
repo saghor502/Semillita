@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iuy-Du-JGp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
@@ -175,7 +174,6 @@
         <!--Catalogo-->
         <scene sceneID="N1u-0o-sX8">
             <objects>
-
                 <viewController modalPresentationStyle="fullScreen" id="iuy-Du-JGp" customClass="Catalogo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VgG-ZB-Yxl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -671,6 +669,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MHQ-ME-MNt"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEU-cW-ivj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="103.79464285714285"/>
         </scene>
@@ -1252,76 +1251,49 @@ Cg
             <point key="canvasLocation" x="3067" y="104"/>
         </scene>
         <!--Contabilidad-->
-        <scene sceneID="ja8-Bi-NbW">
+        <scene sceneID="O4I-gW-pr0">
             <objects>
-                <viewController id="JYR-s4-MER" customClass="Contabilidad" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9RB-If-rmv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
-
+                <viewController id="ETG-bY-pk6" userLabel="Contabilidad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5fl-xX-WQL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGT-ok-U6i" userLabel="TituloPlantasPopulares">
-                                <rect key="frame" x="87" y="97" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-hY-Itc">
+                                <rect key="frame" x="20" y="151" width="374" height="667"/>
+                                <connections>
+                                    <segue destination="x4H-MY-CdE" kind="embed" id="dgQ-ya-bfE"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOg-mb-kP7">
+                                <rect key="frame" x="-1.5" y="801" width="417" height="61"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Las Plantas mas Populares        " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-8s-HhM">
-                                        <rect key="frame" x="-19" y="0.0" width="279" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top3" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-fi-fUP">
-                                <rect key="frame" x="-2" y="174" width="414" height="233"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ows-vf-tLD" userLabel="Tabla1">
-                                <rect key="frame" x="1" y="429" width="412" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Tabla1" translatesAutoresizingMaskIntoConstraints="NO" id="nCC-rO-AMr">
-                                        <rect key="frame" x="19" y="0.0" width="374" height="233"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="vui-Az-LBI" userLabel="Tabla2">
-                                <rect key="frame" x="1" y="677" width="414" height="255"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Tabla2" translatesAutoresizingMaskIntoConstraints="NO" id="aWF-Tl-U1a">
-                                        <rect key="frame" x="19" y="-24" width="374" height="302"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <viewLayoutGuide key="safeArea" id="Ubt-2J-Bbe"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-W9-iep">
-                                <rect key="frame" x="-2" y="919" width="417" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Info" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-8E-QXY">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Info" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-yJ-Ne7">
                                         <rect key="frame" x="333" y="14" width="48" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PrintQR" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-hF-guJ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PrintQR" translatesAutoresizingMaskIntoConstraints="NO" id="JH9-5y-TXh">
                                         <rect key="frame" x="184" y="9" width="49" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IconoPlanta" translatesAutoresizingMaskIntoConstraints="NO" id="daU-0U-wSh">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IconoPlanta" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-cO-BVG">
                                         <rect key="frame" x="45" y="11" width="48" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CLY-yJ-Ne7" firstAttribute="leading" secondItem="XOg-mb-kP7" secondAttribute="leading" constant="333" id="6l2-kg-cGO"/>
+                                    <constraint firstItem="7cE-cO-BVG" firstAttribute="height" secondItem="XOg-mb-kP7" secondAttribute="height" multiplier="0.852459" id="7Px-5O-O3B"/>
+                                    <constraint firstItem="CLY-yJ-Ne7" firstAttribute="width" secondItem="XOg-mb-kP7" secondAttribute="width" multiplier="0.115108" id="BH1-rF-HmV"/>
+                                    <constraint firstAttribute="bottom" secondItem="CLY-yJ-Ne7" secondAttribute="bottom" id="C5A-H5-fSK"/>
+                                    <constraint firstItem="JH9-5y-TXh" firstAttribute="height" secondItem="XOg-mb-kP7" secondAttribute="height" multiplier="0.934426" id="JeN-qK-VSm"/>
+                                    <constraint firstAttribute="bottom" secondItem="JH9-5y-TXh" secondAttribute="bottom" constant="-5" id="a1c-Cv-St2"/>
+                                    <constraint firstItem="JH9-5y-TXh" firstAttribute="width" secondItem="XOg-mb-kP7" secondAttribute="width" multiplier="0.117506" id="lJK-Ch-7ob"/>
+                                    <constraint firstItem="7cE-cO-BVG" firstAttribute="width" secondItem="XOg-mb-kP7" secondAttribute="width" multiplier="0.115108" id="op7-hS-uJJ"/>
+                                    <constraint firstItem="JH9-5y-TXh" firstAttribute="centerX" secondItem="XOg-mb-kP7" secondAttribute="centerX" id="tL3-Ka-IYK"/>
+                                    <constraint firstAttribute="bottom" secondItem="7cE-cO-BVG" secondAttribute="bottom" constant="-2" id="ufh-OD-YME"/>
+                                    <constraint firstItem="CLY-yJ-Ne7" firstAttribute="height" secondItem="XOg-mb-kP7" secondAttribute="height" multiplier="0.770492" id="uo0-gF-gCt"/>
+                                    <constraint firstAttribute="trailing" secondItem="7cE-cO-BVG" secondAttribute="trailing" constant="324" id="vgU-J6-3Yf"/>
+                                </constraints>
                             </view>
                         </subviews>
-
                         <viewLayoutGuide key="safeArea" id="DG6-a7-4g7"/>
                         <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1334,38 +1306,107 @@ Cg
                             <constraint firstItem="XOg-mb-kP7" firstAttribute="centerX" secondItem="DG6-a7-4g7" secondAttribute="centerX" id="b0k-N4-zm4"/>
                             <constraint firstItem="XOg-mb-kP7" firstAttribute="height" secondItem="5fl-xX-WQL" secondAttribute="height" multiplier="0.0680804" id="x8z-hx-j4S"/>
                         </constraints>
-
-
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GTU-1j-ura" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H65-JR-1ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
-            <point key="canvasLocation" x="3821.739130434783" y="103.79464285714285"/>
+            <point key="canvasLocation" x="4498.5507246376819" y="69.642857142857139"/>
+        </scene>
+        <!--Tabla Analiticas-->
+        <scene sceneID="e9V-r7-aPV">
+            <objects>
+                <tableViewController id="x4H-MY-CdE" userLabel="Tabla Analiticas" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="897-V8-WwY">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="hIz-QR-9wa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="989" id="h9N-eh-TIa">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="989"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h9N-eh-TIa" id="Cnu-IB-PBA">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="989"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-rm-aHI" userLabel="TituloPlantasPopulares">
+                                                    <rect key="frame" x="67" y="42" width="240" height="128"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Las Plantas mas Populares        " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-EI-L8Y">
+                                                            <rect key="frame" x="-19" y="8" width="279" height="84"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                            <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top3" translatesAutoresizingMaskIntoConstraints="NO" id="abc-W3-hvk">
+                                                    <rect key="frame" x="0.0" y="151" width="374" height="260"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Tabla1" translatesAutoresizingMaskIntoConstraints="NO" id="exB-qp-fCb">
+                                                    <rect key="frame" x="0.0" y="419" width="374" height="233"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Tabla2" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-gq-fwL">
+                                                    <rect key="frame" x="0.0" y="660" width="374" height="273"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="abc-W3-hvk" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="151" id="5sw-uW-gsV"/>
+                                                <constraint firstItem="SbH-rm-aHI" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="42" id="75E-zu-ALl"/>
+                                                <constraint firstItem="abc-W3-hvk" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.262892" id="8xF-8x-7Ki"/>
+                                                <constraint firstItem="exB-qp-fCb" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="Asq-a9-Aup"/>
+                                                <constraint firstItem="abc-W3-hvk" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Bv3-Dj-Ng5"/>
+                                                <constraint firstItem="exB-qp-fCb" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.235592" id="HIR-2k-qzo"/>
+                                                <constraint firstItem="SbH-rm-aHI" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.129424" id="PHV-X4-nUX"/>
+                                                <constraint firstItem="3fF-gq-fwL" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Pqf-34-oDY"/>
+                                                <constraint firstAttribute="bottom" secondItem="3fF-gq-fwL" secondAttribute="bottom" constant="56" id="QlC-XF-Slg"/>
+                                                <constraint firstItem="3fF-gq-fwL" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="cjS-md-Tlh"/>
+                                                <constraint firstAttribute="bottom" secondItem="exB-qp-fCb" secondAttribute="bottom" constant="337" id="ggb-4P-zdi"/>
+                                                <constraint firstItem="abc-W3-hvk" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="jZH-QG-dTt"/>
+                                                <constraint firstItem="SbH-rm-aHI" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="l2i-hY-Lyr"/>
+                                                <constraint firstItem="3fF-gq-fwL" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.276036" id="liK-UP-4lq"/>
+                                                <constraint firstItem="exB-qp-fCb" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="lmo-MY-Y8w"/>
+                                                <constraint firstItem="SbH-rm-aHI" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.641711" id="trf-Ub-d5v"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="x4H-MY-CdE" id="NDR-uW-lIi"/>
+                            <outlet property="delegate" destination="x4H-MY-CdE" id="af1-4B-QNb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADt-NJ-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3823" y="104"/>
         </scene>
     </scenes>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
         <image name="Cata" width="218" height="214"/>
-        <image name="IconoPlanta" width="161" height="158"/>
-        <image name="Info" width="158" height="149"/>
-        <image name="PrintQR" width="154" height="154"/>
+        <image name="IconoPlanta" width="128" height="128"/>
+        <image name="Info" width="128" height="128"/>
+        <image name="PrintQR" width="128" height="128"/>
         <image name="Screen Shot 2022-09-08 at 15.51.02" width="428" height="927"/>
-        <image name="Tabla1" width="723" height="433"/>
-        <image name="Tabla2" width="540" height="322"/>
-        <image name="Top3" width="611" height="542"/>
-
+        <image name="Tabla1" width="128" height="128"/>
+        <image name="Tabla2" width="128" height="128"/>
+        <image name="Top3" width="128" height="128"/>
         <image name="about" width="204" height="191"/>
         <image name="atras" width="50" height="70"/>
         <image name="basura" width="162" height="187"/>
         <image name="buscador" width="1347" height="259"/>
         <image name="buscarqr" width="117" height="119"/>
         <image name="editar" width="202" height="197"/>
-
         <image name="form" width="829" height="301"/>
         <image name="ingresar" width="1170" height="213"/>
-
         <image name="mapa" width="1425" height="625"/>
         <image name="mas" width="288" height="363"/>
         <image name="p1" width="295" height="367"/>
@@ -1374,11 +1415,7 @@ Cg
         <image name="p4" width="291" height="365"/>
         <image name="planta" width="511" height="488"/>
         <image name="print" width="98" height="113"/>
-
-        
-        <image name="ingresar" width="1170" height="213"/>
         <image name="qr" width="492" height="453"/>
-
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
