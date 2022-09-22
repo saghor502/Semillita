@@ -583,13 +583,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15h-21-zF9" userLabel="Bajo">
                                         <rect key="frame" x="0.0" y="750.5" width="414" height="67.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0L-3X-Ri5">
-                                                <rect key="frame" x="179.5" y="8" width="55" height="60"/>
-                                                <state key="normal" image="print"/>
-                                                <connections>
-                                                    <segue destination="SaB-fP-uUW" kind="show" id="XpC-t8-OeZ"/>
-                                                </connections>
-                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HP-qt-h13" userLabel="B2">
                                                 <rect key="frame" x="207" y="3.5" width="207" height="69.5"/>
                                                 <subviews>
@@ -615,6 +608,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-l3-eb8">
                                                         <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                         <state key="normal" image="Cata"/>
+                                                        <connections>
+                                                            <segue destination="SaB-fP-uUW" kind="show" id="OEf-AX-Fc9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -625,6 +621,13 @@
                                                     <constraint firstItem="xsL-l3-eb8" firstAttribute="top" secondItem="ZDQ-Q1-pTg" secondAttribute="top" constant="10" id="ePA-SP-Bup"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0L-3X-Ri5">
+                                                <rect key="frame" x="179.5" y="8" width="55" height="60"/>
+                                                <state key="normal" image="print"/>
+                                                <connections>
+                                                    <segue destination="SaB-fP-uUW" kind="show" id="pj7-El-Tbw"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1282,10 +1285,6 @@ Cg
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycy-pE-ufC" userLabel="Bajo">
                                         <rect key="frame" x="0.0" y="741.5" width="414" height="66.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4f-CL-2jV">
-                                                <rect key="frame" x="179.5" y="8" width="55" height="59"/>
-                                                <state key="normal" image="print"/>
-                                            </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-Fg-QcQ" userLabel="B2">
                                                 <rect key="frame" x="207" y="3.5" width="207" height="68.5"/>
                                                 <subviews>
@@ -1324,20 +1323,21 @@ Cg
                                                     <constraint firstItem="ZCr-rZ-0Lh" firstAttribute="width" secondItem="xbA-Jt-Si6" secondAttribute="width" multiplier="0.246377" id="lLD-Rd-t5G"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4f-CL-2jV">
+                                                <rect key="frame" x="179" y="3.5" width="55" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="print"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="B4f-CL-2jV" firstAttribute="centerX" secondItem="Ycy-pE-ufC" secondAttribute="centerX" id="0KP-Hj-FGG"/>
                                             <constraint firstItem="xbA-Jt-Si6" firstAttribute="width" secondItem="Ycy-pE-ufC" secondAttribute="width" multiplier="0.5" id="1xW-ET-POb"/>
                                             <constraint firstItem="xbA-Jt-Si6" firstAttribute="top" secondItem="Ycy-pE-ufC" secondAttribute="top" constant="3.5" id="3kS-td-fii"/>
-                                            <constraint firstItem="B4f-CL-2jV" firstAttribute="width" secondItem="Ycy-pE-ufC" secondAttribute="width" multiplier="0.13285" id="Be6-1w-2i6"/>
-                                            <constraint firstItem="B4f-CL-2jV" firstAttribute="top" secondItem="Ycy-pE-ufC" secondAttribute="top" constant="8" id="Cau-mm-CJb"/>
                                             <constraint firstItem="DaB-Fg-QcQ" firstAttribute="height" secondItem="Ycy-pE-ufC" secondAttribute="height" multiplier="1.02963" id="MFA-Cq-Vj0"/>
                                             <constraint firstItem="DaB-Fg-QcQ" firstAttribute="width" secondItem="Ycy-pE-ufC" secondAttribute="width" multiplier="0.5" id="MHu-I4-hmy"/>
                                             <constraint firstAttribute="trailing" secondItem="DaB-Fg-QcQ" secondAttribute="trailing" id="MzC-Qs-zav"/>
                                             <constraint firstItem="xbA-Jt-Si6" firstAttribute="height" secondItem="Ycy-pE-ufC" secondAttribute="height" multiplier="1.02963" id="QRP-db-28U"/>
                                             <constraint firstItem="DaB-Fg-QcQ" firstAttribute="top" secondItem="Ycy-pE-ufC" secondAttribute="top" constant="3.5" id="mXB-aH-MEO"/>
-                                            <constraint firstItem="B4f-CL-2jV" firstAttribute="height" secondItem="Ycy-pE-ufC" secondAttribute="height" multiplier="0.888889" id="o47-Cv-nm5"/>
                                             <constraint firstItem="xbA-Jt-Si6" firstAttribute="leading" secondItem="Ycy-pE-ufC" secondAttribute="leading" id="yl9-bk-TPh"/>
                                         </constraints>
                                     </view>
@@ -1372,7 +1372,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDY-mS-z9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292.753623188406" y="103.79464285714285"/>
+            <point key="canvasLocation" x="2080" y="-691"/>
         </scene>
         <!--ImprimirQR-->
         <scene sceneID="Dbs-N2-RQq">
@@ -1687,9 +1687,9 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="EMg-HR-8cB"/>
-        <segue reference="tqW-vp-rrP"/>
-        <segue reference="FtU-cB-plq"/>
-        <segue reference="QtK-eg-RzA"/>
+        <segue reference="EBh-6D-d9r"/>
+        <segue reference="RFr-O3-svV"/>
+        <segue reference="ocP-Sm-fD9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
