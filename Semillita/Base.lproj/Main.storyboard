@@ -1839,15 +1839,10 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-
-        <segue reference="Uu3-NM-hN1"/>
-        <segue reference="tqW-vp-rrP"/>
-        <segue reference="pj7-El-Tbw"/>
-        <segue reference="ocP-Sm-fD9"/>
         <segue reference="EMg-HR-8cB"/>
+        <segue reference="tqW-vp-rrP"/>
         <segue reference="FtU-cB-plq"/>
-        <segue reference="EPz-my-9eo"/>
-
+        <segue reference="ocP-Sm-fD9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
