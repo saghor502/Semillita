@@ -1762,7 +1762,7 @@ Cg
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-KK-AIl">
                                         <rect key="frame" x="103.5" y="567" width="207" height="204.5"/>
-                                        <color key="backgroundColor" red="0.33853793139999999" green="0.66561055179999995" blue="0.77049928899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.70962959530000003" green="0.001089439495" blue="0.52170890569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button" image="uploadPhoto"/>
                                     </button>
                                 </subviews>
