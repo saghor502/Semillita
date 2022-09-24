@@ -8,9 +8,9 @@
 import Foundation
 
 class Planta: Codable {
-    let id: Int
+    let id: Int?
     let especie: String
-    let estatus: Bool
+    let estatus: Bool?
     let fertilizante: String
     let iluminacion: String
     let nombre_cientifico: String
@@ -19,5 +19,6 @@ class Planta: Codable {
     let riego:String
     let temporada:String
     let usos:[String]
-    let Pimagenes: [Imagen]
+    let Pimagenes: [Imagen]?
+    let descripcion: String
 }

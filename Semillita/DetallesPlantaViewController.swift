@@ -18,10 +18,7 @@ class DetallesPlantaViewController: UIViewController {
         // Do any additional setup after loading the view.
         detallesPlantaServicio.leerPlanta(plantaId:21){
             (plantaRecibida) in
-            print(plantaRecibida!.Pimagenes[0].tipo)
+            print(plantaRecibida!.Pimagenes?[0].tipo)
         }
     }
-
-
 }
-

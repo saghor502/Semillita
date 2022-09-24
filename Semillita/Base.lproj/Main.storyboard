@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-09-08 at 15.51.02" translatesAutoresizingMaskIntoConstraints="NO" id="NnI-BN-eFa">
-                                <rect key="frame" x="-96" y="0.0" width="606" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8c5-5J-cl8" userLabel="Logo">
                                 <rect key="frame" x="0.0" y="85.5" width="414" height="327.5"/>
                                 <subviews>
@@ -1839,20 +1835,14 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-
         <segue reference="Uu3-NM-hN1"/>
         <segue reference="tqW-vp-rrP"/>
         <segue reference="pj7-El-Tbw"/>
         <segue reference="ocP-Sm-fD9"/>
-        <segue reference="EMg-HR-8cB"/>
-        <segue reference="FtU-cB-plq"/>
-        <segue reference="EPz-my-9eo"/>
-
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
         <image name="Cata" width="218" height="214"/>
-        <image name="Screen Shot 2022-09-08 at 15.51.02" width="428" height="927"/>
         <image name="Screen Shot 2022-09-08 at 17.11.45" width="611" height="542"/>
         <image name="Screen Shot 2022-09-09 at 14.51.19" width="723" height="433"/>
         <image name="Screen Shot 2022-09-09 at 15.07.46" width="540" height="322"/>
