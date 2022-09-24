@@ -7,6 +7,10 @@
 
 import Foundation
 
-class listaPlantas: Codable{
-    let results: [Planta]
+public class listaPlantas: Codable{
+    public let results: [Planta]
+    
+    public init(results: [Planta]){
+        self.results = results
+        }
 }
