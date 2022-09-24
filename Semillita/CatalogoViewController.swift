@@ -2,7 +2,7 @@
 //  CatalogoViewController.swift
 //  Semillita
 //
-//  Created by Alejandro Mendoza Vargas on 22/09/22.
+//  Created by Abdiel Alejandro Ramírez Barrón on 24/09/22.
 //
 
 import Foundation
@@ -10,17 +10,21 @@ import UIKit
 import Alamofire
 
 class CatalogoViewController: UIViewController {
-
-    let addPlantService = AddPlantService()
+    
+    let CataServicio = Catalogo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let new_plant = AddPlanta(especie: "Prueba", fertilizante: "Fertilizante prueba", iluminacion: "Iluminacion prueba", nombre_cientifico: "Planta mamastrosa", nombre_tradicional: "Plantototototota", origen: "Peru", riego: "3 veces al dia", temporada: "Invierno", usos: ["1", "2"], desc: "hola"
-        )
-        addPlantService.addPlant(planta: new_plant) {
+        CataServicio.leerCata(){
             (plantaRecibida) in
-            print(plantaRecibida)
+            for planta in plantaRecibida!.results{
+                if (planta.estatus == true){
+                    print(planta.nombre_tradicional)
+                    print(planta.origen)
+                    print(planta.usos)
+                }
+            }
         }
     }
 }

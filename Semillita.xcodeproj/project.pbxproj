@@ -10,14 +10,17 @@
 		407B4B3C28DE93C5004F1A58 /* LogInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B4B3B28DE93C5004F1A58 /* LogInService.swift */; };
 		407B4B4128DE94C3004F1A58 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B4B4028DE94C3004F1A58 /* LogInViewController.swift */; };
 		40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */; };
-		40C3B9CD28DD5F96008EA50C /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */; };
+		40C3B9CD28DD5F96008EA50C /* NuevaPlantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9CC28DD5F96008EA50C /* NuevaPlantaViewController.swift */; };
 		40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9D128DD68B4008EA50C /* AddPlanta.swift */; };
 		8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */; };
 		8423D87F28DD2B0E00EB1E7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8423D87E28DD2B0E00EB1E7C /* Alamofire */; };
 		8423D88728DD318B00EB1E7C /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88628DD318B00EB1E7C /* Planta.swift */; };
 		8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88B28DD375A00EB1E7C /* PlantaService.swift */; };
 		8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D89328DD51C200EB1E7C /* Imagen.swift */; };
-		8E556E2F28DE82D30016619C /* ListaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E556E2E28DE82D30016619C /* ListaPlantas.swift */; };
+		842F974228DF947300E524EC /* CatalogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974128DF947300E524EC /* CatalogoService.swift */; };
+		842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974628DF95F400E524EC /* CatalogoViewController.swift */; };
+		842F974C28DF998200E524EC /* listaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974B28DF998200E524EC /* listaPlantas.swift */; };
+		842F975C28DFAC7900E524EC /* TipoClasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F975B28DFAC7900E524EC /* TipoClasesTest.swift */; };
 		8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */; };
 		8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC6428DD5AD700521310 /* AnaliticosService.swift */; };
 		D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130DF6028C7F81700ADFD25 /* AppDelegate.swift */; };
@@ -51,13 +54,16 @@
 		407B4B3B28DE93C5004F1A58 /* LogInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInService.swift; sourceTree = "<group>"; };
 		407B4B4028DE94C3004F1A58 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantService.swift; sourceTree = "<group>"; };
-		40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
+		40C3B9CC28DD5F96008EA50C /* NuevaPlantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaPlantaViewController.swift; sourceTree = "<group>"; };
 		40C3B9D128DD68B4008EA50C /* AddPlanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanta.swift; sourceTree = "<group>"; };
 		8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPlantaViewController.swift; sourceTree = "<group>"; };
 		8423D88628DD318B00EB1E7C /* Planta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
 		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; };
 		8423D89328DD51C200EB1E7C /* Imagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagen.swift; sourceTree = "<group>"; };
-		8E556E2E28DE82D30016619C /* ListaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPlantas.swift; sourceTree = "<group>"; };
+		842F974128DF947300E524EC /* CatalogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoService.swift; sourceTree = "<group>"; };
+		842F974628DF95F400E524EC /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
+		842F974B28DF998200E524EC /* listaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaPlantas.swift; sourceTree = "<group>"; };
+		842F975B28DFAC7900E524EC /* TipoClasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoClasesTest.swift; sourceTree = "<group>"; };
 		8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC6428DD5AD700521310 /* AnaliticosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosService.swift; sourceTree = "<group>"; };
 		D130DF5D28C7F81700ADFD25 /* Semillita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semillita.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,17 +132,17 @@
 			isa = PBXGroup;
 			children = (
 				D130DF6028C7F81700ADFD25 /* AppDelegate.swift */,
+				842F974B28DF998200E524EC /* listaPlantas.swift */,
 				8423D89328DD51C200EB1E7C /* Imagen.swift */,
 				8423D88628DD318B00EB1E7C /* Planta.swift */,
 				D130DF6228C7F81700ADFD25 /* SceneDelegate.swift */,
 				40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */,
-				40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */,
+				40C3B9CC28DD5F96008EA50C /* NuevaPlantaViewController.swift */,
 				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
 				40C3B9D128DD68B4008EA50C /* AddPlanta.swift */,
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
 				8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */,
 				8E74CC6428DD5AD700521310 /* AnaliticosService.swift */,
-				8E556E2E28DE82D30016619C /* ListaPlantas.swift */,
 				D130DF6928C7F81800ADFD25 /* Assets.xcassets */,
 				D130DF6B28C7F81800ADFD25 /* LaunchScreen.storyboard */,
 				D130DF6E28C7F81800ADFD25 /* Info.plist */,
@@ -144,6 +150,8 @@
 				407B4B3B28DE93C5004F1A58 /* LogInService.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
 				8423D88B28DD375A00EB1E7C /* PlantaService.swift */,
+				842F974128DF947300E524EC /* CatalogoService.swift */,
+				842F974628DF95F400E524EC /* CatalogoViewController.swift */,
 			);
 			path = Semillita;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			children = (
 				D130DF7728C7F81800ADFD25 /* SemillitaTests.swift */,
 				D130DF7928C7F81800ADFD25 /* Info.plist */,
+				842F975B28DFAC7900E524EC /* TipoClasesTest.swift */,
 			);
 			path = SemillitaTests;
 			sourceTree = "<group>";
@@ -305,18 +314,20 @@
 				8423D88728DD318B00EB1E7C /* Planta.swift in Sources */,
 				40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */,
 				40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */,
+				842F974C28DF998200E524EC /* listaPlantas.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
-				40C3B9CD28DD5F96008EA50C /* CatalogoViewController.swift in Sources */,
+				40C3B9CD28DD5F96008EA50C /* NuevaPlantaViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
 				407B4B3C28DE93C5004F1A58 /* LogInService.swift in Sources */,
 				407B4B4128DE94C3004F1A58 /* LogInViewController.swift in Sources */,
 				D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */,
 				D130DF6328C7F81700ADFD25 /* SceneDelegate.swift in Sources */,
 				8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */,
+				842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */,
 				8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */,
 				8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */,
-				8E556E2F28DE82D30016619C /* ListaPlantas.swift in Sources */,
+				842F974228DF947300E524EC /* CatalogoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F975C28DFAC7900E524EC /* TipoClasesTest.swift in Sources */,
 				D130DF7828C7F81800ADFD25 /* SemillitaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
