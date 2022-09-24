@@ -14,6 +14,7 @@ class SemillitaTests: XCTestCase {
     let analiticos = AnaliticosService()
     let add = AddPlantService()
     let logIn = LogInService()
+    let imprimir = ImprimirQRService()
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -97,6 +98,8 @@ class SemillitaTests: XCTestCase {
         
             //Then
             XCTAssertEqual(plantaRecibida![0].id, 74)
+            XCTAssertEqual(plantaRecibida![1].id, 76)
+            XCTAssertEqual(plantaRecibida![2].id, 75)
             
         }
     
@@ -141,6 +144,29 @@ class SemillitaTests: XCTestCase {
             XCTAssertEqual(plantaRecibida, "Usuario no autenticado")
         }
     }
-
+    
+    func testQR() throws{
+        //Given
+        let plantaID = 75
+        
+        //When
+        imprimir.imprimirQR(planta_id: plantaID) {
+            (plantaRecibida) in
+            //Then
+            XCTAssertEqual(plantaRecibida, "iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAAC/ElEQVR4nO2cTW7bMBBG31QCspSAHsBHoW7Qs+YG0lF8A2lpgMLXBX+spKvUqaVao0VgkH4wCY9n5pshY+LLz/Tj6ww45JBDDjnkkEOvCVl+2s2MDUsZ3rzaZXkOPR8KkqQ5D9rAahpppJFGQCNJ0kfoectz6PnQkh2AWb+axuVN0EVs6GJ6w9aD/Cd7cuhboHB9E3Q3g8VMurZoPM7yHHo6NPWrMVmL2UUyu9zsH32SQ4eESiToBCwA3YxBE4G1FcubLLzDtpJ18D059A3QZGZmPRCuLYQZbFjeZEOaX5PU2Gt5Dj3bR2wcwHSJKHkLVmPqMX30EIffk0OPQCRVGWYgi8xI1pxdRJqhyNIsQTUefE8OfRcUdMtJZdKcS4vZJWIDoJHVK1QngGpmGVtYfipnlotRc0zZ1DfRwtyX4HHwPTn0CJSjBp2kscuFS42pLlVrll0uV3rUeH1oYxFQv/0wA0ERaW5EUCQZjVvEy0PlZw+kVHJM3iKnlxohmUVKL4NbxKtDVWs0JS7MWWaksWQCNMlvuI94fSh/yUlf1jxCiunPNpy4+jwRZHaRpKuZ2SU3O5n6XIrQ2N0st0J3WZ5D++QRRWGQkomST9YxahA5+J4cegQqWiNlCk1Rn1BlRjkn43nEqaCgGheKU0juYar9ranfb3kO7VCP2AaHe7a5ne2i+4gTQNuoUVtbWX0WwZGtZPY84gxQqUeo+IicR9yP2m7rmO4jTgUlE5j6XLa2YWnLxLyaRsCG/Zbn0HOg6iO0rUFpbjaNr/SEMuc+4gRQlpuK6XQ+UG7wDEC2l8Vv8JwHut/p0kiTTmCnMlV6avwYd1meQ/tEjc9NrtrN2JapPGqcBbqHhNIDT/ojqJapOr/ldwao/TwQxrWF7mZi6dFkoOnXjMFa3nzwPTn0CPSHRUAjC+OKhfcmWhBYuBrifkb/4Hty6BHocx5RLoNTzkd8qFW5+nx9qFaxgXsD9H6qLp+li/UUjVvEi0Pm/5nMIYcccsghhxz6S+g3jFF0itkEv+YAAAAASUVORK5CYII=")
+        }
+    }
+    
+    func testQRFalso() throws{
+        //Given
+        let plantaID = 0
+        
+        //When
+        imprimir.imprimirQR(planta_id: plantaID) {
+            (plantaRecibida) in
+            //Then
+            XCTAssertEqual(plantaRecibida, "Planta no encontrada")
+        }
+    }
     
 }
