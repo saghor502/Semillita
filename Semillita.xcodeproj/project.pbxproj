@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */; };
+		40C3B9CD28DD5F96008EA50C /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */; };
+		40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9D128DD68B4008EA50C /* AddPlanta.swift */; };
 		8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */; };
 		8423D87F28DD2B0E00EB1E7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8423D87E28DD2B0E00EB1E7C /* Alamofire */; };
 		8423D88728DD318B00EB1E7C /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88628DD318B00EB1E7C /* Planta.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantService.swift; sourceTree = "<group>"; };
+		40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
+		40C3B9D128DD68B4008EA50C /* AddPlanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanta.swift; sourceTree = "<group>"; };
 		8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPlantaViewController.swift; sourceTree = "<group>"; };
 		8423D88628DD318B00EB1E7C /* Planta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
 		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; };
@@ -119,7 +125,10 @@
 				8423D89328DD51C200EB1E7C /* Imagen.swift */,
 				8423D88628DD318B00EB1E7C /* Planta.swift */,
 				D130DF6228C7F81700ADFD25 /* SceneDelegate.swift */,
+				40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */,
+				40C3B9CC28DD5F96008EA50C /* CatalogoViewController.swift */,
 				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
+				40C3B9D128DD68B4008EA50C /* AddPlanta.swift */,
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
 				8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */,
 				8E74CC6428DD5AD700521310 /* AnaliticosService.swift */,
@@ -288,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8423D88728DD318B00EB1E7C /* Planta.swift in Sources */,
+				40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */,
+				40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
+				40C3B9CD28DD5F96008EA50C /* CatalogoViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
 				D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */,
 				D130DF6328C7F81700ADFD25 /* SceneDelegate.swift in Sources */,

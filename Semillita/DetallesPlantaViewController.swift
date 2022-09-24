@@ -21,7 +21,7 @@ class DetallesPlantaViewController: UIViewController {
         /*
         detallesPlantaServicio.leerPlanta(plantaId:21){
             (plantaRecibida) in
-            print(plantaRecibida!.Pimagenes[0].tipo)
+            print(plantaRecibida!.Pimagenes?[0].tipo)
         }
         */
         /*analiticosPlantaservicio.leerAnaliticos(){
@@ -30,5 +30,4 @@ class DetallesPlantaViewController: UIViewController {
         //}
     }
 }
-
 
