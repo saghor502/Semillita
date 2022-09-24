@@ -13,6 +13,7 @@ class SemillitaTests: XCTestCase {
     let catalogo = Catalogo()
     let analiticos = AnaliticosService()
     let add = AddPlantService()
+    let logIn = LogInService()
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -100,5 +101,46 @@ class SemillitaTests: XCTestCase {
         }
     
     }
+    
+    func testAddPlanta() throws {
+        //Given
+        let new_plant = AddPlanta(especie: "Prueba", fertilizante: "Fertilizante prueba", iluminacion: "Iluminacion prueba", nombre_cientifico: "Planta mamastrosa", nombre_tradicional: "Plantototototota", origen: "Peru", riego: "3 veces al dia", temporada: "Invierno", usos: ["1", "2"], desc: "hola"
+        )
+        //When
+        add.addPlant(planta: new_plant) {
+            (plantaRecibida) in
+            //Then
+            XCTAssertEqual(plantaRecibida, "Planta Agregada")
+            
+        }
+
+    }
+    
+    func testLoginValido() throws{
+        //Given
+        let username = "equipo"
+        let password = "semillita1738"
+        
+        //When
+        logIn.logIn(username: username, password: password){
+            (plantaRecibida) in
+            //Then
+            XCTAssertEqual(plantaRecibida, "Usuario autenticado")
+        }
+    }
+    
+    func testLoginInvalido() throws{
+        //Given
+        let username = "notequipo"
+        let password = "notsemillita1738"
+        
+        //When
+        logIn.logIn(username: username, password: password){
+            (plantaRecibida) in
+            //Then
+            XCTAssertEqual(plantaRecibida, "Usuario no autenticado")
+        }
+    }
+
     
 }
