@@ -8,12 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
-
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1379,10 +1377,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="2079.7101449275365" y="-691.07142857142856"/>
         </scene>
-        <!--ImprimirQR-->
+        <!--ImprimirQR View Controller-->
         <scene sceneID="Dbs-N2-RQq">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QU3-2F-e55" customClass="ImprimirQR" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QU3-2F-e55" customClass="ImprimirQRViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jHQ-XY-xvP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1692,13 +1690,13 @@ Cg
         <!--Planta Nueva View Controller-->
         <scene sceneID="7i0-FM-cJk">
             <objects>
-                <viewController id="pe6-rU-Wtu" customClass="PlantaNuevaViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pe6-rU-Wtu" customClass="PlantaNuevaViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Baq-DF-ehh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPT-Z5-AHg">
-                                <rect key="frame" x="20" y="70" width="374" height="662.5"/>
+                                <rect key="frame" x="20" y="114" width="374" height="671"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNO-gj-Y8K">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="1600"/>
@@ -2098,13 +2096,13 @@ Cg
                                 <viewLayoutGuide key="frameLayoutGuide" id="q1F-MY-nj5"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-p8-AkX" userLabel="Bajo">
-                                <rect key="frame" x="0.0" y="748" width="414" height="63.5"/>
+                                <rect key="frame" x="0.0" y="798" width="414" height="67.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBX-XW-Id1" userLabel="B2">
-                                        <rect key="frame" x="207" y="3.5" width="207" height="65.5"/>
+                                        <rect key="frame" x="207" y="3.5" width="207" height="69.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-sK-gRf">
-                                                <rect key="frame" x="79.5" y="11" width="48" height="44"/>
+                                                <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                 <state key="normal" image="about"/>
                                                 <connections>
                                                     <segue destination="ETG-bY-pk6" kind="show" id="SmO-8P-1ag"/>
@@ -2120,10 +2118,10 @@ Cg
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHU-oy-6lu" userLabel="B1">
-                                        <rect key="frame" x="0.0" y="3.5" width="207" height="65.5"/>
+                                        <rect key="frame" x="0.0" y="3.5" width="207" height="69.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBz-eC-A76">
-                                                <rect key="frame" x="78" y="10" width="51" height="48"/>
+                                                <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                 <state key="normal" image="Cata"/>
                                             </button>
                                         </subviews>
@@ -2136,7 +2134,7 @@ Cg
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch1-Ws-1tb">
-                                        <rect key="frame" x="179.5" y="8" width="55" height="56.5"/>
+                                        <rect key="frame" x="179.5" y="8" width="55" height="60"/>
                                         <state key="normal" image="print"/>
                                         <connections>
                                             <segue destination="iuy-Du-JGp" kind="show" id="xEI-KY-pBt"/>
@@ -2181,11 +2179,10 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Moy-go-ae5"/>
-        <segue reference="Uu3-NM-hN1"/>
+        <segue reference="EMg-HR-8cB"/>
         <segue reference="tqW-vp-rrP"/>
-        <segue reference="OEf-AX-Fc9"/>
-        <segue reference="xEI-KY-pBt"/>
+        <segue reference="RFr-O3-svV"/>
+        <segue reference="ocP-Sm-fD9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
