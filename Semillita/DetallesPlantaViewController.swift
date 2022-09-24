@@ -10,15 +10,24 @@ import UIKit
 import Alamofire
 
 class DetallesPlantaViewController: UIViewController {
+    
 
     let detallesPlantaServicio = PlantaService()
+    let analiticosPlantaservicio = AnaliticosService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        /*
         detallesPlantaServicio.leerPlanta(plantaId:21){
             (plantaRecibida) in
             print(plantaRecibida!.Pimagenes?[0].tipo)
         }
+        */
+        /*analiticosPlantaservicio.leerAnaliticos(){
+            (plantaRecibida) in
+            print(plantaRecibida!.nombre_tradicional)*/
+        //}
     }
 }
+

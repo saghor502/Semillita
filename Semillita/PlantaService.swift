@@ -19,7 +19,7 @@ class PlantaService {
             .responseDecodable(of: Planta.self) { respuesta in
             switch respuesta.result {
                 case .success:
-                    
+                    print(respuesta.value)
                     finalizar(respuesta.value)
                 case let .failure(error):
                     print(error)
