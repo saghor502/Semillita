@@ -18,7 +18,9 @@ class AnaliticosViewController: UIViewController {
         // Do any additional setup after loading the view.
         detallesAnaliticosServicio.leerAnaliticos(){
             (plantaRecibida) in
-            print(plantaRecibida!.nombre_tradicional)
+            print(plantaRecibida![0].nombre_tradicional)
+            print(plantaRecibida![1].nombre_tradicional)
+            print(plantaRecibida![2].nombre_tradicional)
         }
     }
 

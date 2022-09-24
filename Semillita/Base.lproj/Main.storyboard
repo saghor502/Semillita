@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETG-bY-pk6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1534,7 +1534,7 @@ Cg
         <!--Contabilidad-->
         <scene sceneID="O4I-gW-pr0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ETG-bY-pk6" userLabel="Contabilidad" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ETG-bY-pk6" userLabel="Contabilidad" customClass="AnaliticosViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5fl-xX-WQL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1840,9 +1840,9 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="EMg-HR-8cB"/>
-        <segue reference="tqW-vp-rrP"/>
+        <segue reference="EBh-6D-d9r"/>
         <segue reference="FtU-cB-plq"/>
-        <segue reference="ocP-Sm-fD9"/>
+        <segue reference="QtK-eg-RzA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>

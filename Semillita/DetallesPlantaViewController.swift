@@ -24,10 +24,10 @@ class DetallesPlantaViewController: UIViewController {
             print(plantaRecibida!.Pimagenes[0].tipo)
         }
         */
-        analiticosPlantaservicio.leerAnaliticos(){
+        /*analiticosPlantaservicio.leerAnaliticos(){
             (plantaRecibida) in
-            print(plantaRecibida!.nombre_tradicional)
-        }
+            print(plantaRecibida!.nombre_tradicional)*/
+        //}
     }
 }
 

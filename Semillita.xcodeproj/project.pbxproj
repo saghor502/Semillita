@@ -12,6 +12,7 @@
 		8423D88728DD318B00EB1E7C /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88628DD318B00EB1E7C /* Planta.swift */; };
 		8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88B28DD375A00EB1E7C /* PlantaService.swift */; };
 		8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D89328DD51C200EB1E7C /* Imagen.swift */; };
+		8E556E2F28DE82D30016619C /* ListaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E556E2E28DE82D30016619C /* ListaPlantas.swift */; };
 		8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */; };
 		8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC6428DD5AD700521310 /* AnaliticosService.swift */; };
 		D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130DF6028C7F81700ADFD25 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		8423D88628DD318B00EB1E7C /* Planta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
 		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; };
 		8423D89328DD51C200EB1E7C /* Imagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagen.swift; sourceTree = "<group>"; };
+		8E556E2E28DE82D30016619C /* ListaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPlantas.swift; sourceTree = "<group>"; };
 		8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC6428DD5AD700521310 /* AnaliticosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosService.swift; sourceTree = "<group>"; };
 		D130DF5D28C7F81700ADFD25 /* Semillita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semillita.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
 				8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */,
 				8E74CC6428DD5AD700521310 /* AnaliticosService.swift */,
+				8E556E2E28DE82D30016619C /* ListaPlantas.swift */,
 				D130DF6928C7F81800ADFD25 /* Assets.xcassets */,
 				D130DF6B28C7F81800ADFD25 /* LaunchScreen.storyboard */,
 				D130DF6E28C7F81800ADFD25 /* Info.plist */,
@@ -293,6 +296,7 @@
 				8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */,
 				8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */,
 				8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */,
+				8E556E2F28DE82D30016619C /* ListaPlantas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
