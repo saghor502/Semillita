@@ -20,19 +20,5 @@ class Planta: Codable {
     let temporada:String
     let usos:[String]
     let Pimagenes: [Imagen]?
-    
-    init(id: Int?, especie: String, estatus: Bool?, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String], pimagenes: [Imagen]?) {
-        self.id = id
-        self.especie = especie
-        self.estatus = estatus
-        self.fertilizante = fertilizante
-        self.iluminacion = iluminacion
-        self.nombre_cientifico = nombre_cientifico
-        self.nombre_tradicional = nombre_tradicional
-        self.origen = origen
-        self.riego = riego
-        self.temporada = temporada
-        self.usos = usos
-        self.Pimagenes = pimagenes
-    }
+    let descripcion: String
 }

@@ -17,8 +17,9 @@ class AddPlanta: Codable {
     let riego:String
     let temporada:String
     let usos:[String]
+    let descripcion:String
     
-    init(especie: String, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String]) {
+    init(especie: String, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String], desc: String) {
         self.especie = especie
         self.fertilizante = fertilizante
         self.iluminacion = iluminacion
@@ -28,5 +29,6 @@ class AddPlanta: Codable {
         self.riego = riego
         self.temporada = temporada
         self.usos = usos
+        self.descripcion = desc
     }
 }
