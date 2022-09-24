@@ -23,11 +23,21 @@
                                         <rect key="frame" x="28" y="40.5" width="358" height="286"/>
                                         <accessibility key="accessibilityConfiguration" label="Logo"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTG-MB-Oqg">
+                                        <rect key="frame" x="0.0" y="11" width="414" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="LoginError"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="mKO-by-TLR" firstAttribute="centerX" secondItem="8c5-5J-cl8" secondAttribute="centerX" id="009-Ko-HT2"/>
+                                    <constraint firstItem="WTG-MB-Oqg" firstAttribute="centerX" secondItem="8c5-5J-cl8" secondAttribute="centerX" id="1c1-5D-mz8"/>
                                     <constraint firstItem="mKO-by-TLR" firstAttribute="width" secondItem="8c5-5J-cl8" secondAttribute="height" multiplier="358:327" id="Eev-54-Idc"/>
                                     <constraint firstItem="mKO-by-TLR" firstAttribute="centerY" secondItem="8c5-5J-cl8" secondAttribute="centerY" multiplier="1.12" id="ehS-MH-rpY"/>
+                                    <constraint firstItem="WTG-MB-Oqg" firstAttribute="width" secondItem="8c5-5J-cl8" secondAttribute="width" id="fki-Fl-VIR"/>
+                                    <constraint firstItem="WTG-MB-Oqg" firstAttribute="top" secondItem="8c5-5J-cl8" secondAttribute="top" constant="11" id="zr6-I4-GHr"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7k-n8-qJR" userLabel="QR">
@@ -65,39 +75,39 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="form" translatesAutoresizingMaskIntoConstraints="NO" id="1gr-VG-jf6">
                                         <rect key="frame" x="20.5" y="11.5" width="373" height="160"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Es9-5J-EwO">
-                                        <rect key="frame" x="78.5" y="-58.5" width="414" height="229"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-SZ-wGF">
-                                        <rect key="frame" x="78.5" y="11.5" width="414" height="229"/>
+                                        <rect key="frame" x="78" y="107" width="298" height="38"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMc-MF-rZS" userLabel="Ingresar">
                                         <rect key="frame" x="21" y="159.5" width="374" height="63"/>
                                         <state key="normal" title="Button" image="ingresar"/>
                                         <connections>
-                                            <segue destination="iuy-Du-JGp" kind="show" id="ocP-Sm-fD9"/>
+                                            <action selector="logInUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jg7-tE-WSD"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Es9-5J-EwO">
+                                        <rect key="frame" x="78" y="37.5" width="298" height="37"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" id="1Pe-eS-NAO"/>
+                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" constant="-116" id="1Pe-eS-NAO"/>
                                     <constraint firstItem="jMc-MF-rZS" firstAttribute="centerY" secondItem="zvM-WW-C5D" secondAttribute="centerY" multiplier="1.67" id="1rA-0R-Z3P"/>
                                     <constraint firstItem="1gr-VG-jf6" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" multiplier="0.9" id="1va-CV-q0J"/>
                                     <constraint firstItem="1gr-VG-jf6" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" multiplier="0.69869" id="35U-i5-ip0"/>
-                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" id="3VB-q4-Gyr"/>
+                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" constant="-116" id="3VB-q4-Gyr"/>
                                     <constraint firstItem="Es9-5J-EwO" firstAttribute="centerY" secondItem="zvM-WW-C5D" secondAttribute="centerY" multiplier="0.49" id="C2y-6I-ykY"/>
                                     <constraint firstItem="1gr-VG-jf6" firstAttribute="centerY" secondItem="zvM-WW-C5D" secondAttribute="centerY" multiplier="0.8" id="CXN-wp-FWz"/>
-                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" id="HJ5-9m-JKC"/>
-                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" multiplier="1.38" id="J2W-il-oY0"/>
+                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" constant="-192" id="HJ5-9m-JKC"/>
+                                    <constraint firstItem="Es9-5J-EwO" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" multiplier="1.38" constant="-58.659999999999968" id="J2W-il-oY0"/>
                                     <constraint firstItem="QVY-SZ-wGF" firstAttribute="centerY" secondItem="zvM-WW-C5D" secondAttribute="centerY" multiplier="1.1" id="JDD-7M-oTQ"/>
-                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" multiplier="1.38" id="MmM-sm-npT"/>
+                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" multiplier="1.38" constant="-58.659999999999968" id="MmM-sm-npT"/>
                                     <constraint firstItem="1gr-VG-jf6" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" id="Ww3-hE-oZy"/>
                                     <constraint firstItem="jMc-MF-rZS" firstAttribute="width" secondItem="zvM-WW-C5D" secondAttribute="width" multiplier="0.9" constant="1.3999999999999773" id="bfI-wn-JDc"/>
-                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" id="m13-MI-TN6"/>
+                                    <constraint firstItem="QVY-SZ-wGF" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" constant="-191" id="m13-MI-TN6"/>
                                     <constraint firstItem="jMc-MF-rZS" firstAttribute="centerX" secondItem="zvM-WW-C5D" secondAttribute="centerX" constant="1" id="xFc-b0-rnW"/>
                                     <constraint firstItem="jMc-MF-rZS" firstAttribute="height" secondItem="zvM-WW-C5D" secondAttribute="height" multiplier="0.3" constant="-5.7000000000000028" id="y2i-WC-62S"/>
                                 </constraints>
@@ -162,6 +172,12 @@
                             <constraint firstItem="zvM-WW-C5D" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.5" id="zgS-h4-sJ5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="error" destination="WTG-MB-Oqg" id="jOs-3A-VhB"/>
+                        <outlet property="password" destination="QVY-SZ-wGF" id="6gX-Mw-Zx7"/>
+                        <outlet property="username" destination="Es9-5J-EwO" id="DZP-kf-Umr"/>
+                        <segue destination="iuy-Du-JGp" kind="show" identifier="Login_To_Catalogo" id="ZAY-MP-pt5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1170,7 +1186,7 @@ Cg
                                                 <rect key="frame" x="85" y="10.5" width="37" height="53"/>
                                                 <state key="normal" image="atras"/>
                                                 <connections>
-                                                    <segue destination="iuy-Du-JGp" kind="show" id="EPz-my-9eo"/>
+                                                    <segue destination="iuy-Du-JGp" kind="show" destinationCreationSelector="toCataogo:" id="EPz-my-9eo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2179,10 +2195,10 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EMg-HR-8cB"/>
+        <segue reference="Uu3-NM-hN1"/>
         <segue reference="tqW-vp-rrP"/>
-        <segue reference="RFr-O3-svV"/>
-        <segue reference="ocP-Sm-fD9"/>
+        <segue reference="OEf-AX-Fc9"/>
+        <segue reference="ZAY-MP-pt5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
@@ -2226,6 +2242,9 @@ Cg
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
