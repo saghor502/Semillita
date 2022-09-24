@@ -16,9 +16,17 @@ class DetallesPlantaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        detallesPlantaServicio.leerPlanta(plantaId:21){
+        detallesPlantaServicio.leerPlanta(plantaId:75){
             (plantaRecibida) in
-            print(plantaRecibida!.Pimagenes?[0].tipo)
+            print(plantaRecibida!.nombre_tradicional)
+            print(plantaRecibida!.nombre_cientifico)
+            print(plantaRecibida!.origen)
+            print(plantaRecibida!.fertilizante)
+            print(plantaRecibida!.riego)
+            print(plantaRecibida!.iluminacion)
+            print(plantaRecibida!.usos)
+            print(plantaRecibida!.descripcion)
+            
         }   
     }
 }
