@@ -1549,6 +1549,11 @@ Cg
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o4z-ep-ZkV"/>
+                    <connections>
+                        <outlet property="imagen" destination="IkK-8H-pEz" id="puQ-4H-7Xa"/>
+                        <outlet property="nombre_cientifico" destination="SUE-ep-m31" id="MuT-NN-9Oa"/>
+                        <outlet property="nombre_tradicional" destination="Ba6-3t-cac" id="taf-2P-tLR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzp-Eg-vpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2202,7 +2207,7 @@ Cg
         <segue reference="EMg-HR-8cB"/>
         <segue reference="GB6-Dv-jtA"/>
         <segue reference="RFr-O3-svV"/>
-        <segue reference="ZAY-MP-pt5"/>
+        <segue reference="3GY-i3-set"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
