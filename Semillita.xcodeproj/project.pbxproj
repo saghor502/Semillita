@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4013F63828E1003200A85655 /* ImageFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013F63728E1003200A85655 /* ImageFunctions.swift */; };
+		4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */; };
 		4062597A28DFB3E70057EEE9 /* ImprimirQRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062597928DFB3E70057EEE9 /* ImprimirQRService.swift */; };
 		4062597F28DFB4890057EEE9 /* ImprimirQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062597E28DFB4890057EEE9 /* ImprimirQRViewController.swift */; };
 		4062598A28DFD3160057EEE9 /* BuscarQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062598928DFD3160057EEE9 /* BuscarQRViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		4013F63728E1003200A85655 /* ImageFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFunctions.swift; sourceTree = "<group>"; };
+		4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaTableViewController.swift; sourceTree = "<group>"; };
 		4062597928DFB3E70057EEE9 /* ImprimirQRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprimirQRService.swift; sourceTree = "<group>"; };
 		4062597E28DFB4890057EEE9 /* ImprimirQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprimirQRViewController.swift; sourceTree = "<group>"; };
 		4062598928DFD3160057EEE9 /* BuscarQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarQRViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				D130DF6B28C7F81800ADFD25 /* LaunchScreen.storyboard */,
 				D130DF6E28C7F81800ADFD25 /* Info.plist */,
 				8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */,
+				4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */,
 				407B4B3B28DE93C5004F1A58 /* LogInService.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
 				8423D88B28DD375A00EB1E7C /* PlantaService.swift */,
@@ -338,6 +341,7 @@
 				842F974C28DF998200E524EC /* listaPlantas.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
+				4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */,
 				40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
 				407B4B3C28DE93C5004F1A58 /* LogInService.swift in Sources */,
