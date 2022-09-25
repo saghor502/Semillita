@@ -1,0 +1,17 @@
+//
+//  ImageFunctions.swift
+//  Semillita
+//
+//  Created by Alejandro Mendoza Vargas on 25/09/22.
+//
+
+import Foundation
+import UIKit
+
+class ImageFunctions {
+    func convert(base64:String) -> UIImage {
+        let imageData = Data(base64Encoded: base64)
+        let image = UIImage(data: imageData!)
+        return image!
+    }
+}
