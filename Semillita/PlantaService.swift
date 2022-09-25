@@ -20,9 +20,7 @@ class PlantaService {
             switch respuesta.result {
                 case .success:
                     finalizar(respuesta.value)
-                case let .failure(error):
-                    print(error)
-                    finalizar(nil)
+                case let .failure(error):                    finalizar(nil)
             }
         }
     }

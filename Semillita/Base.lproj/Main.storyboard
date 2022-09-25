@@ -1254,10 +1254,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="2229" y="858"/>
         </scene>
-        <!--BuscarQR-->
+        <!--BuscarQR View Controller-->
         <scene sceneID="Onk-JU-bWs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="SaB-fP-uUW" customClass="BuscarQR" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="SaB-fP-uUW" customClass="BuscarQRViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UG7-RR-WGB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1278,6 +1278,9 @@ Cg
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okc-4x-Xv0">
                                                 <rect key="frame" x="345" y="20" width="37" height="38"/>
                                                 <state key="normal" image="buscarqr"/>
+                                                <connections>
+                                                    <action selector="buscarQR:" destination="SaB-fP-uUW" eventType="touchUpInside" id="O1o-cG-03k"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar Planta" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="sqH-Xk-pws">
                                                 <rect key="frame" x="69" y="22" width="268" height="34"/>
@@ -1310,9 +1313,6 @@ Cg
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-FI-bCr">
                                                         <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                         <state key="normal" image="about"/>
-                                                        <connections>
-                                                            <segue destination="QU3-2F-e55" kind="show" id="EBh-6D-d9r"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1388,6 +1388,10 @@ Cg
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U2l-7y-zAG"/>
+                    <connections>
+                        <outlet property="buscarPlanta" destination="sqH-Xk-pws" id="NPe-BQ-b35"/>
+                        <segue destination="QU3-2F-e55" kind="show" identifier="BuscarQR_To_ImprimirQR" id="GB6-Dv-jtA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDY-mS-z9b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2195,9 +2199,9 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Uu3-NM-hN1"/>
-        <segue reference="tqW-vp-rrP"/>
-        <segue reference="OEf-AX-Fc9"/>
+        <segue reference="EMg-HR-8cB"/>
+        <segue reference="GB6-Dv-jtA"/>
+        <segue reference="RFr-O3-svV"/>
         <segue reference="ZAY-MP-pt5"/>
     </inferredMetricsTieBreakers>
     <resources>
