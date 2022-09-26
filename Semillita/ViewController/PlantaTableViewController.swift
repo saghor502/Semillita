@@ -25,7 +25,7 @@ class PlantaTableViewController: UITableViewController {
         didSet {
             nombre_tradicional.text = plant?.nombre_tradicional
             nombre_cientifico.text = "Nombre Científico: " + plant!.nombre_cientifico
-            // imagen.image = imageUtil.convert(base64: (plant?.Pimagenes![0].dato)!)
+            imagen.image = imageUtil.convert(base64: (plant?.Pimagenes![0].dato)!)
             descripcion.text = plant?.descripcion
             origen.text = plant?.origen
             

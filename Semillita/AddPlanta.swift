@@ -8,6 +8,7 @@
 import Foundation
 
 class AddPlanta: Codable {
+    let id: Int?
     let especie: String
     let fertilizante: String
     let iluminacion: String
@@ -20,6 +21,7 @@ class AddPlanta: Codable {
     let descripcion:String
     
     init(especie: String, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String], desc: String) {
+        self.id = nil
         self.especie = especie
         self.fertilizante = fertilizante
         self.iluminacion = iluminacion

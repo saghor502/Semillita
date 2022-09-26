@@ -10,9 +10,11 @@ import Foundation
 public class Imagen: Codable{
     public let dato: String
     public let tipo: String
+    public var planta_id: Int
     
-    public init(dato: String, tipo: String){
+    public init(dato: String, tipo: String, planta_id: Int){
         self.dato = dato
         self.tipo = tipo
+        self.planta_id = planta_id
         }
 }

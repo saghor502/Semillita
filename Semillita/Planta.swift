@@ -8,7 +8,7 @@
 import Foundation
 
 public class Planta: Codable {
-    public let id: Int?
+    public let id: Int
     public let especie: String
     public let estatus: Bool?
     public let fertilizante: String
