@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2R-k6-rF2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -704,7 +704,7 @@
         <!--Planta-->
         <scene sceneID="b46-T1-H1D">
             <objects>
-                <tableViewController id="JWs-h3-blB" userLabel="Planta" sceneMemberID="viewController">
+                <tableViewController id="JWs-h3-blB" userLabel="Planta" customClass="PlantaTableViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eMP-V4-fRa">
                         <rect key="frame" x="0.0" y="0.0" width="373" height="630"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -712,7 +712,7 @@
                         <sections>
                             <tableViewSection id="2ue-5S-wgO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="1326" id="oiW-q0-yLZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="planta_cell" rowHeight="1326" id="oiW-q0-yLZ">
                                         <rect key="frame" x="0.0" y="28" width="373" height="1326"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oiW-q0-yLZ" id="VPO-Cw-udW">
@@ -725,8 +725,9 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMv-dv-qH7" userLabel="Titulo">
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Planta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-L4-vGt">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-L4-vGt">
                                                                     <rect key="frame" x="0.0" y="38" width="373" height="33"/>
+                                                                    <accessibility key="accessibilityConfiguration" identifier="nombre_tradicional"/>
                                                                     <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
                                                                     <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -734,6 +735,9 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Qd-cda">
                                                                     <rect key="frame" x="323" y="12" width="42" height="47"/>
                                                                     <state key="normal" image="basura"/>
+                                                                    <connections>
+                                                                        <action selector="deletePlant:" destination="JWs-h3-blB" eventType="touchUpInside" id="TIR-jL-S9s"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
                                                                     <rect key="frame" x="8" y="12" width="47" height="47"/>
@@ -760,7 +764,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awa-85-zia" userLabel="Imagen">
                                                             <rect key="frame" x="0.0" y="91" width="373" height="324"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planta" translatesAutoresizingMaskIntoConstraints="NO" id="5oq-2U-99a">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5oq-2U-99a">
                                                                     <rect key="frame" x="17.5" y="0.0" width="338" height="324"/>
                                                                 </imageView>
                                                             </subviews>
@@ -776,15 +780,14 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-Nh-1mf" userLabel="Subtitulo">
                                                             <rect key="frame" x="0.0" y="415" width="373" height="104"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre cientifico: Plantus Spathiphyllum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-2A-3mj">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-2A-3mj">
                                                                     <rect key="frame" x="0.0" y="8" width="373" height="19"/>
                                                                     <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="15"/>
                                                                     <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSR-62-cz3">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSR-62-cz3">
                                                                     <rect key="frame" x="21" y="27" width="331" height="81"/>
-                                                                    <string key="text">Un Lirio de la Paz tiene distintos significados buenos. Puede representar el perdón, el deseo de recuperar la confianza que alguien tenía en ti. Puede representar la inocencia y la pureza. Y, por último, el significado mundial que le da su nombre: paz y amor.</string>
                                                                     <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -860,15 +863,14 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                                     <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-to-oHh">
-                                                                    <rect key="frame" x="13" y="30" width="347" height="40"/>
-                                                                    <string key="text">El Spathiphyllum es un género de plantas con flores de la familia Araceae. Es originario de México, América tropical, Malasia y oeste del Pacífico.</string>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-to-oHh">
+                                                                    <rect key="frame" x="13" y="30" width="347" height="0.0"/>
                                                                     <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="12"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-Kj-xlP">
-                                                                    <rect key="frame" x="0.5" y="70" width="372" height="164"/>
+                                                                    <rect key="frame" x="0.5" y="30" width="372" height="164"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1120,10 +1122,20 @@ Cg
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="JWs-h3-blB" id="Pmv-iI-3RR"/>
-                            <outlet property="delegate" destination="JWs-h3-blB" id="F2x-S0-knF"/>
+                            <outlet property="dataSource" destination="JWs-h3-blB" id="NWN-Bw-EHE"/>
+                            <outlet property="delegate" destination="JWs-h3-blB" id="rKe-cp-twr"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="cuidados" destination="qJa-jd-3PU" id="03G-1r-HFp"/>
+                        <outlet property="descripcion" destination="gSR-62-cz3" id="0zs-ZK-yvX"/>
+                        <outlet property="imagen" destination="5oq-2U-99a" id="G99-ZN-uAb"/>
+                        <outlet property="nombre_cientifico" destination="wnr-2A-3mj" id="Gbt-gh-QGg"/>
+                        <outlet property="nombre_tradicional" destination="LJM-L4-vGt" id="e9m-iQ-ZnQ"/>
+                        <outlet property="origen" destination="FiV-to-oHh" id="yKd-0h-5pL"/>
+                        <outlet property="table" destination="eMP-V4-fRa" id="Aby-wg-SzJ"/>
+                        <outlet property="usos" destination="kH5-PN-13p" id="W6s-v1-Qia"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="562-PH-YlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1132,6 +1144,8 @@ Cg
         <!--InfoPlanta-->
         <scene sceneID="UrD-DF-1q5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HHl-qe-Q7K" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController modalPresentationStyle="fullScreen" id="N2R-k6-rF2" userLabel="InfoPlanta" customClass="DetallesPlantaViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2O-Gx-r2d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1141,7 +1155,7 @@ Cg
                                 <rect key="frame" x="20.5" y="181" width="373" height="630"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="JWs-h3-blB" kind="embed" id="PSi-RR-97R"/>
+                                    <segue destination="JWs-h3-blB" kind="embed" identifier="loadPlanta" id="PSi-RR-97R"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bo6-Em-4Y8" userLabel="Buscador">
@@ -1205,6 +1219,8 @@ Cg
                                                 <rect key="frame" x="76" y="11" width="55" height="63"/>
                                                 <state key="normal" image="print"/>
                                                 <connections>
+                                                    <action selector="buscarQR:" destination="HHl-qe-Q7K" eventType="touchUpInside" id="V0H-l2-Rqd"/>
+                                                    <action selector="imprimirQR:" destination="N2R-k6-rF2" eventType="touchUpInside" id="vli-yN-0xE"/>
                                                     <segue destination="QU3-2F-e55" kind="show" id="tqW-vp-rrP"/>
                                                 </connections>
                                             </button>
@@ -1249,8 +1265,10 @@ Cg
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pnf-80-mzi"/>
+                    <connections>
+                        <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2229" y="858"/>
         </scene>
@@ -2206,8 +2224,8 @@ Cg
     <inferredMetricsTieBreakers>
         <segue reference="EMg-HR-8cB"/>
         <segue reference="GB6-Dv-jtA"/>
-        <segue reference="RFr-O3-svV"/>
-        <segue reference="3GY-i3-set"/>
+        <segue reference="FtU-cB-plq"/>
+        <segue reference="EPz-my-9eo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
@@ -2232,7 +2250,6 @@ Cg
         <image name="p2" width="290" height="369"/>
         <image name="p3" width="288" height="362"/>
         <image name="p4" width="291" height="365"/>
-        <image name="planta" width="511" height="488"/>
         <image name="print" width="98" height="113"/>
         <image name="print icon" width="512" height="512"/>
         <image name="qr" width="492" height="453"/>
