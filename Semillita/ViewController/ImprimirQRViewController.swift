@@ -27,7 +27,7 @@ class ImprimirQRViewController: UIViewController {
         let imagefunctions = ImageFunctions()
         let new_image:UIImage = imagefunctions.convert(base64: (plant?.Pimagenes![0].dato)!)
         imagen.image = new_image
-        imprimirQRService.imprimirQR(planta_id: (plant?.id!)!) {
+        imprimirQRService.imprimirQR(planta_id: String(plant!.id)) {
             (plantaRecibida) in
             print(plantaRecibida)
         }

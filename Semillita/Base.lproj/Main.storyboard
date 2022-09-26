@@ -732,16 +732,16 @@
                                                                     <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
+                                                                    <rect key="frame" x="8" y="12" width="47" height="47"/>
+                                                                    <state key="normal" image="editar"/>
+                                                                </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Qd-cda">
                                                                     <rect key="frame" x="323" y="12" width="42" height="47"/>
                                                                     <state key="normal" image="basura"/>
                                                                     <connections>
                                                                         <action selector="deletePlant:" destination="JWs-h3-blB" eventType="touchUpInside" id="TIR-jL-S9s"/>
                                                                     </connections>
-                                                                </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
-                                                                    <rect key="frame" x="8" y="12" width="47" height="47"/>
-                                                                    <state key="normal" image="editar"/>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -751,13 +751,13 @@
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="38" id="DeZ-2J-ivd"/>
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.362637" id="RUx-Rx-Vgk"/>
                                                                 <constraint firstItem="5q2-bO-bfm" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.516484" id="Sod-yN-SHe"/>
-                                                                <constraint firstAttribute="trailing" secondItem="GDn-Qd-cda" secondAttribute="trailing" constant="8" id="UAW-uK-b6j"/>
+                                                                <constraint firstAttribute="trailing" secondItem="GDn-Qd-cda" secondAttribute="trailing" constant="8" id="Urf-S1-Vzl"/>
                                                                 <constraint firstItem="5q2-bO-bfm" firstAttribute="leading" secondItem="jMv-dv-qH7" secondAttribute="leading" constant="8" id="VRa-nl-Heg"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.516484" id="eEB-3V-JXP"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="12" id="WmY-D3-fGI"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.112601" constant="-0.00017300000000375348" id="eGj-QZ-nZn"/>
                                                                 <constraint firstItem="5q2-bO-bfm" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.126005" id="iIv-Fh-afk"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="12" id="kru-Ty-i58"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.516484" constant="-4.4000000002597517e-05" id="mMb-GH-d9t"/>
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="centerX" secondItem="jMv-dv-qH7" secondAttribute="centerX" id="nwM-gJ-8j5"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.112601" id="paa-PK-VYz"/>
                                                                 <constraint firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="373:91" id="zut-De-oXH"/>
                                                             </constraints>
                                                         </view>
@@ -1144,8 +1144,6 @@ Cg
         <!--InfoPlanta-->
         <scene sceneID="UrD-DF-1q5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="HHl-qe-Q7K" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController modalPresentationStyle="fullScreen" id="N2R-k6-rF2" userLabel="InfoPlanta" customClass="DetallesPlantaViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2O-Gx-r2d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1269,6 +1267,8 @@ Cg
                         <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="HHl-qe-Q7K" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2229" y="858"/>
         </scene>
@@ -1748,7 +1748,7 @@ Cg
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="91"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Añadir Planta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzd-KG-YRg">
-                                                        <rect key="frame" x="92" y="28" width="190" height="33"/>
+                                                        <rect key="frame" x="65.5" y="28" width="243" height="33"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1759,7 +1759,7 @@ Cg
                                                     <constraint firstItem="Dzd-KG-YRg" firstAttribute="top" secondItem="Ive-9H-bds" secondAttribute="top" constant="28" id="4B3-ip-ERO"/>
                                                     <constraint firstItem="Dzd-KG-YRg" firstAttribute="height" secondItem="Ive-9H-bds" secondAttribute="height" multiplier="0.362637" id="4Vc-p4-nTP"/>
                                                     <constraint firstItem="Dzd-KG-YRg" firstAttribute="centerX" secondItem="Ive-9H-bds" secondAttribute="centerX" id="79B-QO-w8y"/>
-                                                    <constraint firstItem="Dzd-KG-YRg" firstAttribute="width" secondItem="Ive-9H-bds" secondAttribute="width" multiplier="0.508021" id="JFc-AA-BbH"/>
+                                                    <constraint firstItem="Dzd-KG-YRg" firstAttribute="width" secondItem="Ive-9H-bds" secondAttribute="width" multiplier="0.65" id="JFc-AA-BbH"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCZ-mj-UM3" userLabel="Nombre">
@@ -1771,7 +1771,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="E5r-63-aCv">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="E5r-63-aCv">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1798,7 +1798,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="622-la-cmD">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese origen de la planta" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="622-la-cmD">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1825,7 +1825,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="9s0-40-yal">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info sobre temporada" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="9s0-40-yal">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1852,7 +1852,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-ql-AHu">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info sobre el riego" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-ql-AHu">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1879,7 +1879,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="EwB-AQ-fJh">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre científico" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="EwB-AQ-fJh">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1906,7 +1906,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-Xe-xzN">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info sobre fertilizantes" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-Xe-xzN">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1933,7 +1933,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="5xj-vv-SIi">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info de iluminación" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="5xj-vv-SIi">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1960,7 +1960,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-Af-Pvc">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seleccionar Usos" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-Af-Pvc">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -1987,7 +1987,7 @@ Cg
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese nombre Común" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-hw-4vL">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info sobre la especie" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-hw-4vL">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2036,37 +2036,44 @@ Cg
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b75-C1-05L" userLabel="Imagen">
                                                 <rect key="frame" x="0.0" y="1104" width="374" height="203"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngk-Um-Anb">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngk-Um-Anb">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ov-Ud-Kxx">
-                                                        <rect key="frame" x="108" y="45" width="158" height="158"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ov-Ud-Kxx">
+                                                        <rect key="frame" x="195" y="40" width="158" height="158"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                         <state key="normal" image="uploadPhoto">
                                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="uploadImage:" destination="pe6-rU-Wtu" eventType="touchUpInside" id="ZVq-ap-Buo"/>
+                                                        </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJa-vN-n7q">
+                                                        <rect key="frame" x="9" y="45" width="159" height="158"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Ngk-Um-Anb" firstAttribute="width" secondItem="b75-C1-05L" secondAttribute="width" id="0Hm-Ho-3Rm"/>
-                                                    <constraint firstItem="3Ov-Ud-Kxx" firstAttribute="height" secondItem="b75-C1-05L" secondAttribute="height" multiplier="0.778325" id="1SC-t3-wV9"/>
                                                     <constraint firstItem="Ngk-Um-Anb" firstAttribute="centerX" secondItem="b75-C1-05L" secondAttribute="centerX" id="5iJ-4N-pHs"/>
-                                                    <constraint firstAttribute="bottom" secondItem="3Ov-Ud-Kxx" secondAttribute="bottom" id="ER3-cj-wNl"/>
-                                                    <constraint firstItem="3Ov-Ud-Kxx" firstAttribute="centerX" secondItem="b75-C1-05L" secondAttribute="centerX" id="FVY-Px-WeU"/>
                                                     <constraint firstItem="Ngk-Um-Anb" firstAttribute="top" secondItem="b75-C1-05L" secondAttribute="top" constant="8" id="moD-0r-ez9"/>
-                                                    <constraint firstItem="3Ov-Ud-Kxx" firstAttribute="width" secondItem="b75-C1-05L" secondAttribute="width" multiplier="0.42246" id="wl6-5E-XcM"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-E3-jol">
                                                 <rect key="frame" x="34.5" y="1415" width="305" height="65"/>
-                                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="45"/>
+                                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="31"/>
                                                 <state key="normal" title="Añadir Planta">
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="createPlant:" destination="pe6-rU-Wtu" eventType="touchUpInside" id="C6G-9w-f6a"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2215,6 +2222,18 @@ Cg
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Eiu-72-Sz8"/>
+                    <connections>
+                        <outlet property="descripcion" destination="hur-Xt-yCD" id="sfI-th-zh2"/>
+                        <outlet property="especie" destination="1rM-hw-4vL" id="7D8-tU-PtJ"/>
+                        <outlet property="fertilizante" destination="Wlh-Xe-xzN" id="498-Od-U5L"/>
+                        <outlet property="iluminacion" destination="5xj-vv-SIi" id="rvj-xr-6mc"/>
+                        <outlet property="image" destination="TJa-vN-n7q" id="rK5-b3-hHP"/>
+                        <outlet property="nombre_cientifico" destination="EwB-AQ-fJh" id="5Ag-I7-cZL"/>
+                        <outlet property="nombre_tradicional" destination="E5r-63-aCv" id="GnV-Dr-P3M"/>
+                        <outlet property="origen" destination="622-la-cmD" id="bfB-d8-noY"/>
+                        <outlet property="riego" destination="JTd-ql-AHu" id="SSR-TH-Rgh"/>
+                        <outlet property="temporada" destination="9s0-40-yal" id="QMU-Ju-sbV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrl-gZ-Ptq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2222,8 +2241,8 @@ Cg
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EMg-HR-8cB"/>
-        <segue reference="GB6-Dv-jtA"/>
+        <segue reference="SmO-8P-1ag"/>
+        <segue reference="gW8-GY-5VX"/>
         <segue reference="FtU-cB-plq"/>
         <segue reference="EPz-my-9eo"/>
     </inferredMetricsTieBreakers>

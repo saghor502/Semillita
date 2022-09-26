@@ -14,4 +14,8 @@ class ImageFunctions {
         let image = UIImage(data: imageData!)
         return image!
     }
+    
+    func convertImageToBase64String (img: UIImage) -> String {
+        return img.jpegData(compressionQuality: 1)?.base64EncodedString() ?? ""
+    }
 }

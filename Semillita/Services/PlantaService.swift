@@ -15,11 +15,13 @@ class PlantaService {
     
     func leerPlanta(plantaId: Int, finalizar: @escaping LeerPlantaClosure) {
         AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/"+String(plantaId), method: .get)
+        //AF.request("http://localhost:8080/api/plantas/"+String(plantaId), method: .get)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: Planta.self) { respuesta in
             switch respuesta.result {
                 case .success:
+                    print(respuesta.value?.id)
                     finalizar(respuesta.value)
                 case let .failure(error):
                     print(error)
@@ -29,7 +31,7 @@ class PlantaService {
     }
     
     func readPlant(nombre: String, finalizar: @escaping ReadPlantClosure) {
-        AF.request("https://tc2007b-semillita.herokuapp.com/api/planta/"+nombre, method: .get)
+        AF.request("https://tc2007b-semillita.herokuapp.com/api/planta/"+nombre.replacingOccurrences(of: " ", with: "%20"), method: .get)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: Planta.self) { respuesta in

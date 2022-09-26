@@ -11,9 +11,8 @@ import Alamofire
 class ImprimirQRService {
     public typealias ImprimirQRClosure = (String?) -> Void
     
-    func imprimirQR(planta_id: Int, finalizar: @escaping ImprimirQRClosure) {
-        //AF.request("https://tc2007b-semillita.herokuapp.com/api/qr/", method: .get, parameters: planta_id, encoder: JSONParameterEncoder())
-        let params: [String: Int] = [
+    func imprimirQR(planta_id: String, finalizar: @escaping ImprimirQRClosure) {
+        let params: [String: String] = [
             "planta_id": planta_id
         ]
         AF.request("https://tc2007b-semillita.herokuapp.com/api/qr/", method: .get, parameters: params, encoding: URLEncoding.default)
