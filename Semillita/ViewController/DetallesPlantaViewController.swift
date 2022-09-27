@@ -20,7 +20,7 @@ class DetallesPlantaViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        detallesPlantaServicio.leerPlanta(plantaId:118){
+        detallesPlantaServicio.leerPlanta(plantaId:119){
             (plantaRecibida) in
             self.plant = plantaRecibida!
             self.viewController?.plant = plantaRecibida!
@@ -31,6 +31,7 @@ class DetallesPlantaViewController: UIViewController {
         if segue.identifier == "loadPlanta",
            let secondViewController = segue.destination as? PlantaTableViewController {
             self.viewController = secondViewController
+            secondViewController.viewController = self
         }
         if segue.identifier == "Detail_To_ImprimirQR",
            let secondViewController = segue.destination as? ImprimirQRViewController {

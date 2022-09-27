@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2R-k6-rF2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pe6-rU-Wtu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1114,6 +1114,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     <navigationItem key="navigationItem" id="pnf-80-mzi"/>
                     <connections>
                         <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
+                        <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" id="z2W-ne-3QL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1809,20 +1810,11 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seleccionar Usos" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-Af-Pvc">
-                                                        <rect key="frame" x="8" y="40" width="358" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="5Ca-Af-Pvc" firstAttribute="centerX" secondItem="ESg-1r-sc1" secondAttribute="centerX" id="6Pf-zB-H8G"/>
                                                     <constraint firstItem="BDG-A0-MYS" firstAttribute="width" secondItem="ESg-1r-sc1" secondAttribute="width" id="6TX-Uq-cbL"/>
                                                     <constraint firstItem="BDG-A0-MYS" firstAttribute="centerX" secondItem="ESg-1r-sc1" secondAttribute="centerX" id="9Si-CK-XOd"/>
-                                                    <constraint firstItem="5Ca-Af-Pvc" firstAttribute="width" secondItem="ESg-1r-sc1" secondAttribute="width" multiplier="0.957219" id="VeL-7Q-vlM"/>
-                                                    <constraint firstItem="5Ca-Af-Pvc" firstAttribute="height" secondItem="ESg-1r-sc1" secondAttribute="height" multiplier="0.377778" id="Wih-Xe-dTe"/>
-                                                    <constraint firstAttribute="bottom" secondItem="5Ca-Af-Pvc" secondAttribute="bottom" constant="16" id="vr4-eX-DaC"/>
                                                     <constraint firstItem="BDG-A0-MYS" firstAttribute="height" secondItem="ESg-1r-sc1" secondAttribute="height" multiplier="0.266667" id="wik-8M-tJG"/>
                                                     <constraint firstItem="BDG-A0-MYS" firstAttribute="top" secondItem="ESg-1r-sc1" secondAttribute="top" constant="8" id="wjt-s1-gmz"/>
                                                 </constraints>
@@ -2035,9 +2027,6 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch1-Ws-1tb">
                                         <rect key="frame" x="179.5" y="8" width="55" height="60"/>
                                         <state key="normal" image="print"/>
-                                        <connections>
-                                            <segue destination="iuy-Du-JGp" kind="show" id="xEI-KY-pBt"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2081,7 +2070,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         <outlet property="nombre_tradicional" destination="E5r-63-aCv" id="GnV-Dr-P3M"/>
                         <outlet property="origen" destination="622-la-cmD" id="bfB-d8-noY"/>
                         <outlet property="riego" destination="JTd-ql-AHu" id="SSR-TH-Rgh"/>
+                        <outlet property="scrollView" destination="NPT-Z5-AHg" id="h2C-mm-Ao8"/>
                         <outlet property="temporada" destination="9s0-40-yal" id="QMU-Ju-sbV"/>
+                        <segue destination="iuy-Du-JGp" kind="show" identifier="Add_To_Catalogo" id="vRv-aj-ZVF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrl-gZ-Ptq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2092,8 +2083,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
     <inferredMetricsTieBreakers>
         <segue reference="SmO-8P-1ag"/>
         <segue reference="gW8-GY-5VX"/>
-        <segue reference="FtU-cB-plq"/>
-        <segue reference="EPz-my-9eo"/>
+        <segue reference="OEf-AX-Fc9"/>
+        <segue reference="vRv-aj-ZVF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>

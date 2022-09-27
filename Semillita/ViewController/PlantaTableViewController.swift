@@ -22,6 +22,7 @@ class PlantaTableViewController: UITableViewController {
     @IBOutlet weak var usos: UILabel!
     let imageUtil = ImageFunctions()
     let deletePlantService = DeletePlantService()
+    weak var viewController: UIViewController!
     
     var plant:Planta? = nil {
         didSet {
@@ -46,7 +47,7 @@ class PlantaTableViewController: UITableViewController {
     @IBAction func deletePlant(_ sender: UIButton) {
         deletePlantService.deletePlant(planta: self.plant!) { (res) in
             print(res)
-            // self.performSegue(withIdentifier: "Detail_To_Catalogo", sender: self)
+            self.viewController.performSegue(withIdentifier: "Detail_To_Catalogo", sender: self)
         }
     }
 }
