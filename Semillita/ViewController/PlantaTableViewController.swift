@@ -16,8 +16,10 @@ class PlantaTableViewController: UITableViewController {
     @IBOutlet weak var nombre_cientifico: UILabel!
     @IBOutlet weak var descripcion: UILabel!
     @IBOutlet weak var origen: UILabel!
+    @IBOutlet weak var riego: UILabel!
+    @IBOutlet weak var fertilizante: UILabel!
+    @IBOutlet weak var iluminacion: UILabel!
     @IBOutlet weak var usos: UILabel!
-    @IBOutlet weak var cuidados: UILabel!
     let imageUtil = ImageFunctions()
     let deletePlantService = DeletePlantService()
     
@@ -28,10 +30,15 @@ class PlantaTableViewController: UITableViewController {
             imagen.image = imageUtil.convert(base64: (plant?.Pimagenes![0].dato)!)
             descripcion.text = plant?.descripcion
             origen.text = plant?.origen
-            
+            riego.text = "● " + plant!.riego
+            fertilizante.text = "● " + plant!.fertilizante
+            iluminacion.text = "● " + plant!.iluminacion
+            for uso in plant!.usos {
+                usos.text = usos.text! + "● " + uso + "\n"
+            }
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
