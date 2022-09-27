@@ -11,6 +11,7 @@ import Alamofire
 
 class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nombre_tradicional: UITextField!
     @IBOutlet weak var nombre_cientifico: UITextField!
     @IBOutlet weak var origen: UITextField!
@@ -23,15 +24,53 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var image: UIImageView!
     let addPlantService = AddPlantService()
     let addImageService = AddImageService()
+    let usosService = UsosService()
     var imagePicker = UIImagePickerController()
     let imageFunctions = ImageFunctions()
+    var selectedUsos: [String]? = []
+    var allUsos: listaUsos? = nil
+    var height: Int = 855
+    var segments: [UISegmentedControl:Int]? = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        usosService.getUsos() {
+            (response) in
+            self.allUsos = response
+            for uso in response!.results {
+                // Add label
+                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+                label.font = UIFont.preferredFont(forTextStyle: .footnote)
+                label.textColor = .black
+                label.textAlignment = .left
+                label.center = CGPoint(x: 35, y: self.height)
+                label.textAlignment = .center
+                label.text = uso.nombre
+                self.scrollView.addSubview(label)
+                // Add segmentedControl
+                let segmentItems = ["No", "Si"]
+                let control = UISegmentedControl(items: segmentItems)
+                control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 400), height: 20)
+                control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 30), y: self.height)
+                control.selectedSegmentIndex = 0
+                self.scrollView.addSubview(control)
+                self.segments![control] = uso.id
+                // Increase height to lower next items
+                self.height += 20
+            }
+            print(self.segments)
+        }
     }
     
     @IBAction func createPlant(_ sender: UIButton) {
+        for (segment, id) in self.segments! {
+            if segment.selectedSegmentIndex == 1 {
+                selectedUsos!.append(String(id))
+            }
+        }
+        
+
         let new_plant = AddPlanta(
             especie: especie.text!,
             fertilizante: fertilizante.text!,
@@ -41,7 +80,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
             origen: origen.text!,
             riego: riego.text!,
             temporada: temporada.text!,
-            usos: ["1"],
+            usos: self.selectedUsos!,
             desc: descripcion.text!
         )
         addPlantService.addPlant(planta: new_plant) { (plantaRecibida) in
@@ -53,6 +92,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
             self.addImageService.addImage(imagen: imageObject) { (res) in
                 // Despues de crear la imagen
                 print("Imagen Creada")
+                self.performSegue(withIdentifier: "Add_To_Catalogo", sender: self)
             }
         }
     }
