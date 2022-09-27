@@ -726,18 +726,18 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="91"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-L4-vGt">
-                                                                    <rect key="frame" x="0.0" y="38" width="373" height="33"/>
+                                                                    <rect key="frame" x="0.0" y="53" width="373" height="33"/>
                                                                     <accessibility key="accessibilityConfiguration" identifier="nombre_tradicional"/>
                                                                     <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
                                                                     <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
-                                                                    <rect key="frame" x="8" y="12" width="47" height="47"/>
+                                                                    <rect key="frame" x="8" y="4" width="47" height="45.5"/>
                                                                     <state key="normal" image="editar"/>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Qd-cda">
-                                                                    <rect key="frame" x="323" y="12" width="42" height="47"/>
+                                                                    <rect key="frame" x="323" y="4" width="42" height="45.5"/>
                                                                     <state key="normal" image="basura"/>
                                                                     <connections>
                                                                         <action selector="deletePlant:" destination="JWs-h3-blB" eventType="touchUpInside" id="TIR-jL-S9s"/>
@@ -746,17 +746,17 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="5q2-bO-bfm" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="12" id="5rQ-XZ-hBQ"/>
+                                                                <constraint firstItem="5q2-bO-bfm" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="4" id="5rQ-XZ-hBQ"/>
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" id="8ty-Tu-yy0"/>
-                                                                <constraint firstItem="LJM-L4-vGt" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="38" id="DeZ-2J-ivd"/>
+                                                                <constraint firstItem="LJM-L4-vGt" firstAttribute="bottom" secondItem="jMv-dv-qH7" secondAttribute="bottom" constant="-5" id="DeZ-2J-ivd"/>
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.362637" id="RUx-Rx-Vgk"/>
-                                                                <constraint firstItem="5q2-bO-bfm" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.516484" id="Sod-yN-SHe"/>
+                                                                <constraint firstItem="5q2-bO-bfm" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.5" id="Sod-yN-SHe"/>
                                                                 <constraint firstAttribute="trailing" secondItem="GDn-Qd-cda" secondAttribute="trailing" constant="8" id="Urf-S1-Vzl"/>
                                                                 <constraint firstItem="5q2-bO-bfm" firstAttribute="leading" secondItem="jMv-dv-qH7" secondAttribute="leading" constant="8" id="VRa-nl-Heg"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="12" id="WmY-D3-fGI"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.112601" constant="-0.00017300000000375348" id="eGj-QZ-nZn"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="top" constant="4" id="WmY-D3-fGI"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.112601" id="eGj-QZ-nZn"/>
                                                                 <constraint firstItem="5q2-bO-bfm" firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="width" multiplier="0.126005" id="iIv-Fh-afk"/>
-                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.516484" constant="-4.4000000002597517e-05" id="mMb-GH-d9t"/>
+                                                                <constraint firstItem="GDn-Qd-cda" firstAttribute="height" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="0.5" id="mMb-GH-d9t"/>
                                                                 <constraint firstItem="LJM-L4-vGt" firstAttribute="centerX" secondItem="jMv-dv-qH7" secondAttribute="centerX" id="nwM-gJ-8j5"/>
                                                                 <constraint firstAttribute="width" secondItem="jMv-dv-qH7" secondAttribute="height" multiplier="373:91" id="zut-De-oXH"/>
                                                             </constraints>
@@ -812,47 +812,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                                 <constraint firstItem="wnr-2A-3mj" firstAttribute="centerX" secondItem="lOc-Nh-1mf" secondAttribute="centerX" id="urQ-tH-LFF"/>
                                                             </constraints>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-yZ-B6p" userLabel="Navegacion">
-                                                            <rect key="frame" x="0.0" y="519" width="373" height="60"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navegacion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hik-De-vcZ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="24"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="Hik-De-vcZ" secondAttribute="height" multiplier="373:24" id="7n5-SE-PP9"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
-                                                                    <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview · Origen · Usos · Cuidados" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evI-OY-eWE">
-                                                                    <rect key="frame" x="0.0" y="20.5" width="373" height="30.5"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="evI-OY-eWE" secondAttribute="height" multiplier="331:27" id="qtj-Fu-orS"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="16"/>
-                                                                    <color key="textColor" red="0.3529411764705882" green="0.66666666666666663" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <string key="userLabel" base64-UTF8="YES">
-UGxhbnRhIFN0dWZmIFBsYW50YSBTdHVmZiADUGxhbnRhIFBsYW50YSBQbGFudGEgU3R1ZmYgU3R1ZmYg
-UGxhbnRhIFBsYW50YSBQbGFudGEgUGxhbnRhIFN0dWZmIFBsYW50YSAgU3R1ZmYgUGxhbnRhIFBsYW50
-YSBQbGFudGEgUGxhbnRhIFBsYW50YSBQbGFudGEgUGxhbnRhIFBsYW50YSBQbGFudGEgUGxhbnRhIFBs
-YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
-</string>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="LZV-yZ-B6p" secondAttribute="height" multiplier="373:60" id="1LT-lz-Uqf"/>
-                                                                <constraint firstItem="evI-OY-eWE" firstAttribute="centerX" secondItem="LZV-yZ-B6p" secondAttribute="centerX" id="GdI-vv-JWQ"/>
-                                                                <constraint firstAttribute="bottom" secondItem="evI-OY-eWE" secondAttribute="bottom" constant="9" id="KgH-IP-gAC"/>
-                                                                <constraint firstItem="Hik-De-vcZ" firstAttribute="centerX" secondItem="LZV-yZ-B6p" secondAttribute="centerX" id="alB-gl-gbp"/>
-                                                                <constraint firstItem="evI-OY-eWE" firstAttribute="width" secondItem="LZV-yZ-B6p" secondAttribute="width" id="ivV-bI-E7q"/>
-                                                                <constraint firstItem="Hik-De-vcZ" firstAttribute="top" secondItem="LZV-yZ-B6p" secondAttribute="top" id="qyw-IB-ZDf"/>
-                                                                <constraint firstItem="Hik-De-vcZ" firstAttribute="width" secondItem="LZV-yZ-B6p" secondAttribute="width" id="viQ-dJ-8o2"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPh-wf-iOF" userLabel="Origen">
-                                                            <rect key="frame" x="0.0" y="579" width="373" height="270"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPh-wf-iOF" userLabel="OrigenView">
+                                                            <rect key="frame" x="0.0" y="579" width="373" height="100"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ga-or-aQh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
@@ -869,27 +830,20 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-Kj-xlP">
-                                                                    <rect key="frame" x="0.5" y="30" width="372" height="164"/>
-                                                                </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstItem="3Ga-or-aQh" firstAttribute="width" secondItem="gPh-wf-iOF" secondAttribute="width" id="DHQ-xB-9P0"/>
                                                                 <constraint firstItem="FiV-to-oHh" firstAttribute="centerX" secondItem="gPh-wf-iOF" secondAttribute="centerX" id="SK5-zp-Mic"/>
                                                                 <constraint firstItem="3Ga-or-aQh" firstAttribute="centerX" secondItem="gPh-wf-iOF" secondAttribute="centerX" id="ZD7-TO-re3"/>
-                                                                <constraint firstItem="uvQ-Kj-xlP" firstAttribute="height" secondItem="gPh-wf-iOF" secondAttribute="height" multiplier="0.607407" id="bdA-FN-YkZ"/>
                                                                 <constraint firstItem="3Ga-or-aQh" firstAttribute="top" secondItem="gPh-wf-iOF" secondAttribute="top" id="dH0-yX-QXV"/>
-                                                                <constraint firstItem="uvQ-Kj-xlP" firstAttribute="top" secondItem="FiV-to-oHh" secondAttribute="bottom" id="daL-8L-CMp"/>
-                                                                <constraint firstItem="uvQ-Kj-xlP" firstAttribute="width" secondItem="gPh-wf-iOF" secondAttribute="width" multiplier="0.997319" id="fho-qK-WaZ"/>
                                                                 <constraint firstItem="FiV-to-oHh" firstAttribute="top" secondItem="3Ga-or-aQh" secondAttribute="bottom" id="i9z-Tf-x3g"/>
                                                                 <constraint firstItem="FiV-to-oHh" firstAttribute="width" secondItem="gPh-wf-iOF" secondAttribute="width" multiplier="0.930295" id="jyw-rr-RK5"/>
-                                                                <constraint firstItem="uvQ-Kj-xlP" firstAttribute="centerX" secondItem="gPh-wf-iOF" secondAttribute="centerX" id="mmo-Bh-W6K"/>
-                                                                <constraint firstAttribute="width" secondItem="gPh-wf-iOF" secondAttribute="height" multiplier="373:270" id="tGM-AJ-SC7"/>
+                                                                <constraint firstAttribute="width" secondItem="gPh-wf-iOF" secondAttribute="height" multiplier="373:100" id="tGM-AJ-SC7"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2O-dd-5fs" userLabel="Prop">
-                                                            <rect key="frame" x="4" y="849" width="365" height="208"/>
+                                                            <rect key="frame" x="4" y="679" width="365" height="208"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Propiedades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srk-xe-Pdg">
                                                                     <rect key="frame" x="0.0" y="0.0" width="365" height="23.5"/>
@@ -900,96 +854,13 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                                     <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH5-PN-13p">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH5-PN-13p">
                                                                     <rect key="frame" x="9" y="23.5" width="347" height="184"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="kH5-PN-13p" secondAttribute="height" multiplier="347:184" id="mbt-vA-AnC"/>
                                                                     </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="Propiedades del Lirio de la Paz ">
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="11" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="6" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">• Ayuda a detener la creación de partículas bacterianas y mohos en el aire, ya que la misma absorbe estas partículas.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="11" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="6" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">• Sus hojas absorben el CO2 del aire, haciéndolo más puro y sano.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="11" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="6" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">• Ayuda notablemente a descansar mejor. Existen investigaciones que demuestran la mejora en la calidad del sueño después de incluir un Lirio de la Paz en el espacio.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="11" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="6" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">• Su aroma resulta relajante y sus aceites esenciales son explotados en la industria de la cosmética.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                                <font key="NSFont" size="11" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="13"/>
+                                                                    <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -1005,7 +876,7 @@ Cg
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-BW-zt4" userLabel="Cuidados">
-                                                            <rect key="frame" x="0.0" y="1057" width="373" height="261"/>
+                                                            <rect key="frame" x="0.0" y="887" width="373" height="261"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuidados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsj-fm-DtX">
                                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
@@ -1016,66 +887,45 @@ Cg
                                                                     <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJa-jd-3PU">
-                                                                    <rect key="frame" x="13" y="40" width="347" height="185"/>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment>
-                                                                            <string key="content">• Debido a su naturaleza tropical los Espatifilos prefieren temperaturas superiores a los 18 °C, la temperatura ideal sería de 21 °C a 24 °C.  
-• Necesita luz o media sombra, pero nunca sol directo.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.0" green="0.066666666669999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="12" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.0" green="0.066669999999999993" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="12" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">•  Agregar alimento sólido, es decir  materia orgánica,  humus, humus de lombriz o compost sólidos que permiten muy buen drenaje.
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.0" green="0.066666666669999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="12" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.0" green="0.066669999999999993" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="12" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment>
-                                                                            <string key="content">• Es importante mantener la tierra ligeramente húmeda (nunca encharcada) y no existe una receta, debemos observar nuestra planta para regar adecuadamente. 
-</string>
-                                                                            <attributes>
-                                                                                <color key="NSColor" red="0.0" green="0.066666666669999999" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                <font key="NSFont" size="12" name="Palatino-Roman"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXl-yA-MkG" userLabel="Riego">
+                                                                    <rect key="frame" x="18.5" y="30" width="336" height="75"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="75" id="TYe-ed-bz2"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coV-z7-Y9q" userLabel="Fertilizante">
+                                                                    <rect key="frame" x="18.5" y="105" width="336" height="75"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="75" id="5B8-PE-kSn"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKH-CV-S7O" userLabel="Iluminacion">
+                                                                    <rect key="frame" x="18.5" y="180" width="336" height="75"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="75" id="713-Kp-aHD"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="13"/>
+                                                                    <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
-                                                                <constraint firstItem="qJa-jd-3PU" firstAttribute="top" secondItem="qsj-fm-DtX" secondAttribute="bottom" constant="10" id="BzU-Sw-FPS"/>
-                                                                <constraint firstItem="qJa-jd-3PU" firstAttribute="centerX" secondItem="KuL-BW-zt4" secondAttribute="centerX" id="Qc6-5j-eXU"/>
-                                                                <constraint firstItem="qJa-jd-3PU" firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="width" multiplier="0.930295" id="dTa-M8-1Pq"/>
+                                                                <constraint firstItem="DKH-CV-S7O" firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="width" multiplier="0.9" id="07V-kS-hg9"/>
+                                                                <constraint firstItem="coV-z7-Y9q" firstAttribute="centerX" secondItem="KuL-BW-zt4" secondAttribute="centerX" id="3eh-hf-23P"/>
+                                                                <constraint firstItem="coV-z7-Y9q" firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="width" multiplier="0.9" id="9xr-Yc-IfL"/>
+                                                                <constraint firstItem="SXl-yA-MkG" firstAttribute="top" secondItem="qsj-fm-DtX" secondAttribute="bottom" id="CES-J6-5VQ"/>
+                                                                <constraint firstItem="SXl-yA-MkG" firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="width" multiplier="0.9" id="F3x-Ih-t2Z"/>
+                                                                <constraint firstItem="DKH-CV-S7O" firstAttribute="centerX" secondItem="KuL-BW-zt4" secondAttribute="centerX" id="LJd-aU-gfP"/>
+                                                                <constraint firstItem="DKH-CV-S7O" firstAttribute="top" secondItem="coV-z7-Y9q" secondAttribute="bottom" id="Zhz-Q4-fS6"/>
+                                                                <constraint firstItem="SXl-yA-MkG" firstAttribute="centerX" secondItem="KuL-BW-zt4" secondAttribute="centerX" id="ddO-vt-zOF"/>
+                                                                <constraint firstItem="coV-z7-Y9q" firstAttribute="top" secondItem="SXl-yA-MkG" secondAttribute="bottom" id="m4C-dG-nFg"/>
                                                                 <constraint firstItem="qsj-fm-DtX" firstAttribute="centerX" secondItem="KuL-BW-zt4" secondAttribute="centerX" id="r35-p5-OaO"/>
                                                                 <constraint firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="height" multiplier="373:261" id="roU-IV-yxG"/>
                                                                 <constraint firstItem="qsj-fm-DtX" firstAttribute="width" secondItem="KuL-BW-zt4" secondAttribute="width" id="sAj-0J-RF7"/>
@@ -1086,7 +936,6 @@ Cg
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="d2O-dd-5fs" firstAttribute="top" secondItem="gPh-wf-iOF" secondAttribute="bottom" id="7Uq-gt-8m5"/>
-                                                        <constraint firstItem="LZV-yZ-B6p" firstAttribute="width" secondItem="fpT-hK-z3R" secondAttribute="width" id="9f9-JI-Wg7"/>
                                                         <constraint firstItem="jMv-dv-qH7" firstAttribute="width" secondItem="fpT-hK-z3R" secondAttribute="width" id="AlN-kL-vOE"/>
                                                         <constraint firstItem="lOc-Nh-1mf" firstAttribute="top" secondItem="awa-85-zia" secondAttribute="bottom" id="Jjz-PV-m87"/>
                                                         <constraint firstItem="KuL-BW-zt4" firstAttribute="centerX" secondItem="fpT-hK-z3R" secondAttribute="centerX" id="MUo-S4-WDk"/>
@@ -1094,12 +943,10 @@ Cg
                                                         <constraint firstItem="jMv-dv-qH7" firstAttribute="leading" secondItem="fpT-hK-z3R" secondAttribute="leading" id="Q9F-LY-bCd"/>
                                                         <constraint firstItem="lOc-Nh-1mf" firstAttribute="centerX" secondItem="fpT-hK-z3R" secondAttribute="centerX" id="SHR-Es-Eh2"/>
                                                         <constraint firstItem="awa-85-zia" firstAttribute="centerX" secondItem="fpT-hK-z3R" secondAttribute="centerX" id="SqV-AQ-l1g"/>
-                                                        <constraint firstItem="gPh-wf-iOF" firstAttribute="top" secondItem="LZV-yZ-B6p" secondAttribute="bottom" id="Wdo-ql-Pxn"/>
-                                                        <constraint firstItem="LZV-yZ-B6p" firstAttribute="top" secondItem="lOc-Nh-1mf" secondAttribute="bottom" id="YOC-Ng-nlI"/>
+                                                        <constraint firstItem="gPh-wf-iOF" firstAttribute="top" secondItem="lOc-Nh-1mf" secondAttribute="bottom" constant="60" id="Wdo-ql-Pxn"/>
                                                         <constraint firstItem="awa-85-zia" firstAttribute="top" secondItem="jMv-dv-qH7" secondAttribute="bottom" id="bje-a4-Ymj"/>
                                                         <constraint firstItem="gPh-wf-iOF" firstAttribute="centerX" secondItem="fpT-hK-z3R" secondAttribute="centerX" id="fg2-Sv-JJu"/>
                                                         <constraint firstItem="gPh-wf-iOF" firstAttribute="width" secondItem="fpT-hK-z3R" secondAttribute="width" id="i1g-gR-JwY"/>
-                                                        <constraint firstItem="LZV-yZ-B6p" firstAttribute="centerX" secondItem="fpT-hK-z3R" secondAttribute="centerX" id="jSd-1A-cWj"/>
                                                         <constraint firstItem="awa-85-zia" firstAttribute="width" secondItem="fpT-hK-z3R" secondAttribute="width" id="kTC-0n-KDD"/>
                                                         <constraint firstItem="jMv-dv-qH7" firstAttribute="top" secondItem="fpT-hK-z3R" secondAttribute="top" id="u28-iA-Oic"/>
                                                         <constraint firstItem="d2O-dd-5fs" firstAttribute="width" secondItem="fpT-hK-z3R" secondAttribute="width" multiplier="0.978552" id="uXk-Sd-zB8"/>
@@ -1127,14 +974,16 @@ Cg
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cuidados" destination="qJa-jd-3PU" id="03G-1r-HFp"/>
                         <outlet property="descripcion" destination="gSR-62-cz3" id="0zs-ZK-yvX"/>
+                        <outlet property="fertilizante" destination="coV-z7-Y9q" id="BFz-cu-HN9"/>
+                        <outlet property="iluminacion" destination="DKH-CV-S7O" id="Edc-qS-uA5"/>
                         <outlet property="imagen" destination="5oq-2U-99a" id="G99-ZN-uAb"/>
                         <outlet property="nombre_cientifico" destination="wnr-2A-3mj" id="Gbt-gh-QGg"/>
                         <outlet property="nombre_tradicional" destination="LJM-L4-vGt" id="e9m-iQ-ZnQ"/>
                         <outlet property="origen" destination="FiV-to-oHh" id="yKd-0h-5pL"/>
+                        <outlet property="riego" destination="SXl-yA-MkG" id="amo-xC-TJM"/>
                         <outlet property="table" destination="eMP-V4-fRa" id="Aby-wg-SzJ"/>
-                        <outlet property="usos" destination="kH5-PN-13p" id="W6s-v1-Qia"/>
+                        <outlet property="usos" destination="kH5-PN-13p" id="ngF-RA-7pU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="562-PH-YlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2263,7 +2112,6 @@ Cg
         <image name="editar" width="202" height="197"/>
         <image name="form" width="829" height="301"/>
         <image name="ingresar" width="1170" height="213"/>
-        <image name="mapa" width="1425" height="625"/>
         <image name="mas" width="288" height="363"/>
         <image name="p1" width="295" height="367"/>
         <image name="p2" width="290" height="369"/>
