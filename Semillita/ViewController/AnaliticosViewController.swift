@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 
 class AnaliticosViewController: UIViewController {
+    
+    weak var analiticsViewcontroller :  TablaAnaliticosViewController?
 
     let detallesAnaliticosServicio = AnaliticosService()
     
@@ -18,9 +20,14 @@ class AnaliticosViewController: UIViewController {
         // Do any additional setup after loading the view.
         detallesAnaliticosServicio.leerAnaliticos(){
             (plantaRecibida) in
-            print(plantaRecibida![0].nombre_tradicional)
-            print(plantaRecibida![1].nombre_tradicional)
-            print(plantaRecibida![2].nombre_tradicional)
+            self.analiticsViewcontroller?.plantas = plantaRecibida!
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loadAnaliticos", let second = segue.destination as? TablaAnaliticosViewController {
+            self.analiticsViewcontroller = second
         }
     }
 
