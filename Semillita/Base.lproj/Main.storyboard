@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pe6-rU-Wtu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETG-bY-pk6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1438,7 +1438,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-hY-Itc">
                                 <rect key="frame" x="20" y="151" width="374" height="667"/>
                                 <connections>
-                                    <segue destination="x4H-MY-CdE" kind="embed" id="dgQ-ya-bfE"/>
+                                    <segue destination="x4H-MY-CdE" kind="embed" identifier="loadAnaliticos" id="lKP-Pc-pEa"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOg-mb-kP7">
@@ -1499,6 +1499,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u8L-xP-xk6"/>
+                    <connections>
+                        <segue destination="x4H-MY-CdE" kind="show" id="Mm2-mm-EG4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H65-JR-1ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1507,7 +1510,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <!--Tabla Analiticas-->
         <scene sceneID="e9V-r7-aPV">
             <objects>
-                <tableViewController id="x4H-MY-CdE" userLabel="Tabla Analiticas" sceneMemberID="viewController">
+                <tableViewController id="x4H-MY-CdE" userLabel="Tabla Analiticas" customClass="TablaAnaliticosViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="897-V8-WwY">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1538,9 +1541,6 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top3" translatesAutoresizingMaskIntoConstraints="NO" id="abc-W3-hvk">
                                                     <rect key="frame" x="0.0" y="151" width="374" height="260"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Screen Shot 2022-09-09 at 14.51.19" translatesAutoresizingMaskIntoConstraints="NO" id="exB-qp-fCb">
-                                                    <rect key="frame" x="0.0" y="419" width="374" height="233"/>
-                                                </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Screen Shot 2022-09-09 at 15.07.46" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-gq-fwL">
                                                     <rect key="frame" x="0.0" y="660" width="374" height="273"/>
                                                 </imageView>
@@ -1562,33 +1562,56 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                         <constraint firstAttribute="width" secondItem="aj4-O9-v9h" secondAttribute="height" multiplier="23:25" id="JhO-HH-JPQ"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic7-ea-FaF" userLabel="LabelPlanta1">
+                                                    <rect key="frame" x="162" y="347" width="374" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iad-d6-VtH" userLabel="LabelPlanta2">
+                                                    <rect key="frame" x="78" y="369" width="374" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeu-Ec-iJQ" userLabel="LabelPlanta3">
+                                                    <rect key="frame" x="244" y="390" width="374" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="iad-d6-VtH" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="2Lj-ie-aNR"/>
                                                 <constraint firstItem="qeo-Yi-9hK" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="51" id="3KO-t8-aNA"/>
+                                                <constraint firstItem="ic7-ea-FaF" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="347" id="4aM-cQ-xLc"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="151" id="5sw-uW-gsV"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="42" id="75E-zu-ALl"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.262892" id="8xF-8x-7Ki"/>
-                                                <constraint firstItem="exB-qp-fCb" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="Asq-a9-Aup"/>
+                                                <constraint firstItem="yeu-Ec-iJQ" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="9Lb-dZ-3XI"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Bv3-Dj-Ng5"/>
-                                                <constraint firstItem="exB-qp-fCb" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.235592" id="HIR-2k-qzo"/>
                                                 <constraint firstItem="SDB-Dy-3CW" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="248" id="LqH-ei-FLb"/>
+                                                <constraint firstItem="ic7-ea-FaF" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="NkY-Qu-buM"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.129424" id="PHV-X4-nUX"/>
                                                 <constraint firstItem="qeo-Yi-9hK" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.235294" id="PP1-w1-0Se"/>
+                                                <constraint firstItem="ic7-ea-FaF" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="162" id="Pel-Ct-t5y"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Pqf-34-oDY"/>
                                                 <constraint firstAttribute="bottom" secondItem="3fF-gq-fwL" secondAttribute="bottom" constant="56" id="QlC-XF-Slg"/>
                                                 <constraint firstItem="SDB-Dy-3CW" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.243316" id="TPP-tO-bAI"/>
                                                 <constraint firstItem="aj4-O9-v9h" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="TVc-uB-XvS"/>
+                                                <constraint firstItem="yeu-Ec-iJQ" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="244" id="UdP-4d-25l"/>
                                                 <constraint firstItem="qeo-Yi-9hK" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="219" id="ZMT-QV-lpC"/>
+                                                <constraint firstItem="iad-d6-VtH" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="78" id="aH5-AA-xCl"/>
                                                 <constraint firstItem="aj4-O9-v9h" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.245989" id="aW3-0E-e1v"/>
                                                 <constraint firstItem="aj4-O9-v9h" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="154" id="bRu-ya-jK4"/>
+                                                <constraint firstItem="iad-d6-VtH" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="369" id="bn4-xJ-g9g"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="cjS-md-Tlh"/>
-                                                <constraint firstAttribute="bottom" secondItem="exB-qp-fCb" secondAttribute="bottom" constant="337" id="ggb-4P-zdi"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="jZH-QG-dTt"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="l2i-hY-Lyr"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.276036" id="liK-UP-4lq"/>
-                                                <constraint firstItem="exB-qp-fCb" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="lmo-MY-Y8w"/>
                                                 <constraint firstItem="SDB-Dy-3CW" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="224" id="sdc-Ms-s0u"/>
+                                                <constraint firstItem="yeu-Ec-iJQ" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="390" id="sgG-eo-CvV"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.641711" id="trf-Ub-d5v"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1602,6 +1625,16 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                             <outlet property="delegate" destination="x4H-MY-CdE" id="af1-4B-QNb"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Hql-CH-S0U"/>
+                    <connections>
+                        <outlet property="LabelPlantaN1" destination="ic7-ea-FaF" id="kwI-3t-HfE"/>
+                        <outlet property="LabelPlantaN2" destination="iad-d6-VtH" id="ovb-1m-aHy"/>
+                        <outlet property="LabelPlantaN3" destination="yeu-Ec-iJQ" id="351-aH-k67"/>
+                        <outlet property="PlantaN1" destination="aj4-O9-v9h" id="sfp-KE-dTi"/>
+                        <outlet property="PlantaN2" destination="qeo-Yi-9hK" id="voy-TG-IBw"/>
+                        <outlet property="PlantaN3" destination="SDB-Dy-3CW" id="kZL-Vu-BOs"/>
+                        <outlet property="Table" destination="897-V8-WwY" id="vaf-5J-cPJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADt-NJ-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2108,19 +2141,15 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="lKP-Pc-pEa"/>
         <segue reference="SmO-8P-1ag"/>
         <segue reference="gW8-GY-5VX"/>
-
         <segue reference="FtU-cB-plq"/>
         <segue reference="QtK-eg-RzA"/>
-        <segue reference="OEf-AX-Fc9"/>
-        <segue reference="vRv-aj-ZVF"/>
-
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
         <image name="Cata" width="218" height="214"/>
-        <image name="Screen Shot 2022-09-09 at 14.51.19" width="723" height="433"/>
         <image name="Screen Shot 2022-09-09 at 15.07.46" width="540" height="322"/>
         <image name="Screen Shot 2022-09-09 at 15.23.05" width="161" height="158"/>
         <image name="Screen Shot 2022-09-09 at 15.23.22" width="154" height="154"/>

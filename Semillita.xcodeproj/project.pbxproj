@@ -32,6 +32,7 @@
 		842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974628DF95F400E524EC /* CatalogoViewController.swift */; };
 		842F974C28DF998200E524EC /* listaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974B28DF998200E524EC /* listaPlantas.swift */; };
 		842F975C28DFAC7900E524EC /* TipoClasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F975B28DFAC7900E524EC /* TipoClasesTest.swift */; };
+		8E10D8EF28E3E31D00913875 /* TablaAnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10D8EE28E3E31D00913875 /* TablaAnaliticosViewController.swift */; };
 		8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */; };
 		8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC6428DD5AD700521310 /* AnaliticosService.swift */; };
 		D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130DF6028C7F81700ADFD25 /* AppDelegate.swift */; };
@@ -86,6 +87,7 @@
 		842F974628DF95F400E524EC /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
 		842F974B28DF998200E524EC /* listaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaPlantas.swift; sourceTree = "<group>"; };
 		842F975B28DFAC7900E524EC /* TipoClasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoClasesTest.swift; sourceTree = "<group>"; };
+		8E10D8EE28E3E31D00913875 /* TablaAnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaAnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC6428DD5AD700521310 /* AnaliticosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosService.swift; sourceTree = "<group>"; };
 		D130DF5D28C7F81700ADFD25 /* Semillita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semillita.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				40C3B9CC28DD5F96008EA50C /* PlantaNuevaViewController.swift */,
 				4062597E28DFB4890057EEE9 /* ImprimirQRViewController.swift */,
 				8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */,
+				8E10D8EE28E3E31D00913875 /* TablaAnaliticosViewController.swift */,
 				8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */,
 				4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
@@ -392,6 +395,7 @@
 				40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */,
 				842F974C28DF998200E524EC /* listaPlantas.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
+				8E10D8EF28E3E31D00913875 /* TablaAnaliticosViewController.swift in Sources */,
 				407E7D6528E26387008089F8 /* AddImage.swift in Sources */,
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
 				4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */,
