@@ -1685,7 +1685,7 @@ Cg
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2022-09-08 at 17.11.45" translatesAutoresizingMaskIntoConstraints="NO" id="abc-W3-hvk">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top3" translatesAutoresizingMaskIntoConstraints="NO" id="abc-W3-hvk">
                                                     <rect key="frame" x="0.0" y="151" width="374" height="260"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Screen Shot 2022-09-09 at 14.51.19" translatesAutoresizingMaskIntoConstraints="NO" id="exB-qp-fCb">
@@ -1694,24 +1694,51 @@ Cg
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Screen Shot 2022-09-09 at 15.07.46" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-gq-fwL">
                                                     <rect key="frame" x="0.0" y="660" width="374" height="273"/>
                                                 </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qeo-Yi-9hK" userLabel="Planta2">
+                                                    <rect key="frame" x="51" y="219" width="88" height="91"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="qeo-Yi-9hK" secondAttribute="height" multiplier="88:91" id="OvG-PW-onf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDB-Dy-3CW" userLabel="Planta3">
+                                                    <rect key="frame" x="224" y="248" width="91" height="97"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="SDB-Dy-3CW" secondAttribute="height" multiplier="91:97" id="xPn-S2-NRv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aj4-O9-v9h" userLabel="Planta1">
+                                                    <rect key="frame" x="141" y="154" width="92" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="aj4-O9-v9h" secondAttribute="height" multiplier="23:25" id="JhO-HH-JPQ"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.96078431369999995" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="qeo-Yi-9hK" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="51" id="3KO-t8-aNA"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="151" id="5sw-uW-gsV"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="42" id="75E-zu-ALl"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.262892" id="8xF-8x-7Ki"/>
                                                 <constraint firstItem="exB-qp-fCb" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="Asq-a9-Aup"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Bv3-Dj-Ng5"/>
                                                 <constraint firstItem="exB-qp-fCb" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.235592" id="HIR-2k-qzo"/>
+                                                <constraint firstItem="SDB-Dy-3CW" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="248" id="LqH-ei-FLb"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.129424" id="PHV-X4-nUX"/>
+                                                <constraint firstItem="qeo-Yi-9hK" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.235294" id="PP1-w1-0Se"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="Pqf-34-oDY"/>
                                                 <constraint firstAttribute="bottom" secondItem="3fF-gq-fwL" secondAttribute="bottom" constant="56" id="QlC-XF-Slg"/>
+                                                <constraint firstItem="SDB-Dy-3CW" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.243316" id="TPP-tO-bAI"/>
+                                                <constraint firstItem="aj4-O9-v9h" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="TVc-uB-XvS"/>
+                                                <constraint firstItem="qeo-Yi-9hK" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="219" id="ZMT-QV-lpC"/>
+                                                <constraint firstItem="aj4-O9-v9h" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.245989" id="aW3-0E-e1v"/>
+                                                <constraint firstItem="aj4-O9-v9h" firstAttribute="top" secondItem="Cnu-IB-PBA" secondAttribute="top" constant="154" id="bRu-ya-jK4"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="cjS-md-Tlh"/>
                                                 <constraint firstAttribute="bottom" secondItem="exB-qp-fCb" secondAttribute="bottom" constant="337" id="ggb-4P-zdi"/>
                                                 <constraint firstItem="abc-W3-hvk" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" id="jZH-QG-dTt"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="l2i-hY-Lyr"/>
                                                 <constraint firstItem="3fF-gq-fwL" firstAttribute="height" secondItem="Cnu-IB-PBA" secondAttribute="height" multiplier="0.276036" id="liK-UP-4lq"/>
                                                 <constraint firstItem="exB-qp-fCb" firstAttribute="centerX" secondItem="Cnu-IB-PBA" secondAttribute="centerX" id="lmo-MY-Y8w"/>
+                                                <constraint firstItem="SDB-Dy-3CW" firstAttribute="leading" secondItem="Cnu-IB-PBA" secondAttribute="leading" constant="224" id="sdc-Ms-s0u"/>
                                                 <constraint firstItem="SbH-rm-aHI" firstAttribute="width" secondItem="Cnu-IB-PBA" secondAttribute="width" multiplier="0.641711" id="trf-Ub-d5v"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1728,7 +1755,7 @@ Cg
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADt-NJ-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3823" y="104"/>
+            <point key="canvasLocation" x="3821.739130434783" y="103.45982142857143"/>
         </scene>
         <!--Planta Nueva View Controller-->
         <scene sceneID="7i0-FM-cJk">
@@ -2244,17 +2271,17 @@ Cg
         <segue reference="SmO-8P-1ag"/>
         <segue reference="gW8-GY-5VX"/>
         <segue reference="FtU-cB-plq"/>
-        <segue reference="EPz-my-9eo"/>
+        <segue reference="QtK-eg-RzA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
         <image name="Cata" width="218" height="214"/>
-        <image name="Screen Shot 2022-09-08 at 17.11.45" width="611" height="542"/>
         <image name="Screen Shot 2022-09-09 at 14.51.19" width="723" height="433"/>
         <image name="Screen Shot 2022-09-09 at 15.07.46" width="540" height="322"/>
         <image name="Screen Shot 2022-09-09 at 15.23.05" width="161" height="158"/>
         <image name="Screen Shot 2022-09-09 at 15.23.22" width="154" height="154"/>
         <image name="Screen Shot 2022-09-09 at 15.23.39" width="158" height="149"/>
+        <image name="Top3" width="530" height="470"/>
         <image name="about" width="204" height="191"/>
         <image name="atras" width="50" height="70"/>
         <image name="basura" width="162" height="187"/>
