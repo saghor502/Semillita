@@ -12,7 +12,9 @@ class Catalogo {
     public typealias LeerCataClosure = (listaPlantas?) -> Void
     
     func leerCata(finalizar: @escaping LeerCataClosure) {
-        AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/", method: .get)
+        let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
+        // AF.request("http://localhost:8080/api/plantas/", method: .get, encoding: JSONEncoding.default, headers: headers)
+        AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/", method: .get, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: listaPlantas.self) { respuesta in
