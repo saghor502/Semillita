@@ -13,15 +13,6 @@ class AddImageService {
     public typealias AddImageClosure = (Imagen?) -> Void
     
     func addImage(imagen: AddImage, finalizar: @escaping AddImageClosure) {
-        //AF.request("https://tc2007b-semillita.herokuapp.com/api/imagenes/", method: .post, parameters: imagen, encoder: JSONParameterEncoder())
-        /*
-        AF.request("http://localhost:8080/api/imagenes/", method: .post, parameters: imagen, encoder: JSONParameterEncoder())
-            .validate(statusCode: 200..<300)
-            .validate(contentType: ["text/html"])
-            .responseString { (res) in
-                finalizar("Imagen Agregada")
-            }
-         */
         AF.upload(multipartFormData: {
             (form) in
             form.append(imagen.dato, withName: "dato", fileName: "plant-image.jpeg", mimeType: imagen.tipo);

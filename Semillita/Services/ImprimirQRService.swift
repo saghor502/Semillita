@@ -9,7 +9,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class ImprimirQRService {
-    public typealias ImprimirQRClosure = (String?) -> Void
+    public typealias ImprimirQRClosure = (String) -> Void
     
     func imprimirQR(planta_id: String, finalizar: @escaping ImprimirQRClosure) {
         let params: [String: String] = [
@@ -21,7 +21,7 @@ class ImprimirQRService {
             .responseString { (res) in
                 switch res.result {
                     case .success:
-                        finalizar(res.value)
+                        finalizar(res.value!)
                     case let .failure(error):
                         print(error)
                         finalizar("Planta no encontrada")

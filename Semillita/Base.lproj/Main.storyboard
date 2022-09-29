@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETG-bY-pk6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2R-k6-rF2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1068,7 +1068,6 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <connections>
                                                     <action selector="buscarQR:" destination="HHl-qe-Q7K" eventType="touchUpInside" id="V0H-l2-Rqd"/>
                                                     <action selector="imprimirQR:" destination="N2R-k6-rF2" eventType="touchUpInside" id="vli-yN-0xE"/>
-                                                    <segue destination="QU3-2F-e55" kind="show" id="tqW-vp-rrP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1113,8 +1112,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     </view>
                     <navigationItem key="navigationItem" id="pnf-80-mzi"/>
                     <connections>
-                        <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
                         <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" id="z2W-ne-3QL"/>
+                        <segue destination="SaB-fP-uUW" kind="show" identifier="Detail_To_BuscarQR" id="xWJ-x9-yDw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1298,6 +1297,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-Nn-cLc">
                                                 <rect key="frame" x="93.5" y="343.5" width="186" height="171.5"/>
                                                 <state key="normal" title="printQR" image="print icon"/>
+                                                <connections>
+                                                    <action selector="enviarQR:" destination="QU3-2F-e55" eventType="touchUpInside" id="S4f-s6-gjh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1421,6 +1423,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         <outlet property="imagen" destination="IkK-8H-pEz" id="puQ-4H-7Xa"/>
                         <outlet property="nombre_cientifico" destination="SUE-ep-m31" id="MuT-NN-9Oa"/>
                         <outlet property="nombre_tradicional" destination="Ba6-3t-cac" id="taf-2P-tLR"/>
+                        <segue destination="SaB-fP-uUW" kind="show" identifier="ImprimirQR_To_BuscarQR" id="MQo-Mx-fJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzp-Eg-vpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2142,10 +2145,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lKP-Pc-pEa"/>
-        <segue reference="SmO-8P-1ag"/>
-        <segue reference="gW8-GY-5VX"/>
-        <segue reference="FtU-cB-plq"/>
-        <segue reference="QtK-eg-RzA"/>
+        <segue reference="EMg-HR-8cB"/>
+        <segue reference="xWJ-x9-yDw"/>
+        <segue reference="z2W-ne-3QL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
