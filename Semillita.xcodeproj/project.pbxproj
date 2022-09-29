@@ -32,6 +32,10 @@
 		842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974628DF95F400E524EC /* CatalogoViewController.swift */; };
 		842F974C28DF998200E524EC /* listaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974B28DF998200E524EC /* listaPlantas.swift */; };
 		842F975C28DFAC7900E524EC /* TipoClasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F975B28DFAC7900E524EC /* TipoClasesTest.swift */; };
+		843267DD28E5135B00D41840 /* CatalagoTodasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */; };
+		843267F228E51E7F00D41840 /* PlantasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843267F128E51E7F00D41840 /* PlantasCollectionViewController.swift */; };
+		843267F728E5213800D41840 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843267F628E5213800D41840 /* CollectionViewCell.swift */; };
+		84F2A98828E5D7170008026C /* CellCatalogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2A98728E5D7170008026C /* CellCatalogo.swift */; };
 		8E10D8EF28E3E31D00913875 /* TablaAnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10D8EE28E3E31D00913875 /* TablaAnaliticosViewController.swift */; };
 		8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */; };
 		8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74CC6428DD5AD700521310 /* AnaliticosService.swift */; };
@@ -87,6 +91,10 @@
 		842F974628DF95F400E524EC /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
 		842F974B28DF998200E524EC /* listaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaPlantas.swift; sourceTree = "<group>"; };
 		842F975B28DFAC7900E524EC /* TipoClasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoClasesTest.swift; sourceTree = "<group>"; };
+		843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalagoTodasViewController.swift; sourceTree = "<group>"; };
+		843267F128E51E7F00D41840 /* PlantasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantasCollectionViewController.swift; sourceTree = "<group>"; };
+		843267F628E5213800D41840 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		84F2A98728E5D7170008026C /* CellCatalogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCatalogo.swift; sourceTree = "<group>"; };
 		8E10D8EE28E3E31D00913875 /* TablaAnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaAnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC5F28DD5AC100521310 /* AnaliticosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosViewController.swift; sourceTree = "<group>"; };
 		8E74CC6428DD5AD700521310 /* AnaliticosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaliticosService.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 				4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
 				842F974628DF95F400E524EC /* CatalogoViewController.swift */,
+				843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,6 +231,9 @@
 				4059FCCE28E1FDDB00747DEF /* Services */,
 				4013F63628E1001B00A85655 /* Util */,
 				D130DF6028C7F81700ADFD25 /* AppDelegate.swift */,
+				843267F128E51E7F00D41840 /* PlantasCollectionViewController.swift */,
+				84F2A98728E5D7170008026C /* CellCatalogo.swift */,
+				843267F628E5213800D41840 /* CollectionViewCell.swift */,
 				D130DF6228C7F81700ADFD25 /* SceneDelegate.swift */,
 				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
@@ -392,6 +404,7 @@
 				4062598A28DFD3160057EEE9 /* BuscarQRViewController.swift in Sources */,
 				40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */,
 				405A415928E39EA20060C69C /* Uso.swift in Sources */,
+				84F2A98828E5D7170008026C /* CellCatalogo.swift in Sources */,
 				40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */,
 				842F974C28DF998200E524EC /* listaPlantas.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
@@ -401,7 +414,9 @@
 				4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */,
 				40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
+				843267DD28E5135B00D41840 /* CatalagoTodasViewController.swift in Sources */,
 				407B4B3C28DE93C5004F1A58 /* LogInService.swift in Sources */,
+				843267F228E51E7F00D41840 /* PlantasCollectionViewController.swift in Sources */,
 				407B4B4128DE94C3004F1A58 /* LogInViewController.swift in Sources */,
 				D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */,
 				D130DF6328C7F81700ADFD25 /* SceneDelegate.swift in Sources */,
@@ -411,6 +426,7 @@
 				8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */,
 				4062597A28DFB3E70057EEE9 /* ImprimirQRService.swift in Sources */,
 				8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */,
+				843267F728E5213800D41840 /* CollectionViewCell.swift in Sources */,
 				4013F63828E1003200A85655 /* ImageFunctions.swift in Sources */,
 				842F974228DF947300E524EC /* CatalogoService.swift in Sources */,
 				407E7D6028E24CEC008089F8 /* AddImageService.swift in Sources */,

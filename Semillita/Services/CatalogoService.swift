@@ -11,7 +11,7 @@ import Alamofire
 class Catalogo {
     public typealias LeerCataClosure = (listaPlantas?) -> Void
     
-    func leerCata(finalizar: @escaping LeerCataClosure) {
+    func leerCata(finalizar: @escaping LeerCataClosure) -> Void {
         AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/", method: .get)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
