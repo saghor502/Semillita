@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iuy-Du-JGp">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -58,7 +60,7 @@
                                 <rect key="frame" x="0.0" y="502.5" width="414" height="82"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar Sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC8-nj-DpM">
-                                        <rect key="frame" x="122" y="26.5" width="170.5" height="29"/>
+                                        <rect key="frame" x="121.5" y="26.5" width="171" height="29"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
                                         <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -272,6 +274,7 @@
                                                 <rect key="frame" x="0.0" y="52" width="414" height="200"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
+
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mas" translatesAutoresizingMaskIntoConstraints="NO" id="Zpi-BE-7aO">
                                                         <rect key="frame" x="8" y="8" width="116" height="139"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -294,6 +297,7 @@
                                                             <segue destination="Mb2-t4-YKJ" kind="embed" id="eCg-GQ-xL2"/>
                                                         </connections>
                                                     </containerView>
+
                                                 </subviews>
                                             </view>
                                         </subviews>
@@ -315,7 +319,7 @@
                                                         <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                         <state key="normal" image="about"/>
                                                         <connections>
-                                                            <segue destination="ETG-bY-pk6" kind="show" id="Uu3-NM-hN1"/>
+                                                            <segue destination="ETG-bY-pk6" kind="show" identifier="Catalogo_To_Contabilidad" id="Uu3-NM-hN1"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -333,9 +337,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-l3-eb8">
                                                         <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                         <state key="normal" image="Cata"/>
-                                                        <connections>
-                                                            <segue destination="SaB-fP-uUW" kind="show" id="OEf-AX-Fc9"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -350,7 +351,7 @@
                                                 <rect key="frame" x="179.5" y="8" width="55" height="60"/>
                                                 <state key="normal" image="print"/>
                                                 <connections>
-                                                    <segue destination="SaB-fP-uUW" kind="show" id="pj7-El-Tbw"/>
+                                                    <segue destination="SaB-fP-uUW" kind="show" identifier="Catalogo_To_BuscarQR" id="pj7-El-Tbw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -759,7 +760,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="85" y="10" width="37" height="49.5"/>
                                                 <state key="normal" image="atras"/>
                                                 <connections>
-                                                    <segue destination="iuy-Du-JGp" kind="show" destinationCreationSelector="toCataogo:" id="EPz-my-9eo"/>
+                                                    <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" destinationCreationSelector="toCataogo:" id="EPz-my-9eo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -780,7 +781,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <connections>
                                                     <action selector="buscarQR:" destination="HHl-qe-Q7K" eventType="touchUpInside" id="V0H-l2-Rqd"/>
                                                     <action selector="imprimirQR:" destination="N2R-k6-rF2" eventType="touchUpInside" id="vli-yN-0xE"/>
-                                                    <segue destination="QU3-2F-e55" kind="show" id="tqW-vp-rrP"/>
+                                                    <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR2" id="tqW-vp-rrP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -826,8 +827,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     <navigationItem key="navigationItem" id="pnf-80-mzi"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
                         <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" id="z2W-ne-3QL"/>
+                        <segue destination="SaB-fP-uUW" kind="show" identifier="Detail_To_BuscarQR" id="xWJ-x9-yDw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -894,6 +895,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-FI-bCr">
                                                         <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                         <state key="normal" image="about"/>
+                                                        <connections>
+                                                            <segue destination="ETG-bY-pk6" kind="show" identifier="ImprimirQR_To_Contabilidad" id="arK-ug-TnL"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -911,7 +915,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                         <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                         <state key="normal" image="Cata"/>
                                                         <connections>
-                                                            <segue destination="iuy-Du-JGp" kind="show" id="d7c-tB-d22"/>
+                                                            <segue destination="iuy-Du-JGp" kind="show" identifier="BuscarQR_To_ImrimirQR" id="d7c-tB-d22"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1011,6 +1015,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-Nn-cLc">
                                                 <rect key="frame" x="93.5" y="343.5" width="186" height="171.5"/>
                                                 <state key="normal" title="printQR" image="print icon"/>
+                                                <connections>
+                                                    <action selector="enviarQR:" destination="QU3-2F-e55" eventType="touchUpInside" id="S4f-s6-gjh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1041,7 +1048,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="SaB-fP-uUW" kind="show" id="RFr-O3-svV"/>
+                                            <segue destination="SaB-fP-uUW" kind="show" identifier="ImprimirQR_To_BuscarQR" id="RFr-O3-svV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1067,7 +1074,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                 <state key="normal" image="about"/>
                                                 <connections>
-                                                    <segue destination="ETG-bY-pk6" kind="show" id="EMg-HR-8cB"/>
+                                                    <segue destination="ETG-bY-pk6" kind="show" identifier="ImprimirQR_To_Contabilidad" id="EMg-HR-8cB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1086,7 +1093,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                 <state key="normal" image="Cata"/>
                                                 <connections>
-                                                    <segue destination="iuy-Du-JGp" kind="show" id="3GY-i3-set"/>
+                                                    <segue destination="iuy-Du-JGp" kind="show" identifier="ImprimirQR_To_Catalogo" id="3GY-i3-set"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1134,6 +1141,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         <outlet property="imagen" destination="IkK-8H-pEz" id="puQ-4H-7Xa"/>
                         <outlet property="nombre_cientifico" destination="SUE-ep-m31" id="MuT-NN-9Oa"/>
                         <outlet property="nombre_tradicional" destination="Ba6-3t-cac" id="taf-2P-tLR"/>
+                        <segue destination="SaB-fP-uUW" kind="show" identifier="ImprimirQR_To_BuscarQR" id="MQo-Mx-fJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzp-Eg-vpz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1260,7 +1268,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                         <rect key="frame" x="55" y="19" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="iuy-Du-JGp" kind="show" id="QtK-eg-RzA"/>
+                                            <segue destination="iuy-Du-JGp" kind="show" identifier="Contabilidad_To_Catalogo" id="QtK-eg-RzA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1284,7 +1292,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                 <rect key="frame" x="192" y="816" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="SaB-fP-uUW" kind="show" id="FtU-cB-plq"/>
+                                    <segue destination="SaB-fP-uUW" kind="show" identifier="Contabilidad_To_BuscarQR" id="FtU-cB-plq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1303,7 +1311,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     </view>
                     <navigationItem key="navigationItem" id="u8L-xP-xk6"/>
                     <connections>
-                        <segue destination="x4H-MY-CdE" kind="show" id="Mm2-mm-EG4"/>
+                        <segue destination="x4H-MY-CdE" kind="show" identifier="loadAnaliticos2" id="Mm2-mm-EG4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H65-JR-1ki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1441,7 +1449,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADt-NJ-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3821.739130434783" y="103.45982142857143"/>
+            <point key="canvasLocation" x="3761" y="104"/>
         </scene>
         <!--Planta Nueva View Controller-->
         <scene sceneID="7i0-FM-cJk">
@@ -1859,7 +1867,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="79.5" y="11" width="48" height="47"/>
                                                 <state key="normal" image="about"/>
                                                 <connections>
-                                                    <segue destination="ETG-bY-pk6" kind="show" id="SmO-8P-1ag"/>
+                                                    <segue destination="ETG-bY-pk6" kind="show" identifier="Add_To_Contabilidad" id="SmO-8P-1ag"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1877,6 +1885,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBz-eC-A76">
                                                 <rect key="frame" x="78" y="10" width="51" height="51"/>
                                                 <state key="normal" image="Cata"/>
+                                                <connections>
+                                                    <segue destination="iuy-Du-JGp" kind="show" identifier="Add_To_Catalogo2" id="8GC-Fh-LXc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1890,6 +1901,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch1-Ws-1tb">
                                         <rect key="frame" x="179.5" y="8" width="55" height="60"/>
                                         <state key="normal" image="print"/>
+                                        <connections>
+                                            <segue destination="SaB-fP-uUW" kind="show" identifier="Add_To_Imprimir" id="2hA-NA-5xL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2035,11 +2049,18 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lKP-Pc-pEa"/>
+
         <segue reference="Uu3-NM-hN1"/>
         <segue reference="gW8-GY-5VX"/>
         <segue reference="pj7-El-Tbw"/>
         <segue reference="eOk-kt-hQe"/>
         <segue reference="z2W-ne-3QL"/>
+
+        <segue reference="EMg-HR-8cB"/>
+        <segue reference="GB6-Dv-jtA"/>
+        <segue reference="xWJ-x9-yDw"/>
+        <segue reference="ZAY-MP-pt5"/>
+
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
