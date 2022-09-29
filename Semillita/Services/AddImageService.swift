@@ -27,7 +27,7 @@ class AddImageService {
         { (respuesta) in
         switch respuesta.result {
             case .success:
-                print(respuesta.value)
+                print(respuesta.value!)
                 finalizar(respuesta.value)
             case let .failure(error):
                 print(error)

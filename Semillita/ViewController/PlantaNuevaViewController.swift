@@ -59,7 +59,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
                 // Increase height to lower next items
                 self.height += 20
             }
-            print(self.segments)
+            print(self.segments!)
         }
     }
     

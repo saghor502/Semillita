@@ -55,7 +55,7 @@ class DetallesPlantaViewController: UIViewController {
             (imagenRecibida) in
                 let img_string = imagenRecibida
                 self.enviarQRService.enviarQR(image: img_string, nombre_tradicional: self.plant!.nombre_tradicional) {  response in
-                print(response)
+                print(response!)
                 self.performSegue(withIdentifier: "Detail_To_BuscarQR", sender: self)
         }
         
