@@ -10,7 +10,7 @@ import UIKit
 
 class ImageFunctions {
     func convert(base64:String) -> UIImage {
-        let imageData = Data(base64Encoded: base64)
+        let imageData = Data(base64Encoded: base64.replacingOccurrences(of: "\"", with: ""))
         let image = UIImage(data: imageData!)
         return image!
     }

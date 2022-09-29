@@ -15,8 +15,10 @@ class ImprimirQRViewController: UIViewController {
     @IBOutlet weak var nombre_cientifico: UILabel!
     @IBOutlet weak var imagen: UIImageView!
     
-    var plant: Planta?
+    var plant: Planta? = nil
+    var image_string: String = ""
     let imprimirQRService = ImprimirQRService()
+    let enviarQRService = EnviarQRService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,16 +30,15 @@ class ImprimirQRViewController: UIViewController {
         let new_image:UIImage = imagefunctions.convert(base64: (plant?.Pimagenes![0].dato)!)
         imagen.image = new_image
         imprimirQRService.imprimirQR(planta_id: String(plant!.id)) {
-            (plantaRecibida) in
-            print(plantaRecibida)
+            (imagenRecibida) in
+            self.image_string = imagenRecibida
         }
     }
-    init() {
-        plant = nil
-        super.init(nibName: nil, bundle: nil)
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-       super.init(coder: aDecoder)
+    @IBAction func enviarQR(_ sender: UIButton) {
+        self.enviarQRService.enviarQR(image: self.image_string, nombre_tradicional: self.plant!.nombre_tradicional) { response in
+            // Perform segue
+            self.performSegue(withIdentifier: "ImprimirQR_To_BuscarQR", sender: self)
+        }
     }
 }
