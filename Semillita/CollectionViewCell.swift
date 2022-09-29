@@ -15,7 +15,7 @@ class CollectionViewCell: UICollectionViewCell {
     func configure(with countryName: String){
         countryLabel.text = countryName
     }
-    
+    //new text or something
     func imagen(with imagenP: String){
         imagenPlanta.image = imageUtil.convert(base64: (imagenP))
     }
