@@ -19,8 +19,8 @@ class AddImageService {
             form.append(imagen.dato, withName: "dato", fileName: "plant-image.jpeg", mimeType: imagen.tipo);
             form.append(imagen.tipo.data(using: .utf8)!, withName: "tipo");
             form.append(imagen.planta_id.data(using: .utf8)!,  withName: "planta_id")
-        }, to: "http://localhost:8080/api/imagenes/",
-        // to: "https://tc2007b-semillita.herokuapp.com/api/imagenes/"),
+        }, to: "https://tc2007b-semillita.herokuapp.com/api/imagenes/",
+        //to: "http://localhost:8080/api/imagenes/",
         usingThreshold: UInt64.init(),
         method: .post,
         headers: headers)

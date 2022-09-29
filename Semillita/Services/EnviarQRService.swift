@@ -19,8 +19,8 @@ class EnviarQRService {
             (form) in
             form.append(self.imageFunctions.convert(base64: image).pngData()!, withName: "dato", fileName: "plant-image.jpeg", mimeType: "image/png");
             form.append(nombre_tradicional.data(using: .utf8)!,  withName: "nombre_tradicional")
-        }, to: "http://localhost:8080/api/qr/",
-        // to: "https://tc2007b-semillita.herokuapp.com/api/qr/"),
+        }, to: "https://tc2007b-semillita.herokuapp.com/api/qr/",
+        // to: "http://localhost:8080/api/qr/",
         usingThreshold: UInt64.init(),
         method: .post,
         headers: headers)
