@@ -16,13 +16,15 @@ class LogInService {
             "username": username,
             "password": password
         ]
-        AF.request("https://tc2007b-semillita.herokuapp.com/api/users/", method: .post, parameters: params, encoder: JSONParameterEncoder())
-        //AF.request("http://localhost:8080/api/users/", method: .post, parameters: [username, password], encoder: JSONParameterEncoder())
+        //AF.request("https://tc2007b-semillita.herokuapp.com/api/token/", method: .post, parameters: params, encoder: JSONParameterEncoder())
+        AF.request("http://localhost:8080/api/token/", method: .post, parameters: params, encoder: JSONParameterEncoder())
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .responseString { (res) in
+            .responseDecodable(of: Token.self) { (res) in
                 switch res.result {
                     case .success:
+                        JWT.refresh = res.value!.refresh!
+                        JWT.token = res.value!.access
                         finalizar("Usuario autenticado")
                     case .failure:
                         finalizar("Usuario no autenticado")

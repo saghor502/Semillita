@@ -23,7 +23,7 @@ class DetallesPlantaViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        detallesPlantaServicio.leerPlanta(plantaId:126){
+        detallesPlantaServicio.leerPlanta(plantaId:129){
             (plantaRecibida) in
             self.plant = plantaRecibida!
             self.viewController?.plant = plantaRecibida!

@@ -21,6 +21,8 @@
 		407B4B4128DE94C3004F1A58 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B4B4028DE94C3004F1A58 /* LogInViewController.swift */; };
 		407E7D6028E24CEC008089F8 /* AddImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E7D5F28E24CEC008089F8 /* AddImageService.swift */; };
 		407E7D6528E26387008089F8 /* AddImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E7D6428E26387008089F8 /* AddImage.swift */; };
+		408A3F9828E60DFC00D35DE9 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A3F9728E60DFC00D35DE9 /* JWT.swift */; };
+		408A3F9E28E6118D00D35DE9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A3F9D28E6118D00D35DE9 /* Token.swift */; };
 		40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */; };
 		40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9CC28DD5F96008EA50C /* PlantaNuevaViewController.swift */; };
 		40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9D128DD68B4008EA50C /* AddPlanta.swift */; };
@@ -91,6 +93,8 @@
 		407B4B4028DE94C3004F1A58 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		407E7D5F28E24CEC008089F8 /* AddImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageService.swift; sourceTree = "<group>"; };
 		407E7D6428E26387008089F8 /* AddImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImage.swift; sourceTree = "<group>"; };
+		408A3F9728E60DFC00D35DE9 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		408A3F9D28E6118D00D35DE9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantService.swift; sourceTree = "<group>"; };
 		40C3B9CC28DD5F96008EA50C /* PlantaNuevaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaNuevaViewController.swift; sourceTree = "<group>"; };
 		40C3B9D128DD68B4008EA50C /* AddPlanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanta.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		4059FCD028E1FE1900747DEF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				408A3F9628E60DEE00D35DE9 /* Struct */,
 				4059FCD128E1FE3000747DEF /* ValueObject */,
 			);
 			name = Model;
@@ -190,6 +195,7 @@
 				407E7D6428E26387008089F8 /* AddImage.swift */,
 				405A415828E39EA20060C69C /* Uso.swift */,
 				405A416228E3A1A50060C69C /* listaUsos.swift */,
+				408A3F9D28E6118D00D35DE9 /* Token.swift */,
 			);
 			name = ValueObject;
 			sourceTree = "<group>";
@@ -215,6 +221,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		408A3F9628E60DEE00D35DE9 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				408A3F9728E60DFC00D35DE9 /* JWT.swift */,
+			);
+			name = Struct;
 			sourceTree = "<group>";
 		};
 		D130DF5428C7F81700ADFD25 = {
@@ -419,12 +433,14 @@
 				405A415928E39EA20060C69C /* Uso.swift in Sources */,
 				40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */,
 				842F974C28DF998200E524EC /* listaPlantas.swift in Sources */,
+				408A3F9E28E6118D00D35DE9 /* Token.swift in Sources */,
 				405C584428E51E15009938AC /* EnviarQRService.swift in Sources */,
 				8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */,
 				8E10D8EF28E3E31D00913875 /* TablaAnaliticosViewController.swift in Sources */,
 				407E7D6528E26387008089F8 /* AddImage.swift in Sources */,
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
 				4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */,
+				408A3F9828E60DFC00D35DE9 /* JWT.swift in Sources */,
 				40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
 				407B4B3C28DE93C5004F1A58 /* LogInService.swift in Sources */,
