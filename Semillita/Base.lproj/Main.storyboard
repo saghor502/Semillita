@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SaB-fP-uUW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2R-k6-rF2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -1068,7 +1068,6 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <connections>
                                                     <action selector="buscarQR:" destination="HHl-qe-Q7K" eventType="touchUpInside" id="V0H-l2-Rqd"/>
                                                     <action selector="imprimirQR:" destination="N2R-k6-rF2" eventType="touchUpInside" id="vli-yN-0xE"/>
-                                                    <segue destination="QU3-2F-e55" kind="show" id="tqW-vp-rrP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1113,8 +1112,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     </view>
                     <navigationItem key="navigationItem" id="pnf-80-mzi"/>
                     <connections>
-                        <segue destination="QU3-2F-e55" kind="show" identifier="Detail_To_ImprimirQR" id="gW8-GY-5VX"/>
                         <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" id="z2W-ne-3QL"/>
+                        <segue destination="SaB-fP-uUW" kind="show" identifier="Detail_To_BuscarQR" id="xWJ-x9-yDw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2147,9 +2146,8 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
     <inferredMetricsTieBreakers>
         <segue reference="lKP-Pc-pEa"/>
         <segue reference="EMg-HR-8cB"/>
-        <segue reference="GB6-Dv-jtA"/>
-        <segue reference="MQo-Mx-fJH"/>
-        <segue reference="d7c-tB-d22"/>
+        <segue reference="xWJ-x9-yDw"/>
+        <segue reference="z2W-ne-3QL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
