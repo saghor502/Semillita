@@ -14,8 +14,6 @@
 		405A415E28E39EEC0060C69C /* UsosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A415D28E39EEC0060C69C /* UsosService.swift */; };
 		405A416328E3A1A50060C69C /* listaUsos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405A416228E3A1A50060C69C /* listaUsos.swift */; };
 		405C584428E51E15009938AC /* EnviarQRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C584328E51E15009938AC /* EnviarQRService.swift */; };
-		405C589A28E539E7009938AC /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405C589228E539E1009938AC /* Charts.framework */; };
-		405C589B28E539E7009938AC /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 405C589228E539E1009938AC /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4062597A28DFB3E70057EEE9 /* ImprimirQRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062597928DFB3E70057EEE9 /* ImprimirQRService.swift */; };
 		4062597F28DFB4890057EEE9 /* ImprimirQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062597E28DFB4890057EEE9 /* ImprimirQRViewController.swift */; };
 		4062598A28DFD3160057EEE9 /* BuscarQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062598928DFD3160057EEE9 /* BuscarQRViewController.swift */; };
@@ -49,20 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		405C589128E539E1009938AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 405C588C28E539E1009938AC /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		405C589328E539E1009938AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 405C588C28E539E1009938AC /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
 		D130DF7428C7F81800ADFD25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D130DF5528C7F81700ADFD25 /* Project object */;
@@ -86,7 +70,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				405C589B28E539E7009938AC /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +84,6 @@
 		405A415D28E39EEC0060C69C /* UsosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsosService.swift; sourceTree = "<group>"; };
 		405A416228E3A1A50060C69C /* listaUsos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaUsos.swift; sourceTree = "<group>"; };
 		405C584328E51E15009938AC /* EnviarQRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviarQRService.swift; sourceTree = "<group>"; };
-		405C588C28E539E1009938AC /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/Charts-4.0.2 2/Charts.xcodeproj"; sourceTree = "<group>"; };
 		4062597928DFB3E70057EEE9 /* ImprimirQRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprimirQRService.swift; sourceTree = "<group>"; };
 		4062597E28DFB4890057EEE9 /* ImprimirQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprimirQRViewController.swift; sourceTree = "<group>"; };
 		4062598928DFD3160057EEE9 /* BuscarQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarQRViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8423D87F28DD2B0E00EB1E7C /* Alamofire in Frameworks */,
-				405C589A28E539E7009938AC /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,15 +217,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		405C588D28E539E1009938AC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				405C589228E539E1009938AC /* Charts.framework */,
-				405C589428E539E1009938AC /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D130DF5428C7F81700ADFD25 = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +249,6 @@
 				D130DF6228C7F81700ADFD25 /* SceneDelegate.swift */,
 				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
-				405C588C28E539E1009938AC /* Charts.xcodeproj */,
 				D130DF6928C7F81800ADFD25 /* Assets.xcassets */,
 				D130DF6B28C7F81800ADFD25 /* LaunchScreen.storyboard */,
 				D130DF6E28C7F81800ADFD25 /* Info.plist */,
@@ -400,12 +371,6 @@
 			);
 			productRefGroup = D130DF5E28C7F81700ADFD25 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 405C588D28E539E1009938AC /* Products */;
-					ProjectRef = 405C588C28E539E1009938AC /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D130DF5C28C7F81700ADFD25 /* Semillita */,
@@ -414,23 +379,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		405C589228E539E1009938AC /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 405C589128E539E1009938AC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		405C589428E539E1009938AC /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 405C589328E539E1009938AC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D130DF5B28C7F81700ADFD25 /* Resources */ = {
