@@ -25,6 +25,7 @@ class LogInService {
                     case .success:
                         JWT.refresh = res.value!.refresh!
                         JWT.token = res.value!.access
+                        JWT.counter = 0
                         finalizar("Usuario autenticado")
                     case .failure:
                         finalizar("Usuario no autenticado")

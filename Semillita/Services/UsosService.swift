@@ -9,6 +9,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class UsosService {
+    let refreshFunction = RefreshToken()
     public typealias LeerUsosClosure = (listaUsos?) -> Void
     
     func getUsos(finalizar: @escaping LeerUsosClosure) {
@@ -22,8 +23,15 @@ class UsosService {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
-                    print(error)
-                    finalizar(nil)
+                    if respuesta.response?.statusCode == 401 && JWT.counter < 1 {
+                        self.refreshFunction.refresh()
+                        JWT.counter += 1
+                        self.getUsos(finalizar: finalizar)
+                    } else {
+                        print(error)
+                        finalizar(nil)
+                    }
+                    
             }
         }
     }

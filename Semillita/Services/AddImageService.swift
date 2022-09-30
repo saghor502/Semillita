@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class AddImageService {
+    let refreshFunction = RefreshToken()
     public typealias AddImageClosure = (Imagen?) -> Void
     
     func addImage(imagen: AddImage, finalizar: @escaping AddImageClosure) {
@@ -33,8 +34,14 @@ class AddImageService {
                 print(respuesta.value!)
                 finalizar(respuesta.value)
             case let .failure(error):
-                print(error)
-                finalizar(nil)
+                if respuesta.response?.statusCode == 401 && JWT.counter < 1 {
+                    self.refreshFunction.refresh()
+                    JWT.counter += 1
+                    self.addImage(imagen: imagen, finalizar: finalizar)
+                } else {
+                    print(error)
+                    finalizar(nil)
+                }
         }
         }
     }
