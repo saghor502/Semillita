@@ -44,6 +44,11 @@ class DetallesPlantaViewController: UIViewController {
            let secondViewController = segue.destination as? ImprimirQRViewController {
             secondViewController.plant = self.plant!
         }
+        if segue.identifier == "Detail_To_Edit",
+           let secondViewController = segue.destination as? EditarViewController {
+            //print(self.planta?.nombre_tradicional)
+            secondViewController.plant = self.plant
+        }
     }
     
     init() {
@@ -65,4 +70,6 @@ class DetallesPlantaViewController: UIViewController {
         
     }
 }
+    
+    
 }
