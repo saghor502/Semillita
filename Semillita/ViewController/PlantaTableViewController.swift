@@ -44,6 +44,22 @@ class PlantaTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
+    
+    @IBAction func editPlanta(_ sender: Any) {
+        self.viewController.performSegue(withIdentifier: "Detail_To_Edit", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("porfavor muestra este mensaje")
+        //print(self.planta?.nombre_tradicional)
+        if segue.identifier == "Detail_To_Edit",
+           let secondViewController = segue.destination as? EditarViewController {
+            //print(self.planta?.nombre_tradicional)
+            secondViewController.plant = self.plant
+        }
+    }
+    
+    
     @IBAction func deletePlant(_ sender: UIButton) {
         deletePlantService.deletePlant(planta: self.plant!) { (res) in
             print(res!)

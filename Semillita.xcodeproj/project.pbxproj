@@ -26,6 +26,9 @@
 		40C3B9C828DD5AF7008EA50C /* AddPlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */; };
 		40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9CC28DD5F96008EA50C /* PlantaNuevaViewController.swift */; };
 		40C3B9D228DD68B4008EA50C /* AddPlanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C3B9D128DD68B4008EA50C /* AddPlanta.swift */; };
+		841D410728E6750100209DAD /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D410628E6750100209DAD /* EditarViewController.swift */; };
+		841D410B28E67C5700209DAD /* EditarPlanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D410A28E67C5700209DAD /* EditarPlanta.swift */; };
+		841D410F28E67D3400209DAD /* EditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D410E28E67D3400209DAD /* EditService.swift */; };
 		8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */; };
 		8423D87F28DD2B0E00EB1E7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8423D87E28DD2B0E00EB1E7C /* Alamofire */; };
 		8423D88728DD318B00EB1E7C /* Planta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88628DD318B00EB1E7C /* Planta.swift */; };
@@ -102,6 +105,9 @@
 		40C3B9C728DD5AF7008EA50C /* AddPlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantService.swift; sourceTree = "<group>"; };
 		40C3B9CC28DD5F96008EA50C /* PlantaNuevaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaNuevaViewController.swift; sourceTree = "<group>"; };
 		40C3B9D128DD68B4008EA50C /* AddPlanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanta.swift; sourceTree = "<group>"; };
+		841D410628E6750100209DAD /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
+		841D410A28E67C5700209DAD /* EditarPlanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPlanta.swift; sourceTree = "<group>"; };
+		841D410E28E67D3400209DAD /* EditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditService.swift; sourceTree = "<group>"; };
 		8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPlantaViewController.swift; sourceTree = "<group>"; };
 		8423D88628DD318B00EB1E7C /* Planta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
 		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 				407E7D5F28E24CEC008089F8 /* AddImageService.swift */,
 				405A415D28E39EEC0060C69C /* UsosService.swift */,
 				405C584328E51E15009938AC /* EnviarQRService.swift */,
+				841D410E28E67D3400209DAD /* EditService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 				405A415828E39EA20060C69C /* Uso.swift */,
 				405A416228E3A1A50060C69C /* listaUsos.swift */,
 				408A3F9D28E6118D00D35DE9 /* Token.swift */,
+				841D410A28E67C5700209DAD /* EditarPlanta.swift */,
 			);
 			name = ValueObject;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
 				842F974628DF95F400E524EC /* CatalogoViewController.swift */,
 				843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */,
+				841D410628E6750100209DAD /* EditarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -454,6 +463,8 @@
 				D130DF6528C7F81700ADFD25 /* ViewController.swift in Sources */,
 				4013F64E28E11E3D00A85655 /* PlantaTableViewController.swift in Sources */,
 				408A3F9828E60DFC00D35DE9 /* JWT.swift in Sources */,
+				841D410B28E67C5700209DAD /* EditarPlanta.swift in Sources */,
+				841D410F28E67D3400209DAD /* EditService.swift in Sources */,
 				40C3B9CD28DD5F96008EA50C /* PlantaNuevaViewController.swift in Sources */,
 				8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */,
 				843267DD28E5135B00D41840 /* CatalagoTodasViewController.swift in Sources */,
@@ -468,6 +479,7 @@
 				8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */,
 				4062597A28DFB3E70057EEE9 /* ImprimirQRService.swift in Sources */,
 				8E74CC6028DD5AC100521310 /* AnaliticosViewController.swift in Sources */,
+				841D410728E6750100209DAD /* EditarViewController.swift in Sources */,
 				843267F728E5213800D41840 /* CollectionViewCell.swift in Sources */,
 				4013F63828E1003200A85655 /* ImageFunctions.swift in Sources */,
 				842F974228DF947300E524EC /* CatalogoService.swift in Sources */,

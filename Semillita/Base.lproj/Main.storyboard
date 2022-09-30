@@ -193,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-K7-Vvf" userLabel="Pantalla">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="1769.5" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-gy-5yE">
                                         <rect key="frame" x="169" y="367" width="76" height="83"/>
@@ -203,17 +203,17 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXF-qV-zHK" userLabel="Buscador">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1769.5" height="92"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buscador" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-dQ-AAL">
-                                                <rect key="frame" x="4" y="8" width="406" height="76"/>
+                                                <rect key="frame" x="17" y="8" width="1735.5" height="76"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9z-mh-Plg">
-                                                <rect key="frame" x="345" y="20" width="37" height="38"/>
+                                                <rect key="frame" x="1579.5" y="20" width="158" height="38"/>
                                                 <state key="normal" image="buscarqr"/>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Buscar Planta" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="weu-30-dL5">
-                                                <rect key="frame" x="69" y="22" width="268" height="34"/>
+                                                <rect key="frame" x="69" y="22" width="1145.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -236,25 +236,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-h3-L0w" userLabel="Catalogo1">
-                                        <rect key="frame" x="0.0" y="100" width="414" height="274"/>
+                                        <rect key="frame" x="0.0" y="100" width="1769.5" height="274"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqo-ep-JvM">
-                                                <rect key="frame" x="0.0" y="-10" width="414" height="62"/>
+                                                <rect key="frame" x="0.0" y="-10" width="1769.5" height="62"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todas las Plantas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REy-Oo-KOw">
-                                                        <rect key="frame" x="18" y="8" width="141" height="21"/>
+                                                        <rect key="frame" x="18" y="8" width="602.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75 plantas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ul-C4-a60">
-                                                        <rect key="frame" x="18" y="34" width="141" height="18"/>
+                                                        <rect key="frame" x="18" y="34" width="602.5" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver todas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx9-jx-kKG">
-                                                        <rect key="frame" x="338" y="21" width="69" height="18"/>
+                                                        <rect key="frame" x="1467.5" y="21" width="295" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" red="0.70196078431372544" green="0.070588235294117646" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -278,15 +278,15 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mas" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-ig-6hN">
-                                                <rect key="frame" x="8" y="47" width="116" height="157"/>
+                                                <rect key="frame" x="8" y="47" width="496" height="157"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Planta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFY-Xv-Y3i">
-                                                <rect key="frame" x="8" y="157" width="109" height="117"/>
+                                                <rect key="frame" x="8" y="157" width="466" height="117"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-vd-wZC">
+                                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-vd-wZC">
                                                 <rect key="frame" x="125" y="47" width="289" height="200"/>
                                                 <connections>
                                                     <segue destination="Mb2-t4-YKJ" kind="embed" id="GfQ-Gp-Uf4"/>
@@ -315,13 +315,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15h-21-zF9" userLabel="Bajo">
-                                        <rect key="frame" x="0.0" y="750.5" width="414" height="67.5"/>
+                                        <rect key="frame" x="0.0" y="750.5" width="1769.5" height="67.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HP-qt-h13" userLabel="B2">
-                                                <rect key="frame" x="207" y="3.5" width="207" height="69.5"/>
+                                                <rect key="frame" x="885" y="3.5" width="884.5" height="69.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-db-xEi">
-                                                        <rect key="frame" x="79.5" y="11" width="48" height="47"/>
+                                                        <rect key="frame" x="339.5" y="11" width="205.5" height="47"/>
                                                         <state key="normal" image="about"/>
                                                         <connections>
                                                             <segue destination="ETG-bY-pk6" kind="show" identifier="Catalogo_To_Contabilidad" id="Uu3-NM-hN1"/>
@@ -337,10 +337,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-Q1-pTg" userLabel="B1">
-                                                <rect key="frame" x="0.0" y="3.5" width="207" height="69.5"/>
+                                                <rect key="frame" x="0.0" y="3.5" width="885" height="69.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-l3-eb8">
-                                                        <rect key="frame" x="78" y="10" width="51" height="51"/>
+                                                        <rect key="frame" x="333.5" y="10" width="218" height="51"/>
                                                         <state key="normal" image="Cata"/>
                                                     </button>
                                                 </subviews>
@@ -353,7 +353,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0L-3X-Ri5">
-                                                <rect key="frame" x="179.5" y="8" width="55" height="60"/>
+                                                <rect key="frame" x="767.5" y="8" width="235" height="60"/>
                                                 <state key="normal" image="print"/>
                                                 <connections>
                                                     <segue destination="SaB-fP-uUW" kind="show" identifier="Catalogo_To_BuscarQR" id="pj7-El-Tbw"/>
@@ -377,7 +377,7 @@
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-d1-47L">
-                                        <rect key="frame" x="0.0" y="391" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="391" width="1770" height="200"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="E1S-2E-4R9" kind="embed" id="Rly-Mu-jEU"/>
@@ -453,6 +453,10 @@
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
                                                                     <rect key="frame" x="8" y="4" width="47" height="45.5"/>
                                                                     <state key="normal" image="editar"/>
+                                                                    <connections>
+                                                                        <action selector="editPlanta:" destination="JWs-h3-blB" eventType="touchUpInside" id="fDW-c5-dUu"/>
+                                                                        <segue destination="zTj-FV-H6D" kind="show" identifier="Detail_To_Edit" id="bGt-g2-deG"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Qd-cda">
                                                                     <rect key="frame" x="323" y="4" width="42" height="45.5"/>
@@ -702,6 +706,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         <outlet property="riego" destination="SXl-yA-MkG" id="amo-xC-TJM"/>
                         <outlet property="table" destination="eMP-V4-fRa" id="Aby-wg-SzJ"/>
                         <outlet property="usos" destination="kH5-PN-13p" id="ngF-RA-7pU"/>
+                        <segue destination="zTj-FV-H6D" kind="show" identifier="Detail_To_Edit" id="1mR-Mc-MPg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="562-PH-YlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -834,6 +839,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     <connections>
                         <segue destination="iuy-Du-JGp" kind="show" identifier="Detail_To_Catalogo" id="z2W-ne-3QL"/>
                         <segue destination="SaB-fP-uUW" kind="show" identifier="Detail_To_BuscarQR" id="xWJ-x9-yDw"/>
+                        <segue destination="zTj-FV-H6D" kind="show" identifier="Detail_To_Edit" id="8Kd-iV-SRC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrV-cs-Qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1158,7 +1164,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
             <objects>
                 <collectionViewController storyboardIdentifier="PlantasCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E1S-2E-4R9" customClass="PlantasCollectionViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="j1o-Kh-ocM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1770" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.96657019850000003" blue="0.84524971250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="9Gy-gz-seO">
@@ -2054,16 +2060,16 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
             </objects>
             <point key="canvasLocation" x="1541" y="1521"/>
         </scene>
-        <!--Planta Nueva View Controller-->
+        <!--Editar View Controller-->
         <scene sceneID="ywf-9h-nws">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="zTj-FV-H6D" customClass="PlantaNuevaViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="zTj-FV-H6D" customClass="EditarViewController" customModule="Semillita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWT-GO-nXb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-xu-vci">
-                                <rect key="frame" x="20" y="114" width="374" height="671"/>
+                                <rect key="frame" x="20" y="70" width="374" height="662.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9e-k7-CMf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="1600"/>
@@ -2365,7 +2371,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="uploadImage:" destination="zTj-FV-H6D" eventType="touchUpInside" id="6HV-D5-9h2"/>
+                                                            <action selector="uploadImage:" destination="zTj-FV-H6D" eventType="touchUpInside" id="lpv-4p-HUE"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8d-gG-CA7">
@@ -2387,7 +2393,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="createPlant:" destination="zTj-FV-H6D" eventType="touchUpInside" id="IfK-vf-eb0"/>
+                                                    <action selector="createPlant:" destination="zTj-FV-H6D" eventType="touchUpInside" id="0Uh-3O-eie"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2461,13 +2467,13 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                 <viewLayoutGuide key="frameLayoutGuide" id="aUY-WA-z3H"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLA-jN-55a" userLabel="Bajo">
-                                <rect key="frame" x="0.0" y="798" width="414" height="67.5"/>
+                                <rect key="frame" x="0.0" y="748" width="414" height="63.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-2o-BDL" userLabel="B2">
-                                        <rect key="frame" x="207" y="3.5" width="207" height="69.5"/>
+                                        <rect key="frame" x="207" y="3.5" width="207" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHn-Ps-BMY">
-                                                <rect key="frame" x="79.5" y="11" width="48" height="47"/>
+                                                <rect key="frame" x="79.5" y="11" width="48" height="44"/>
                                                 <state key="normal" image="about"/>
                                             </button>
                                         </subviews>
@@ -2480,10 +2486,10 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPA-JU-bX2" userLabel="B1">
-                                        <rect key="frame" x="0.0" y="3.5" width="207" height="69.5"/>
+                                        <rect key="frame" x="0.0" y="3.5" width="207" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pT-wi-ma4">
-                                                <rect key="frame" x="78" y="10" width="51" height="51"/>
+                                                <rect key="frame" x="78" y="10" width="51" height="48"/>
                                                 <state key="normal" image="Cata"/>
                                             </button>
                                         </subviews>
@@ -2496,7 +2502,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvT-22-KoB">
-                                        <rect key="frame" x="179.5" y="8" width="55" height="60"/>
+                                        <rect key="frame" x="179.5" y="8" width="55" height="56.5"/>
                                         <state key="normal" image="print"/>
                                     </button>
                                 </subviews>
@@ -2531,32 +2537,35 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OzO-Z0-atO"/>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="descripcion" destination="WxO-HC-ul9" id="Ga8-ER-6AR"/>
-                        <outlet property="especie" destination="UuM-9u-BeO" id="9Hf-en-3HL"/>
-                        <outlet property="fertilizante" destination="kzb-mc-h4Q" id="2YP-li-TgE"/>
-                        <outlet property="iluminacion" destination="Drc-3c-lz5" id="qD4-i3-EhL"/>
-                        <outlet property="image" destination="W8d-gG-CA7" id="hca-NG-9lB"/>
-                        <outlet property="nombre_cientifico" destination="HhI-eV-Hdu" id="fEf-dQ-6NM"/>
-                        <outlet property="nombre_tradicional" destination="ghx-7Y-JLD" id="KkO-eN-0fZ"/>
-                        <outlet property="origen" destination="7ke-5f-Ejo" id="GCt-qP-OFu"/>
-                        <outlet property="riego" destination="Cz5-Wc-AOV" id="9Uk-4S-148"/>
-                        <outlet property="scrollView" destination="Aaf-xu-vci" id="auT-Sf-iDe"/>
-                        <outlet property="temporada" destination="c1l-Ca-Fsp" id="U7V-Aw-wRD"/>
+                        <outlet property="descripcion" destination="rAi-qW-9Fi" id="PAY-qO-zYZ"/>
+                        <outlet property="especie" destination="UuM-9u-BeO" id="8xW-TH-uJG"/>
+                        <outlet property="fertilizante" destination="kzb-mc-h4Q" id="e4z-PS-NAs"/>
+                        <outlet property="iluminacion" destination="Drc-3c-lz5" id="al5-9w-eUa"/>
+                        <outlet property="image" destination="W8d-gG-CA7" id="GDM-QH-KCy"/>
+                        <outlet property="nombre_cientifico" destination="HhI-eV-Hdu" id="OQz-SI-mqo"/>
+                        <outlet property="nombre_tradicional" destination="ghx-7Y-JLD" id="816-nH-C7o"/>
+                        <outlet property="origen" destination="7ke-5f-Ejo" id="K5Q-8i-vQe"/>
+                        <outlet property="riego" destination="Cz5-Wc-AOV" id="Jfn-a2-kf8"/>
+                        <outlet property="scrollView" destination="Aaf-xu-vci" id="Gkf-Mb-rl5"/>
+                        <outlet property="temporada" destination="c1l-Ca-Fsp" id="zAk-Aa-qah"/>
+                        <segue destination="iuy-Du-JGp" kind="show" identifier="Edit_To_Catalogo" id="UMy-zH-Leg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz3-Ou-ayd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70" y="929"/>
+            <point key="canvasLocation" x="101" y="978"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8Kd-iV-SRC"/>
         <segue reference="lKP-Pc-pEa"/>
         <segue reference="Uu3-NM-hN1"/>
-        <segue reference="GB6-Dv-jtA"/>
+        <segue reference="tqW-vp-rrP"/>
         <segue reference="pj7-El-Tbw"/>
         <segue reference="3ax-3M-Poz"/>
-        <segue reference="ZAY-MP-pt5"/>
+        <segue reference="UMy-zH-Leg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
