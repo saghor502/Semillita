@@ -14,13 +14,13 @@ class CatalogoViewController: UIViewController {
     @IBOutlet weak var catalogoTodas: UICollectionView!
     
     
-    let CataServicio = Catalogo()
+    //let CataServicio = Catalogo()
     var plant: Planta? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        CataServicio.leerCata(){
+        /*CataServicio.leerCata(){
             (plantaRecibida) in
             for planta in plantaRecibida!.results{
                 if (planta.estatus == true){
@@ -29,7 +29,7 @@ class CatalogoViewController: UIViewController {
                     //print(planta.usos)
                 }
             }
-        }
+        }*/
     }
     
 }
