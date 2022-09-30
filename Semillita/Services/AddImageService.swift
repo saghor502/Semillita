@@ -34,12 +34,14 @@ class AddImageService {
                 print(respuesta.value!)
                 finalizar(respuesta.value)
             case let .failure(error):
-                if respuesta.response?.statusCode == 401 {
+                if respuesta.response?.statusCode == 401 && JWT.counter < 1 {
                     self.refreshFunction.refresh()
+                    JWT.counter += 1
                     self.addImage(imagen: imagen, finalizar: finalizar)
+                } else {
+                    print(error)
+                    finalizar(nil)
                 }
-                print(error)
-                finalizar(nil)
         }
         }
     }

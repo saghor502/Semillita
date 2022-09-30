@@ -32,12 +32,14 @@ class EnviarQRService {
             case .success:
                 finalizar("QR Enviado")
             case let .failure(error):
-                if res.response?.statusCode == 401 {
+                if res.response?.statusCode == 401 && JWT.counter < 1 {
                     self.refreshFunction.refresh()
+                    JWT.counter += 1
                     self.enviarQR(image: image, nombre_tradicional: nombre_tradicional, finalizar: finalizar)
+                } else {
+                    print(error)
+                    finalizar(nil)
                 }
-                print(error)
-                finalizar("QR No enviado")
             }
         }
             

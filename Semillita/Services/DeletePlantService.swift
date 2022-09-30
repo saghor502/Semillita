@@ -24,12 +24,15 @@ class DeletePlantService {
                 case .success:
                     finalizar("Planta Desactivada")
                 case let .failure(error):
-                    if res.response?.statusCode == 401 {
+                    if res.response?.statusCode == 401 && JWT.counter < 1 {
                         self.refreshFunction.refresh()
+                        JWT.counter += 1
                         self.deletePlant(planta: planta, finalizar: finalizar)
+                    } else {
+                        print(error)
+                        finalizar("Error borrando planta")
                     }
-                    print(error)
-                    finalizar("Error")
+                    
                 }
             }
         }

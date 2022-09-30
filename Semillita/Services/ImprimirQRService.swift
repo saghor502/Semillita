@@ -26,12 +26,14 @@ class ImprimirQRService {
                     case .success:
                         finalizar(res.value!)
                     case let .failure(error):
-                        if res.response?.statusCode == 401 {
+                        if res.response?.statusCode == 401 && JWT.counter < 1 {
                             self.refreshFunction.refresh()
+                            JWT.counter += 1
                             self.imprimirQR(planta_id: planta_id, finalizar: finalizar)
+                        } else {
+                            print(error)
+                            finalizar("Planta no encontrada")
                         }
-                        print(error)
-                        finalizar("Planta no encontrada")
             }
         }
     }
