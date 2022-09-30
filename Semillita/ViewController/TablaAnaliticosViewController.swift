@@ -17,23 +17,23 @@ class TablaAnaliticosViewController : UITableViewController {
     @IBOutlet weak var LabelPlantaN1: UILabel!
     @IBOutlet weak var LabelPlantaN2: UILabel!
     @IBOutlet weak var LabelPlantaN3: UILabel!
-    
+    @IBOutlet weak var grafica: UIImageView!
     
     let analiticosService = AnaliticosService()
     
     let funcionImagen = ImageFunctions()
     
-    var plantas: [Planta]? = nil {
+    var resultado: AnaliticosObject? = nil {
         didSet {
             
-            self.LabelPlantaN1.text = plantas![0].nombre_tradicional
-            self.LabelPlantaN2.text = plantas![1].nombre_tradicional
-            self.LabelPlantaN3.text = plantas![2].nombre_tradicional
+            self.LabelPlantaN1.text = resultado!.popularPlants[0].nombre_tradicional
+            self.LabelPlantaN2.text = resultado!.popularPlants[1].nombre_tradicional
+            self.LabelPlantaN3.text = resultado!.popularPlants[2].nombre_tradicional
            
-            self.PlantaN1.image = funcionImagen.convert (base64: plantas![0].Pimagenes![0].dato)
-            self.PlantaN2.image = funcionImagen.convert (base64: plantas![1].Pimagenes![0].dato)
-            self.PlantaN3.image = funcionImagen.convert (base64: plantas![2].Pimagenes![0].dato)
-        
+            self.PlantaN1.image = funcionImagen.convert (base64: resultado!.popularPlants[0].Pimagenes![0].dato)
+            self.PlantaN2.image = funcionImagen.convert (base64: resultado!.popularPlants[1].Pimagenes![0].dato)
+            self.PlantaN3.image = funcionImagen.convert (base64: resultado!.popularPlants[2].Pimagenes![0].dato)
+            self.grafica.image = funcionImagen.convert(base64: resultado!.graph)
         }
     }
     
