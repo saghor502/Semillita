@@ -230,7 +230,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-h3-L0w" userLabel="Catalogo1">
                                         <rect key="frame" x="0.0" y="91" width="414" height="268.5"/>
                                         <subviews>
-                                            
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqo-ep-JvM">
                                                 <rect key="frame" x="0.0" y="-10" width="414" height="67"/>
                                                 <subviews>
@@ -272,10 +271,8 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar Planta" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFY-Xv-Y3i">
-
                                                 <rect key="frame" x="8" y="203" width="108" height="58"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-
                                                 <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -303,7 +300,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-
                                             <constraint firstItem="Cqo-ep-JvM" firstAttribute="width" secondItem="5hG-h3-L0w" secondAttribute="width" id="0Sa-OB-pb7"/>
                                             <constraint firstItem="pwK-gy-5yE" firstAttribute="height" secondItem="5hG-h3-L0w" secondAttribute="height" multiplier="0.309125" constant="56" id="3hr-9z-6wR"/>
                                             <constraint firstItem="Cqo-ep-JvM" firstAttribute="top" secondItem="5hG-h3-L0w" secondAttribute="top" constant="-10" id="FsO-aw-FdO"/>
@@ -322,7 +318,6 @@
                                             <constraint firstItem="wdQ-ig-6hN" firstAttribute="width" secondItem="5hG-h3-L0w" secondAttribute="width" multiplier="0.3" id="uFM-N9-4sh"/>
                                             <constraint firstItem="wdQ-ig-6hN" firstAttribute="leading" secondItem="5hG-h3-L0w" secondAttribute="leading" id="xDW-fU-W5z"/>
                                             <constraint firstItem="Cqo-ep-JvM" firstAttribute="centerX" secondItem="5hG-h3-L0w" secondAttribute="centerX" id="ymB-DI-gih"/>
-
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-d1-47L">
@@ -2588,7 +2583,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="tqW-vp-rrP"/>
         <segue reference="pj7-El-Tbw"/>
         <segue reference="3ax-3M-Poz"/>
-        <segue reference="EPz-my-9eo"/>
+        <segue reference="ZAY-MP-pt5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>

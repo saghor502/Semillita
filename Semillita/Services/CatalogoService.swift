@@ -9,6 +9,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class Catalogo {
+    let refreshFunction = RefreshToken()
     public typealias LeerCataClosure = (listaPlantas?) -> Void
     
     func leerCata(finalizar: @escaping LeerCataClosure) {
@@ -22,6 +23,10 @@ class Catalogo {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
+                    if respuesta.response?.statusCode == 401 {
+                        self.refreshFunction.refresh()
+                        self.leerCata(finalizar: finalizar)
+                    }
                     print(error)
                     finalizar(nil)
             }

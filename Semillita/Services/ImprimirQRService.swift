@@ -9,6 +9,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class ImprimirQRService {
+    let refreshFunction = RefreshToken()
     public typealias ImprimirQRClosure = (String) -> Void
     
     func imprimirQR(planta_id: String, finalizar: @escaping ImprimirQRClosure) {
@@ -25,6 +26,10 @@ class ImprimirQRService {
                     case .success:
                         finalizar(res.value!)
                     case let .failure(error):
+                        if res.response?.statusCode == 401 {
+                            self.refreshFunction.refresh()
+                            self.imprimirQR(planta_id: planta_id, finalizar: finalizar)
+                        }
                         print(error)
                         finalizar("Planta no encontrada")
             }

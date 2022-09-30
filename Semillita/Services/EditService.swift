@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class EditService {
+    let refreshFunction = RefreshToken()
     public typealias EditPlantClosure = (Planta?) -> Void
     
     func addPlant(planta: EditarPlanta, finalizar: @escaping EditPlantClosure) {
@@ -23,6 +24,10 @@ class EditService {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
+                    if respuesta.response?.statusCode == 401 {
+                        self.refreshFunction.refresh()
+                        self.addPlant(planta: planta, finalizar: finalizar)
+                    }
                     print(error)
                     finalizar(nil)
             }

@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class AddImageService {
+    let refreshFunction = RefreshToken()
     public typealias AddImageClosure = (Imagen?) -> Void
     
     func addImage(imagen: AddImage, finalizar: @escaping AddImageClosure) {
@@ -33,6 +34,10 @@ class AddImageService {
                 print(respuesta.value!)
                 finalizar(respuesta.value)
             case let .failure(error):
+                if respuesta.response?.statusCode == 401 {
+                    self.refreshFunction.refresh()
+                    self.addImage(imagen: imagen, finalizar: finalizar)
+                }
                 print(error)
                 finalizar(nil)
         }

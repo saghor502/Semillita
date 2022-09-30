@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class DeletePlantService {
+    let refreshFunction = RefreshToken()
     public typealias DeletePlantClosure = (String?) -> Void
     
     func deletePlant(planta: Planta, finalizar: @escaping DeletePlantClosure) {
@@ -19,7 +20,17 @@ class DeletePlantService {
             .validate(statusCode: 200..<300)
             .validate(contentType: ["text/html"])
             .responseString { (res) in
-                finalizar("Planta Desactivada")
+                switch res.result {
+                case .success:
+                    finalizar("Planta Desactivada")
+                case let .failure(error):
+                    if res.response?.statusCode == 401 {
+                        self.refreshFunction.refresh()
+                        self.deletePlant(planta: planta, finalizar: finalizar)
+                    }
+                    print(error)
+                    finalizar("Error")
+                }
             }
         }
     }
