@@ -20,7 +20,7 @@ class AnaliticosViewController: UIViewController {
         // Do any additional setup after loading the view.
         detallesAnaliticosServicio.leerAnaliticos(){
             (plantaRecibida) in
-            self.analiticsViewcontroller?.plantas = plantaRecibida!
+            self.analiticsViewcontroller?.resultado = plantaRecibida!
         }
         
     }
