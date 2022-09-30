@@ -23,11 +23,15 @@ class DetallesPlantaViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        detallesPlantaServicio.leerPlanta(plantaId:126){
+        /*detallesPlantaServicio.leerPlanta(plantaId:119){
             (plantaRecibida) in
             self.plant = plantaRecibida!
             self.viewController?.plant = plantaRecibida!
-        }
+        }*/
+        print("AVER AVER AVER SI YA SANTA MARIA MADRE MIA")
+        print(plant?.nombre_tradicional)
+        self.viewController?.plant = plant
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

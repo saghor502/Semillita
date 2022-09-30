@@ -11,7 +11,11 @@ import Alamofire
 
 class CatalogoViewController: UIViewController {
     
+    @IBOutlet weak var catalogoTodas: UICollectionView!
+    
+    
     let CataServicio = Catalogo()
+    var plant: Planta? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +24,12 @@ class CatalogoViewController: UIViewController {
             (plantaRecibida) in
             for planta in plantaRecibida!.results{
                 if (planta.estatus == true){
-                    print(planta.nombre_tradicional)
-                    print(planta.origen)
-                    print(planta.usos)
+                    //print(planta.nombre_tradicional)
+                    //print(planta.origen)
+                    //print(planta.usos)
                 }
             }
         }
     }
+    
 }
