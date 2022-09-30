@@ -46,7 +46,7 @@ class PlantaTableViewController: UITableViewController {
     
     @IBAction func deletePlant(_ sender: UIButton) {
         deletePlantService.deletePlant(planta: self.plant!) { (res) in
-            print(res)
+            print(res!)
             self.viewController.performSegue(withIdentifier: "Detail_To_Catalogo", sender: self)
         }
     }

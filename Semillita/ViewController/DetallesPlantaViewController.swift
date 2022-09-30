@@ -14,6 +14,9 @@ class DetallesPlantaViewController: UIViewController {
     let detallesPlantaServicio = PlantaService()
     weak var viewController: PlantaTableViewController?
     var plant: Planta? = nil
+    let enviarQRService = EnviarQRService()
+    let imageFunctions = ImageFunctions()
+    let imprimirQRService = ImprimirQRService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +54,15 @@ class DetallesPlantaViewController: UIViewController {
        super.init(coder: aDecoder)
     }
     @IBAction func imprimirQR(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "Detail_To_ImprimirQR", sender: self)
+
+        self.imprimirQRService.imprimirQR(planta_id: String(plant!.id)) {
+            (imagenRecibida) in
+                let img_string = imagenRecibida
+                self.enviarQRService.enviarQR(image: img_string, nombre_tradicional: self.plant!.nombre_tradicional) {  response in
+                print(response!)
+                self.performSegue(withIdentifier: "Detail_To_BuscarQR", sender: self)
+        }
+        
     }
+}
 }
