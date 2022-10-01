@@ -26,12 +26,14 @@ class PlantaService {
                 print(respuesta.value?.id)
                 finalizar(respuesta.value)
             case let .failure(error):
-                if respuesta.response?.statusCode == 401 {
+                if respuesta.response?.statusCode == 401 && JWT.counter < 1 {
                     self.refreshFunction.refresh()
                     self.leerPlanta(plantaId: plantaId, finalizar: finalizar)
+                } else {
+                    print(error)
+                    finalizar(nil)
                 }
-                print(error)
-                finalizar(nil)
+                
         }
         }
     }
