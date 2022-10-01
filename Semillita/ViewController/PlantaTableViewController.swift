@@ -50,11 +50,8 @@ class PlantaTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("porfavor muestra este mensaje")
-        //print(self.planta?.nombre_tradicional)
         if segue.identifier == "Detail_To_Edit",
            let secondViewController = segue.destination as? EditarViewController {
-            //print(self.planta?.nombre_tradicional)
             secondViewController.plant = self.plant
         }
     }

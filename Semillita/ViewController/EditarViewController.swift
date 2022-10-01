@@ -24,8 +24,7 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
     @IBOutlet weak var descripcion: UILabel!
     @IBOutlet weak var especie: UITextField!
     @IBOutlet weak var image: UIImageView!
-    
-    
+    @IBOutlet weak var errorLabel: UILabel!
     
     let addPlantService = EditService()
     let addImageService = AddImageService()
@@ -40,6 +39,7 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.errorLabel.text = ""
         nombre_tradicional.text = plant?.nombre_tradicional
         nombre_cientifico.text = plant?.nombre_cientifico
         origen.text = plant?.origen
@@ -99,12 +99,20 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
             desc: descripcion.text!
         )
         addPlantService.addPlant(planta: new_plant) { (plantaRecibida) in
+            guard plantaRecibida != nil else {
+                self.errorLabel.text = "Hubo un error al editar la planta"
+                return
+            }
             // Get image and upload it
             let imageObject = AddImage(
                 dato: (self.image.image?.jpegData(compressionQuality: 0.75))!,
                 tipo: "image/jpeg",
                 planta_id: String((self.plant?.id)!))
             self.addImageService.addImage(imagen: imageObject) { (res) in
+                guard res != nil else {
+                    self.errorLabel.text = "Hubo un error al añadir la imagen"
+                    return
+                }
                 // Despues de crear la imagen
                 print("Imagen Creada")
                 self.performSegue(withIdentifier: "Edit_To_Catalogo", sender: self)

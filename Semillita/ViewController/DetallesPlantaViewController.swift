@@ -11,6 +11,7 @@ import Alamofire
 
 class DetallesPlantaViewController: UIViewController {
     
+    @IBOutlet weak var errorLabel: UILabel!
     let detallesPlantaServicio = PlantaService()
     weak var viewController: PlantaTableViewController?
     var plant: Planta? = nil
@@ -20,16 +21,8 @@ class DetallesPlantaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.errorLabel.text = ""
         // Do any additional setup after loading the view.
-        
-        /*detallesPlantaServicio.leerPlanta(plantaId:119){
-            (plantaRecibida) in
-            self.plant = plantaRecibida!
-            self.viewController?.plant = plantaRecibida!
-        }*/
-        print("AVER AVER AVER SI YA SANTA MARIA MADRE MIA")
-        print(plant?.nombre_tradicional)
         self.viewController?.plant = plant
         
     }
@@ -62,8 +55,16 @@ class DetallesPlantaViewController: UIViewController {
 
         self.imprimirQRService.imprimirQR(planta_id: String(plant!.id)) {
             (imagenRecibida) in
+            guard imagenRecibida != "Planta no encontrada" else {
+                self.errorLabel.text = "Hubo un error al crear el QR"
+                return
+            }
                 let img_string = imagenRecibida
                 self.enviarQRService.enviarQR(image: img_string, nombre_tradicional: self.plant!.nombre_tradicional) {  response in
+                    guard response != nil else {
+                        self.errorLabel.text = "Hubo un error al mandar el QR"
+                        return
+                    }
                 print(response!)
                 self.performSegue(withIdentifier: "Detail_To_BuscarQR", sender: self)
         }

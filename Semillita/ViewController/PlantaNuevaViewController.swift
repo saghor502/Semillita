@@ -22,6 +22,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var iluminacion: UITextField!
     @IBOutlet weak var descripcion: UITextView!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var errorLabel: UILabel!
     let addPlantService = AddPlantService()
     let addImageService = AddImageService()
     let usosService = UsosService()
@@ -34,6 +35,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorLabel.text = ""
         // Do any additional setup after loading the view.
         usosService.getUsos() {
             (response) in
@@ -84,12 +86,21 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
             desc: descripcion.text!
         )
         addPlantService.addPlant(planta: new_plant) { (plantaRecibida) in
+            guard plantaRecibida != nil else {
+                self.errorLabel.text = "No se pudo agregar la planta"
+                return
+            }
             // Get image and upload it
             let imageObject = AddImage(
                 dato: (self.image.image?.jpegData(compressionQuality: 0.75))!,
                 tipo: "image/jpeg",
                 planta_id: String((plantaRecibida?.id)!))
             self.addImageService.addImage(imagen: imageObject) { (res) in
+                guard res != nil else {
+                    // Error
+                    self.errorLabel.text = "No se pudo agregar la planta"
+                    return
+                }
                 // Despues de crear la imagen
                 print("Imagen Creada")
                 self.performSegue(withIdentifier: "Add_To_Catalogo", sender: self)
