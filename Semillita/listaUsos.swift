@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Clase que representa una lista de objetos de tipo Uso
 class listaUsos: Codable {
     let results: [Uso]
 }

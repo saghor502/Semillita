@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Clase que representa una planta para añadir
 class AddPlanta: Codable {
     let id: Int?
     let especie: String
@@ -20,6 +22,20 @@ class AddPlanta: Codable {
     let usos:[String]
     let descripcion:String
     
+    
+    /// Inicializador de objeto de tipo AddPlanta
+    /// - Parameters:
+    ///   - especie: especie de la planta
+    ///   - estatus: estatus de la planta
+    ///   - fertilizante: fertilizante de la planta
+    ///   - iluminacion: iluminacion de la planta
+    ///   - nombre_cientifico: nombre_cientifico de la planta
+    ///   - nombre_tradicional: nombre_tradicional de la planta
+    ///   - origen: origen de la planta
+    ///   - riego: riego de la planta
+    ///   - temporada: temporada de la planta
+    ///   - usos: lisa de usos de la planta
+    ///   - desc: descripcion de la planta
     init(especie: String, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String], desc: String) {
         self.id = nil
         self.especie = especie

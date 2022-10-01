@@ -39,6 +39,7 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.segments = [:]
         self.errorLabel.text = ""
         self.nombre_tradicional.text = self.plant?.nombre_tradicional
         self.nombre_cientifico.text = self.plant?.nombre_cientifico

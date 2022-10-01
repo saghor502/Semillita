@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Clase que representa un uso
 class Uso: Codable {
     let id: Int
     let nombre: String

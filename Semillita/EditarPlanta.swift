@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Clase que representa una imagen cuando va a ser editada
 class EditarPlanta: Codable {
     let id: Int?
     let especie: String
@@ -20,6 +22,22 @@ class EditarPlanta: Codable {
     let usos:[String]
     let descripcion:String
     
+    
+    /// Inicializador de objeto de tipo EditarPlanta
+    /// - Parameters:
+    ///   - id: id de la planta (opcional)
+    ///   - especie: especie de la planta
+    ///   - estatus: estatus de la planta
+    ///   - fertilizante: fertilizante de la planta
+    ///   - iluminacion: iluminacion de la planta
+    ///   - nombre_cientifico: nombre_cientifico de la planta
+    ///   - nombre_tradicional: nombre_tradicional de la planta
+    ///   - origen: origen de la planta
+    ///   - riego: riego de la planta
+    ///   - temporada: temporada de la planta
+    ///   - usos: lisa de usos de la planta
+    ///   - Pimagenes: lista de imagenes de la planta
+    ///   - desc: descripcion de la planta
     init(id:Int?, especie: String, fertilizante: String, iluminacion: String, nombre_cientifico: String, nombre_tradicional: String, origen: String, riego: String, temporada: String, usos: [String], desc: String) {
         self.id = id
         self.especie = especie
