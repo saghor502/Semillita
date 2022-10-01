@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+/// Clase que representa los analiticos obtenidos
 class AnaliticosObject: Codable {
     let popularPlants: [Planta]
     let graph: String

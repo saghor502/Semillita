@@ -41,7 +41,12 @@ class PlantasCollectionViewController: UICollectionViewController {
         if let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPlanta", for: indexPath) as? CollectionViewCell{
             
                 countryCell.configure(with: plantasP!.results[indexPath.row].nombre_tradicional)
+            if plantasP!.results[indexPath.row].Pimagenes!.count < 1 {
+                countryCell.imagen(with: "")
+            } else {
                 countryCell.imagen(with: plantasP!.results[indexPath.row].Pimagenes![0].dato)
+            }
+            
             
             
             cell = countryCell

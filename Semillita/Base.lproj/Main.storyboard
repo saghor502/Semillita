@@ -1172,16 +1172,16 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                 <rect key="frame" x="0.0" y="-48.5" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFW-g9-KgO" userLabel="Informacion">
-                                        <rect key="frame" x="21" y="70" width="373" height="720"/>
+                                        <rect key="frame" x="20.5" y="70" width="373" height="720"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-3t-cac">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-3t-cac">
                                                 <rect key="frame" x="0.0" y="31.5" width="373" height="28.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <color key="textColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="highlightedColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="shadowColor" red="0.64313725490196072" green="0.47843137254901957" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p3" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-8H-pEz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-8H-pEz">
                                                 <rect key="frame" x="82" y="84" width="209" height="192"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-Nn-cLc">
@@ -1288,6 +1288,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                         <outlet property="errorLabel" destination="HAw-jb-pGD" id="QsD-iq-u3c"/>
                         <outlet property="imagen" destination="IkK-8H-pEz" id="puQ-4H-7Xa"/>
                         <outlet property="nombre_tradicional" destination="Ba6-3t-cac" id="taf-2P-tLR"/>
+                        <outlet property="qrImage" destination="jFH-Uy-FXO" id="YfE-TI-zdw"/>
                         <segue destination="SaB-fP-uUW" kind="show" identifier="ImprimirQR_To_BuscarQR" id="MQo-Mx-fJH"/>
                     </connections>
                 </viewController>
@@ -1902,7 +1903,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="0.0" y="901" width="374" height="203"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-5M-EEk">
-                                                        <rect key="frame" x="0.0" y="8" width="374" height="24"/>
+                                                        <rect key="frame" x="0.0" y="18" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1918,7 +1919,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="hur-Xt-yCD" firstAttribute="height" secondItem="9P8-CS-phS" secondAttribute="height" multiplier="0.665025" id="6u8-bn-gPL"/>
-                                                    <constraint firstItem="Kxj-5M-EEk" firstAttribute="top" secondItem="9P8-CS-phS" secondAttribute="top" constant="8" id="GK2-dn-dlR"/>
+                                                    <constraint firstItem="Kxj-5M-EEk" firstAttribute="top" secondItem="9P8-CS-phS" secondAttribute="top" constant="18" id="GK2-dn-dlR"/>
                                                     <constraint firstItem="Kxj-5M-EEk" firstAttribute="width" secondItem="9P8-CS-phS" secondAttribute="width" id="OvV-GB-TjL"/>
                                                     <constraint firstItem="hur-Xt-yCD" firstAttribute="width" secondItem="9P8-CS-phS" secondAttribute="width" multiplier="0.97861" id="RBW-oY-4nz"/>
                                                     <constraint firstAttribute="bottom" secondItem="hur-Xt-yCD" secondAttribute="bottom" constant="28" id="Z0l-0o-BQ3"/>
@@ -1969,6 +1970,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="ESg-1r-sc1" firstAttribute="centerX" secondItem="iNO-gj-Y8K" secondAttribute="centerX" id="0SY-Ea-2Fs"/>
                                             <constraint firstItem="b75-C1-05L" firstAttribute="width" secondItem="iNO-gj-Y8K" secondAttribute="width" id="0bK-fT-tpp"/>
@@ -2534,7 +2536,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 <rect key="frame" x="0.0" y="901" width="374" height="203"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAi-qW-9Fi">
-                                                        <rect key="frame" x="0.0" y="8" width="374" height="24"/>
+                                                        <rect key="frame" x="0.0" y="18" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2549,7 +2551,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="rAi-qW-9Fi" firstAttribute="top" secondItem="d3u-P6-yxL" secondAttribute="top" constant="8" id="Gt7-ND-pim"/>
+                                                    <constraint firstItem="rAi-qW-9Fi" firstAttribute="top" secondItem="d3u-P6-yxL" secondAttribute="top" constant="18" id="Gt7-ND-pim"/>
                                                     <constraint firstItem="WxO-HC-ul9" firstAttribute="centerX" secondItem="d3u-P6-yxL" secondAttribute="centerX" id="Tuu-M2-K7t"/>
                                                     <constraint firstItem="WxO-HC-ul9" firstAttribute="width" secondItem="d3u-P6-yxL" secondAttribute="width" multiplier="0.97861" id="UY8-o1-qzp"/>
                                                     <constraint firstItem="rAi-qW-9Fi" firstAttribute="centerX" secondItem="d3u-P6-yxL" secondAttribute="centerX" id="XA5-Dq-kW2"/>
@@ -2962,15 +2964,10 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="fje-lS-EUV"/>
         <segue reference="8Kd-iV-SRC"/>
         <segue reference="lKP-Pc-pEa"/>
-
-        <segue reference="Uu3-NM-hN1"/>
-        <segue reference="pj7-El-Tbw"/>
-
-        <segue reference="EMg-HR-8cB"/>
-        <segue reference="RFr-O3-svV"/>
- 
+        <segue reference="yDD-4R-7hm"/>
+        <segue reference="6Cz-fp-IJi"/>
         <segue reference="3ax-3M-Poz"/>
-        <segue reference="3GY-i3-set"/>
+        <segue reference="UMy-zH-Leg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
@@ -2989,7 +2986,6 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <image name="ingresar" width="1170" height="213"/>
         <image name="mas" width="288" height="363"/>
         <image name="p1" width="295" height="367"/>
-        <image name="p3" width="288" height="362"/>
         <image name="print" width="98" height="113"/>
         <image name="print icon" width="512" height="512"/>
         <image name="qr" width="492" height="453"/>

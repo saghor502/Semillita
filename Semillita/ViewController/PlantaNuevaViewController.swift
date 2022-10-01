@@ -53,8 +53,8 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
                 // Add segmentedControl
                 let segmentItems = ["No", "Si"]
                 let control = UISegmentedControl(items: segmentItems)
-                control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 400), height: 20)
-                control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 30), y: self.height)
+                control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 300), height: 20)
+                control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 40), y: self.height)
                 control.selectedSegmentIndex = 0
                 self.scrollView.addSubview(control)
                 self.segments![control] = uso.id
