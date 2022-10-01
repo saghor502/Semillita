@@ -8,10 +8,16 @@
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utlizada para leer todas las plantas
 class Catalogo {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para leer todas las plantas
     public typealias LeerCataClosure = (listaPlantas?) -> Void
     
+    /// Función utilizada para leer todas las plantas
+    /// - Parameter finalizar: nada
     func leerCata(finalizar: @escaping LeerCataClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         // AF.request("http://localhost:8080/api/plantas/", method: .get, encoding: JSONEncoding.default, headers: headers)

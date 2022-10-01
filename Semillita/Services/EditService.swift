@@ -9,10 +9,18 @@ import Foundation
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para editar una planta
 class EditService {
+    // Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para editar una planta
     public typealias EditPlantClosure = (Planta?) -> Void
     
+    /// Función utilizada para editar una planta
+    /// - Parameters:
+    ///   - planta: objeto de tipo planta a editar
+    ///   - finalizar: nada
     func addPlant(planta: EditarPlanta, finalizar: @escaping EditPlantClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/" + String(planta.id!)+"/", method: .put, parameters: planta, encoder: JSONParameterEncoder(), headers: headers)

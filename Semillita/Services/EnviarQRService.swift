@@ -9,11 +9,22 @@ import Foundation
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para enviar QRs
 class EnviarQRService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Objeto de tipo ImageFunctions
     let imageFunctions = ImageFunctions()
+    /// Definición de closure para enviar QRs
     public typealias EnviarQRClosure = (String?) -> Void
     
+    
+    /// Función para enviar QR
+    /// - Parameters:
+    ///   - image: imagen del qr a enviar en base64
+    ///   - nombre_tradicional: nombre_tradicional de la planta
+    ///   - finalizar: Nada
     func enviarQR(image: String, nombre_tradicional: String, finalizar: @escaping EnviarQRClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.upload(multipartFormData: {

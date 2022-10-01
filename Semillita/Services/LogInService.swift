@@ -8,9 +8,17 @@
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utiizada para hacer login
 class LogInService {
+    /// Definición de closure para hacer login
     public typealias LogInClosure = (String?) -> Void
     
+    /// Función utilizada para hacer login
+    /// - Parameters:
+    ///   - username: nombre de usuario a autenticar
+    ///   - password: contraseña de usuario a autenticar
+    ///   - finalizar: Nada
     func logIn(username: String, password: String, finalizar: @escaping LogInClosure) {
         let params: [String: String] = [
             "username": username,

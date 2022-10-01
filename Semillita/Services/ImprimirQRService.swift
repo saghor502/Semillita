@@ -8,10 +8,18 @@
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para obtener QR
 class ImprimirQRService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para obtener QR
     public typealias ImprimirQRClosure = (String) -> Void
     
+    /// Función para obtener QR
+    /// - Parameters:
+    ///   - planta_id: id de planta para qr
+    ///   - finalizar: Nada
     func imprimirQR(planta_id: String, finalizar: @escaping ImprimirQRClosure) {
         let params: [String: String] = [
             "planta_id": planta_id

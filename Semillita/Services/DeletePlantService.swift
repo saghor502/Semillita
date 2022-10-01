@@ -9,10 +9,18 @@ import Foundation
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para eliminar plantas
 class DeletePlantService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para eliminar plantas
     public typealias DeletePlantClosure = (String?) -> Void
     
+    /// Función para eliminar plantas
+    /// - Parameters:
+    ///   - planta: objeto de tipo Planta a eliminar
+    ///   - finalizar: Nada
     func deletePlant(planta: Planta, finalizar: @escaping DeletePlantClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.request("https://tc2007b-semillita.herokuapp.com/api/plantas/" + String(planta.id), method: .delete, encoding: JSONEncoding.default, headers: headers)

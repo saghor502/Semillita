@@ -8,10 +8,16 @@
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para obtener analíticos
 class AnaliticosService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para leer analiticos
     public typealias LeerAnaliticosClosure = (AnaliticosObject?) -> Void
     
+    /// Función para leer analíticos
+    /// - Parameter finalizar: Nada
     func leerAnaliticos(finalizar: @escaping LeerAnaliticosClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.request("https://tc2007b-semillita.herokuapp.com/api/analiticos/" , method: .get, encoding: JSONEncoding.default, headers: headers)
