@@ -22,6 +22,7 @@ class PlantasCollectionViewController: UICollectionViewController {
             self.plantasP = plantaRecibida
             self.collectionView.reloadData()
             print("se supone que ya se cargo")
+            print(self.plantasP!.results[0].nombre_cientifico)
         }
         
         
@@ -53,12 +54,15 @@ class PlantasCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(self.plantasP?.results[indexPath.row].id ?? "0")
         self.planta = plantasP?.results[indexPath.row]
+        print("este mero")
+        print(self.planta!.nombre_tradicional)
         self.performSegue(withIdentifier:"CatToDetail" , sender: self )
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("porfavor muestra este mensaje")
+        print(planta?.nombre_tradicional)
         //print(self.planta?.nombre_tradicional)
         if segue.identifier == "CatToDetail",
            let secondViewController = segue.destination as? DetallesPlantaViewController {
