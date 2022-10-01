@@ -195,6 +195,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-K7-Vvf" userLabel="Pantalla">
                                 <rect key="frame" x="0.0" y="5" width="414" height="896"/>
                                 <subviews>
+
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-h3-L0w" userLabel="Catalogo1">
                                         <rect key="frame" x="0.0" y="115" width="414" height="268.5"/>
                                         <subviews>
@@ -2960,13 +2961,19 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fje-lS-EUV"/>
+    
         <segue reference="8Kd-iV-SRC"/>
         <segue reference="lKP-Pc-pEa"/>
         <segue reference="arK-ug-TnL"/>
         <segue reference="FtU-cB-plq"/>
         <segue reference="Hxs-8d-YJl"/>
         <segue reference="d7c-tB-d22"/>
+        <segue reference="EMg-HR-8cB"/>
+        <segue reference="tqW-vp-rrP"/>
+        <segue reference="pj7-El-Tbw"/>
+        <segue reference="9Kf-Gc-rke"/>
+        <segue reference="ZAY-MP-pt5"/>
+
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>

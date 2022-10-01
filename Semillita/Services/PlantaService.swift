@@ -32,9 +32,11 @@ class PlantaService {
                     self.leerPlanta(plantaId: plantaId, finalizar: finalizar)
                 } else {
                     print(error)
+                    finalizar(nil)
                 }
-                
-                finalizar(nil)
+
+                }
+
         }
         }
     }
