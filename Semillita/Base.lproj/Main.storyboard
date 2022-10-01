@@ -227,7 +227,7 @@
                                             <constraint firstItem="FqY-iC-ocw" firstAttribute="top" secondItem="qUi-0f-VGC" secondAttribute="top" constant="20" symbolic="YES" id="t5L-zI-YBe"/>
                                         </constraints>
                                     </view>
-
+                                    
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-h3-L0w" userLabel="Catalogo1">
                                         <rect key="frame" x="0.0" y="91" width="414" height="268.5"/>
                                         <subviews>
@@ -321,7 +321,7 @@
                                             <constraint firstItem="Cqo-ep-JvM" firstAttribute="centerX" secondItem="5hG-h3-L0w" secondAttribute="centerX" id="ymB-DI-gih"/>
                                         </constraints>
                                     </view>
-
+                                    
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDw-d1-47L">
                                         <rect key="frame" x="0.0" y="458" width="414" height="200"/>
                                         <connections>
@@ -391,6 +391,7 @@
                                             <constraint firstItem="c0L-3X-Ri5" firstAttribute="top" secondItem="15h-21-zF9" secondAttribute="top" id="vg0-Oj-1jo"/>
                                         </constraints>
                                     </view>
+                                    <!--
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-h3-L0w" userLabel="Catalogo1">
                                         <rect key="frame" x="0.0" y="115" width="414" height="268.5"/>
                                         <subviews>
@@ -494,6 +495,7 @@
                                             <constraint firstItem="Cqo-ep-JvM" firstAttribute="centerX" secondItem="5hG-h3-L0w" secondAttribute="centerX" id="ymB-DI-gih"/>
                                         </constraints>
                                     </view>
+                                    -->
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-Mn-90f">
                                         <rect key="frame" x="0.0" y="391" width="414" height="67"/>
                                         <subviews>
