@@ -8,10 +8,16 @@
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para leer todos los usos
 class UsosService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para leer usos
     public typealias LeerUsosClosure = (listaUsos?) -> Void
     
+    /// Función para leer usos
+    /// - Parameter finalizar: Nada
     func getUsos(finalizar: @escaping LeerUsosClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.request("https://tc2007b-semillita.herokuapp.com/api/usos/", method: .get, encoding: JSONEncoding.default, headers: headers)

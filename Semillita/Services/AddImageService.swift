@@ -9,10 +9,19 @@ import Foundation
 import Alamofire
 
 // https://github.com/Alamofire/Alamofire
+
+/// Clase utilizada para agregar imagenes
 class AddImageService {
+    /// Objeto de tipo RefreshToken
     let refreshFunction = RefreshToken()
+    /// Definición de closure para agregar imagenes
     public typealias AddImageClosure = (Imagen?) -> Void
     
+    
+    /// Función para agregar imágenes
+    /// - Parameters:
+    ///   - imagen: objeto de tipo AddImage para agregar
+    ///   - finalizar: Nada
     func addImage(imagen: AddImage, finalizar: @escaping AddImageClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
         AF.upload(multipartFormData: {
