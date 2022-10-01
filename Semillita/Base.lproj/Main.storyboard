@@ -2756,7 +2756,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                     <navigationItem key="navigationItem" id="OzO-Z0-atO"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="descripcion" destination="rAi-qW-9Fi" id="PAY-qO-zYZ"/>
+                        <outlet property="descripcion" destination="WxO-HC-ul9" id="bdP-vO-f4p"/>
                         <outlet property="errorLabel" destination="Sz0-Cf-Y98" id="E7e-Zu-icE"/>
                         <outlet property="especie" destination="UuM-9u-BeO" id="8xW-TH-uJG"/>
                         <outlet property="fertilizante" destination="kzb-mc-h4Q" id="e4z-PS-NAs"/>
@@ -2962,8 +2962,13 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="fje-lS-EUV"/>
         <segue reference="8Kd-iV-SRC"/>
         <segue reference="lKP-Pc-pEa"/>
+
+        <segue reference="Uu3-NM-hN1"/>
+        <segue reference="pj7-El-Tbw"/>
+
         <segue reference="EMg-HR-8cB"/>
         <segue reference="RFr-O3-svV"/>
+ 
         <segue reference="3ax-3M-Poz"/>
         <segue reference="3GY-i3-set"/>
     </inferredMetricsTieBreakers>

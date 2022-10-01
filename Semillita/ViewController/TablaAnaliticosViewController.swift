@@ -30,9 +30,9 @@ class TablaAnaliticosViewController : UITableViewController {
             self.LabelPlantaN2.text = resultado!.popularPlants[1].nombre_tradicional
             self.LabelPlantaN3.text = resultado!.popularPlants[2].nombre_tradicional
            
-            self.PlantaN1.image = funcionImagen.convert (base64: resultado!.popularPlants[0].Pimagenes![0].dato)
-            self.PlantaN2.image = funcionImagen.convert (base64: resultado!.popularPlants[1].Pimagenes![0].dato)
-            self.PlantaN3.image = funcionImagen.convert (base64: resultado!.popularPlants[2].Pimagenes![0].dato)
+            self.PlantaN1.image = funcionImagen.convert(base64: resultado!.popularPlants[0].Pimagenes![0].dato)
+            self.PlantaN2.image = funcionImagen.convert(base64: resultado!.popularPlants[1].Pimagenes![0].dato)
+            self.PlantaN3.image = funcionImagen.convert(base64: resultado!.popularPlants[2].Pimagenes![0].dato)
             self.grafica.image = funcionImagen.convert(base64: resultado!.graph)
         }
     }

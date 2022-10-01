@@ -38,7 +38,7 @@ class EnviarQRService {
                     self.enviarQR(image: image, nombre_tradicional: nombre_tradicional, finalizar: finalizar)
                 } else {
                     print(error)
-                    finalizar(nil)
+                    finalizar("QR No Enviado")
                 }
             }
         }

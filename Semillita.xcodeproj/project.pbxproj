@@ -114,7 +114,7 @@
 		841D410E28E67D3400209DAD /* EditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditService.swift; sourceTree = "<group>"; };
 		8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPlantaViewController.swift; sourceTree = "<group>"; };
 		8423D88628DD318B00EB1E7C /* Planta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planta.swift; sourceTree = "<group>"; };
-		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; };
+		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8423D89328DD51C200EB1E7C /* Imagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagen.swift; sourceTree = "<group>"; };
 		842F974128DF947300E524EC /* CatalogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoService.swift; sourceTree = "<group>"; };
 		842F974628DF95F400E524EC /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };

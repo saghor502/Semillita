@@ -20,16 +20,6 @@ class CatalogoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        /*CataServicio.leerCata(){
-            (plantaRecibida) in
-            for planta in plantaRecibida!.results{
-                if (planta.estatus == true){
-                    //print(planta.nombre_tradicional)
-                    //print(planta.origen)
-                    //print(planta.usos)
-                }
-            }
-        }*/
     }
     
 }
