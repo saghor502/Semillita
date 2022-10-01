@@ -12,28 +12,24 @@ import Alamofire
 class BuscarQRViewController: UIViewController {
     
     @IBOutlet weak var buscarPlanta: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     let detallesPlantaServicio = PlantaService()
-    var plant: Planta?
+    var plant: Planta? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorLabel.text = ""
         // Do any additional setup after loading the view.
         }
-    
-    init() {
-        plant = nil
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-       super.init(coder: aDecoder)
-    }
     
     @IBAction func buscarQR(_ sender: UIButton) {
         if buscarPlanta != nil {
             detallesPlantaServicio.readPlant(nombre: buscarPlanta.text!) {
             (plantaRecibida) in
-            guard plantaRecibida != nil else { print("No se armo"); return }
+            guard plantaRecibida != nil else {
+                self.errorLabel.text = "No existe ninguna planta con ese nombre";
+                print("No se armo");
+                return }
                 self.plant = plantaRecibida
                 self.performSegue(withIdentifier: "BuscarQR_To_ImprimirQR", sender: self)
             }
