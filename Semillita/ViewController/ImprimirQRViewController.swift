@@ -43,7 +43,7 @@ class ImprimirQRViewController: UIViewController {
     
     @IBAction func enviarQR(_ sender: UIButton) {
         self.enviarQRService.enviarQR(image: self.image_string, nombre_tradicional: self.plant!.nombre_tradicional) { response in
-            guard response != nil else {
+            guard response != "QR No Enviado" else {
                 self.errorLabel.text = "No se pudo enviar el QR"
                 return
             }

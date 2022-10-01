@@ -66,6 +66,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func createPlant(_ sender: UIButton) {
+        self.errorLabel.text = ""
         for (segment, id) in self.segments! {
             if segment.selectedSegmentIndex == 1 {
                 selectedUsos!.append(String(id))
@@ -109,7 +110,6 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     }
     @IBAction func uploadImage(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            print("Button capture")
 
             imagePicker.delegate = self
             imagePicker.sourceType = .savedPhotosAlbum

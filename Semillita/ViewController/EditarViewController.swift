@@ -21,10 +21,10 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
     @IBOutlet weak var riego: UITextField!
     @IBOutlet weak var fertilizante: UITextField!
     @IBOutlet weak var iluminacion: UITextField!
-    @IBOutlet weak var descripcion: UILabel!
     @IBOutlet weak var especie: UITextField!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var descripcion: UITextView!
     
     let addPlantService = EditService()
     let addImageService = AddImageService()
@@ -40,14 +40,15 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.errorLabel.text = ""
-        nombre_tradicional.text = plant?.nombre_tradicional
-        nombre_cientifico.text = plant?.nombre_cientifico
-        origen.text = plant?.origen
-        temporada.text = plant?.temporada
-        riego.text = plant?.riego
-        fertilizante.text = plant?.fertilizante
-        iluminacion.text = plant?.iluminacion
-        especie.text = plant?.especie
+        self.nombre_tradicional.text = self.plant?.nombre_tradicional
+        self.nombre_cientifico.text = self.plant?.nombre_cientifico
+        self.origen.text = self.plant?.origen
+        self.temporada.text = self.plant?.temporada
+        self.riego.text = self.plant?.riego
+        self.fertilizante.text = self.plant?.fertilizante
+        self.iluminacion.text = self.plant?.iluminacion
+        self.especie.text = self.plant?.especie
+        self.descripcion.text = self.plant?.descripcion
 
         usosService.getUsos() {
             (response) in
@@ -65,9 +66,13 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
                 // Add segmentedControl
                 let segmentItems = ["No", "Si"]
                 let control = UISegmentedControl(items: segmentItems)
-                control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 400), height: 20)
-                control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 30), y: self.height)
-                control.selectedSegmentIndex = 0
+                control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 300), height: 20)
+                control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 40), y: self.height)
+                if self.plant!.usos.contains(where: {$0 == uso.nombre}) {
+                    control.selectedSegmentIndex = 1
+                } else {
+                    control.selectedSegmentIndex = 0
+                }
                 self.scrollView.addSubview(control)
                 self.segments![control] = uso.id
                 // Increase height to lower next items
@@ -78,6 +83,7 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
     }
     
     @IBAction func createPlant(_ sender: UIButton) {
+        self.errorLabel.text = ""
         for (segment, id) in self.segments! {
             if segment.selectedSegmentIndex == 1 {
                 selectedUsos!.append(String(id))
@@ -87,16 +93,16 @@ class EditarViewController: UIViewController, UIImagePickerControllerDelegate,  
 
         let new_plant = EditarPlanta(
             id: self.plant?.id,
-            especie: especie.text!,
-            fertilizante: fertilizante.text!,
-            iluminacion: iluminacion.text!,
-            nombre_cientifico: nombre_cientifico.text!,
-            nombre_tradicional: nombre_tradicional.text!,
-            origen: origen.text!,
-            riego: riego.text!,
-            temporada: temporada.text!,
+            especie: self.especie.text!,
+            fertilizante: self.fertilizante.text!,
+            iluminacion: self.iluminacion.text!,
+            nombre_cientifico: self.nombre_cientifico.text!,
+            nombre_tradicional: self.nombre_tradicional.text!,
+            origen: self.origen.text!,
+            riego: self.riego.text!,
+            temporada: self.temporada.text!,
             usos: self.selectedUsos!,
-            desc: descripcion.text!
+            desc: self.descripcion.text!
         )
         addPlantService.addPlant(planta: new_plant) { (plantaRecibida) in
             guard plantaRecibida != nil else {

@@ -44,15 +44,8 @@ class DetallesPlantaViewController: UIViewController {
         }
     }
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        }
-    
-    required init?(coder aDecoder: NSCoder) {
-       super.init(coder: aDecoder)
-    }
     @IBAction func imprimirQR(_ sender: UIButton) {
-
+        self.errorLabel.text = ""
         self.imprimirQRService.imprimirQR(planta_id: String(plant!.id)) {
             (imagenRecibida) in
             guard imagenRecibida != "Planta no encontrada" else {

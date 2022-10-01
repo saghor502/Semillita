@@ -22,7 +22,7 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func logInUser(_ sender: UIButton) {
-
+        self.error.text = ""
         logInServicio.logIn(username: username.text!, password: password.text!) { (result) in
             guard result == "Usuario autenticado" else { self.error.text = "Usuario o contraseña incorrectos"; return }
             self.performSegue(withIdentifier: "Login_To_Catalogo", sender: self)

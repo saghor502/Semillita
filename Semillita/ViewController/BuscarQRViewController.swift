@@ -23,7 +23,8 @@ class BuscarQRViewController: UIViewController {
         }
     
     @IBAction func buscarQR(_ sender: UIButton) {
-        if buscarPlanta != nil {
+        self.errorLabel.text = ""
+        if buscarPlanta.text != "" {
             detallesPlantaServicio.readPlant(nombre: buscarPlanta.text!) {
             (plantaRecibida) in
             guard plantaRecibida != nil else {
