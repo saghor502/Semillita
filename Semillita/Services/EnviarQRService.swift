@@ -35,10 +35,12 @@ class EnviarQRService {
                 if res.response?.statusCode == 401 && JWT.counter < 1 {
                     self.refreshFunction.refresh()
                     JWT.counter += 1
+                    print(JWT.counter)
                     self.enviarQR(image: image, nombre_tradicional: nombre_tradicional, finalizar: finalizar)
                 } else {
+                    print(JWT.counter)
                     print(error)
-                    finalizar(nil)
+                    finalizar("NO")
                 }
             }
         }

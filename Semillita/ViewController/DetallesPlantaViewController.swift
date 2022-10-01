@@ -24,6 +24,7 @@ class DetallesPlantaViewController: UIViewController {
         self.errorLabel.text = ""
         // Do any additional setup after loading the view.
         self.viewController?.plant = plant
+        print(plant!.nombre_tradicional)
         
     }
     
