@@ -10,4 +10,5 @@ import Foundation
 struct JWT {
     static var refresh: String = ""
     static var token: String = ""
+    static var counter: Int = 0
 }

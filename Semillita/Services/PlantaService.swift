@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class PlantaService {
+    let refreshFunction = RefreshToken()
     public typealias LeerPlantaClosure = (Planta?) -> Void
     public typealias ReadPlantClosure = (Planta?) -> Void
     
@@ -25,6 +26,10 @@ class PlantaService {
                 print(respuesta.value?.id)
                 finalizar(respuesta.value)
             case let .failure(error):
+                if respuesta.response?.statusCode == 401 {
+                    self.refreshFunction.refresh()
+                    self.leerPlanta(plantaId: plantaId, finalizar: finalizar)
+                }
                 print(error)
                 finalizar(nil)
         }
@@ -42,8 +47,15 @@ class PlantaService {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
-                    print(error)
-                    finalizar(nil)
+                    if respuesta.response?.statusCode == 401 && JWT.counter < 1 {
+                        self.refreshFunction.refresh()
+                        JWT.counter += 1
+                        self.readPlant(nombre: nombre, finalizar: finalizar)
+                    } else {
+                        print(error)
+                        finalizar(nil)
+                    }
+                    
             }
         }
     }

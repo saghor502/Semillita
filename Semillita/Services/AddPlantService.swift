@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class AddPlantService {
+    let refreshFunction = RefreshToken()
     public typealias AddPlantClosure = (Planta?) -> Void
     
     func addPlant(planta: AddPlanta, finalizar: @escaping AddPlantClosure) {
@@ -23,8 +24,14 @@ class AddPlantService {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
-                    print(error)
-                    finalizar(nil)
+                    if respuesta.response?.statusCode == 401 && JWT.counter < 1  {
+                        self.refreshFunction.refresh()
+                        JWT.counter += 1
+                        self.addPlant(planta: planta, finalizar: finalizar)
+                    } else {
+                        print(error)
+                        finalizar(nil)
+                    }
             }
             }
     }

@@ -9,6 +9,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class AnaliticosService {
+    let refreshFunction = RefreshToken()
     public typealias LeerAnaliticosClosure = (AnaliticosObject?) -> Void
     
     func leerAnaliticos(finalizar: @escaping LeerAnaliticosClosure) {
@@ -22,8 +23,14 @@ class AnaliticosService {
                 case .success:
                     finalizar(respuesta.value)
                 case let .failure(error):
-                    print(error)
-                    finalizar(nil)
+                    if respuesta.response?.statusCode == 401 && JWT.counter < 1  {
+                        self.refreshFunction.refresh()
+                        JWT.counter += 1
+                        self.leerAnaliticos(finalizar: finalizar)
+                    } else {
+                        print(error)
+                        finalizar(nil)
+                    }
             }
         }
     }

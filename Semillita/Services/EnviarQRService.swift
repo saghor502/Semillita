@@ -10,6 +10,7 @@ import Alamofire
 
 // https://github.com/Alamofire/Alamofire
 class EnviarQRService {
+    let refreshFunction = RefreshToken()
     let imageFunctions = ImageFunctions()
     public typealias EnviarQRClosure = (String?) -> Void
     
@@ -27,7 +28,19 @@ class EnviarQRService {
         .validate(statusCode: 200..<300)
         .validate(contentType: ["application/json"])
         .responseString() { res in
-            finalizar("QR enviado")
+            switch res.result {
+            case .success:
+                finalizar("QR Enviado")
+            case let .failure(error):
+                if res.response?.statusCode == 401 && JWT.counter < 1 {
+                    self.refreshFunction.refresh()
+                    JWT.counter += 1
+                    self.enviarQR(image: image, nombre_tradicional: nombre_tradicional, finalizar: finalizar)
+                } else {
+                    print(error)
+                    finalizar(nil)
+                }
+            }
         }
             
     }
