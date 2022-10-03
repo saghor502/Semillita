@@ -36,9 +36,9 @@ class PlantaTableViewController: UITableViewController {
             
             descripcion.text = plant?.descripcion
             origen.text = plant?.origen
-            riego.text = "● " + plant!.riego
-            fertilizante.text = "● " + plant!.fertilizante
-            iluminacion.text = "● " + plant!.iluminacion
+            riego.text = "● Riego:  " + plant!.riego
+            fertilizante.text = "● Fertilizante: " + plant!.fertilizante
+            iluminacion.text = "● Iluminacion:  " + plant!.iluminacion
             for uso in plant!.usos {
                 usos.text = usos.text! + "● " + uso + "\n"
             }
