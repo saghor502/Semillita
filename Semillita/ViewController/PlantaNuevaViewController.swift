@@ -82,6 +82,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
         }
     
     @IBAction func createPlant(_ sender: UIButton) {
+        sender.isEnabled = false
         self.errorLabel.text = ""
         for (segment, id) in self.segments! {
             if segment.selectedSegmentIndex == 1 {
@@ -123,6 +124,7 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
                 self.performSegue(withIdentifier: "Add_To_Catalogo", sender: self)
             }
         }
+        sender.isEnabled = true
     }
     @IBAction func uploadImage(_ sender: UIButton) {
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
