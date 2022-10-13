@@ -54,8 +54,8 @@ class PlantaService {
     ///   - finalizar: nada
     func readPlant(nombre: String, finalizar: @escaping ReadPlantClosure) {
         let headers = HTTPHeaders([HTTPHeader(name: "Authorization", value: "Bearer "+JWT.token+"")])
-        AF.request("https://tc2007b-semillita.herokuapp.com/api/planta/"+nombre.replacingOccurrences(of: " ", with: "%20") + "/", method: .get, encoding: JSONEncoding.default, headers: headers)
-        // AF.request("http://localhost:8080/api/planta/"+nombre.replacingOccurrences(of: " ", with: "%20")+"/", method: .get, encoding: JSONEncoding.default, headers: headers)
+        AF.request("https://tc2007b-semillita.herokuapp.com/api/planta/", method: .get, parameters: ["nombre_tradicional": nombre], encoding: URLEncoding(destination: .queryString), headers: headers)
+        //AF.request("http://localhost:8080/api/planta/", method: .get, parameters: ["nombre_tradicional": nombre], encoding: URLEncoding(destination: .queryString), headers: headers)
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
             .responseDecodable(of: Planta.self) { respuesta in
