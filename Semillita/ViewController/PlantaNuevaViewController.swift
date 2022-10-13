@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
+class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var nombre_tradicional: UITextField!
@@ -35,6 +35,8 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         self.errorLabel.text = ""
         // Do any additional setup after loading the view.
         usosService.getUsos() {
@@ -63,7 +65,21 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
             }
             print(self.segments!)
         }
+        self.nombre_tradicional.delegate = self
+        self.nombre_cientifico.delegate = self
+        self.origen.delegate = self
+        self.especie.delegate = self
+        self.temporada.delegate = self
+        self.riego.delegate = self
+        self.fertilizante.delegate = self
+        self.iluminacion.delegate = self
+        self.descripcion.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            self.view.endEditing(true)
+            return false
+        }
     
     @IBAction func createPlant(_ sender: UIButton) {
         self.errorLabel.text = ""
@@ -124,5 +140,9 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                 self.image.image = image
             }
+    }
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }

@@ -18,6 +18,8 @@ class CatalagoTodasViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         
         swiftBetaCollectionView.backgroundColor = .blue
         view.addSubview(swiftBetaCollectionView)
@@ -28,5 +30,9 @@ class CatalagoTodasViewController: UIViewController {
             swiftBetaCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             swiftBetaCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
+    }
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
