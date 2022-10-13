@@ -41,6 +41,19 @@ class PlantasCollectionViewController: UICollectionViewController {
         if let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPlanta", for: indexPath) as? CollectionViewCell{
             
                 countryCell.configure(with: plantasP!.results[indexPath.row].nombre_tradicional)
+            print(plantasP!.results[indexPath.row].id)
+            print(plantasP!.results[indexPath.row].especie)
+            print(plantasP!.results[indexPath.row].fertilizante)
+            print(plantasP!.results[indexPath.row].iluminacion)
+            print(plantasP!.results[indexPath.row].nombre_tradicional)
+            print(plantasP!.results[indexPath.row].nombre_cientifico)
+            print(plantasP!.results[indexPath.row].origen)
+            print(plantasP!.results[indexPath.row].riego)
+            print(plantasP!.results[indexPath.row].usos)
+            print(plantasP!.results[indexPath.row].descripcion)
+            print(plantasP!.results[indexPath.row].temporada)
+
+            
             if plantasP!.results[indexPath.row].Pimagenes!.count < 1 {
                 countryCell.imagen(with: "")
             } else {

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
     
     let logInServicio = LogInService()
     @IBOutlet weak var username: UITextField!
@@ -21,7 +21,15 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             view.addGestureRecognizer(tap)
+        
+        self.username.delegate = self
+        self.password.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            self.view.endEditing(true)
+            return false
+        }
     
     @IBAction func logInUser(_ sender: UIButton) {
         self.error.text = ""

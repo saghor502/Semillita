@@ -9,12 +9,14 @@ import XCTest
 @testable import Semillita
 
 class SemillitaTests: XCTestCase {
+    
     let planta = PlantaService()
     let catalogo = Catalogo()
     let analiticos = AnaliticosService()
     let add = AddPlantService()
     let logIn = LogInService()
     let imprimir = ImprimirQRService()
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,36 +24,66 @@ class SemillitaTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
 
     func testObtenerPlanta() throws {
         //Given
-        let idPlanta = 75
+        
+        let conversionExpectation = expectation(description: "Conversion Terminada")
+        logIn.logIn(username: "equipo", password: "semillita1738") { (result) in
+            conversionExpectation.fulfill()
+            }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+        
+    }
+    
+        //Given
+        let idPlanta = 132
        
         //When
+        let conversionExpectation2 = expectation(description: "Conversion Terminada")
         planta.leerPlanta(plantaId:idPlanta){
             (plantaRecibida) in
-        
+            conversionExpectation2.fulfill()
             //Then
-            XCTAssertEqual(plantaRecibida!.nombre_tradicional, "Plantototototota")
-            XCTAssertEqual(plantaRecibida!.nombre_cientifico, "Planta mamastrosa")
-            XCTAssertEqual(plantaRecibida!.especie, "Prueba")
-            XCTAssertEqual(plantaRecibida!.origen, "Peru")
-            XCTAssertEqual(plantaRecibida!.temporada, "Invierno")
-            XCTAssertEqual(plantaRecibida!.estatus, true)
-            XCTAssertEqual(plantaRecibida!.descripcion, "hola")
-            XCTAssertEqual(plantaRecibida!.fertilizante, "Fertilizante prueba")
-            XCTAssertEqual(plantaRecibida!.riego, "3 veces al dia")
-            XCTAssertEqual(plantaRecibida!.iluminacion, "Iluminacion prueba")
+            XCTAssertEqual(plantaRecibida!.nombre_tradicional, "Romero")
+            XCTAssertEqual(plantaRecibida!.nombre_cientifico, "Salvia rosmarinus")
+            XCTAssertEqual(plantaRecibida!.especie, "Lamiaceae")
+            XCTAssertEqual(plantaRecibida!.origen, "Nativa de la región Mediterránea")
+            XCTAssertEqual(plantaRecibida!.temporada, "Esta planta puede crecer a cualquier temporada del año")
+            XCTAssertEqual(plantaRecibida!.descripcion, "El romero es un arbusto aromático, leñoso, de hojas perennes, muy ramificado y ocasionalmente achaparrado y que puede llegar a medir hasta 2 metros de altura. Los tallos jóvenes están cubiertos de borra que desaparece al crecer, a medida que envejecen se vuelven de color rojizo y con la corteza resquebrajada.")
+            XCTAssertEqual(plantaRecibida!.fertilizante, "Bajo tratamiento de químicos y abonos")
+            XCTAssertEqual(plantaRecibida!.riego, "Poca cantidad de agua")
+            XCTAssertEqual(plantaRecibida!.iluminacion, "Necesita la luz natural del sol")
             XCTAssertEqual(plantaRecibida!.usos[0], "Medicinal")
             XCTAssertEqual(plantaRecibida!.usos[1], "Alimento")
             
         }
         
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
     }
     
-    func testObtenerCatalogo() throws {
-        //Given
-
+    
+    
+    
+}
+/*
         //When
         catalogo.leerCata(){
             (plantaRecibida) in
@@ -169,4 +201,4 @@ class SemillitaTests: XCTestCase {
         }
     }
     
-}
+ }*/

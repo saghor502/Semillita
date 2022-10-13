@@ -20,6 +20,8 @@ class PlantaTableViewController: UITableViewController {
     @IBOutlet weak var fertilizante: UILabel!
     @IBOutlet weak var iluminacion: UILabel!
     @IBOutlet weak var usos: UILabel!
+    @IBOutlet weak var temporada: UILabel!
+    
     let imageUtil = ImageFunctions()
     let deletePlantService = DeletePlantService()
     weak var viewController: UIViewController!
@@ -39,6 +41,7 @@ class PlantaTableViewController: UITableViewController {
             riego.text = "● Riego:  " + plant!.riego
             fertilizante.text = "● Fertilizante: " + plant!.fertilizante
             iluminacion.text = "● Iluminacion:  " + plant!.iluminacion
+            temporada.text = "● Temporada:  " + plant!.temporada
             for uso in plant!.usos {
                 usos.text = usos.text! + "● " + uso + "\n"
             }
