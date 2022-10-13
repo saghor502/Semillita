@@ -18,7 +18,7 @@ class TipoClasesTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testPlanta() throws{
+   /* func testPlanta() throws{
         // Given
         let id = 1
         let especie = "Testespecie"
@@ -134,5 +134,5 @@ class TipoClasesTest: XCTestCase {
         XCTAssertEqual("tipo2", listaClase.results[1].Pimagenes![0].tipo)
         XCTAssertEqual("Des2", listaClase.results[1].descripcion)
     }
-    
+    */
 }
