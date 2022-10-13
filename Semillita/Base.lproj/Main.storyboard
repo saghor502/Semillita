@@ -1869,7 +1869,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smu-EG-ohO" userLabel="Ilumina">
                                                 <rect key="frame" x="0.0" y="721" width="374" height="90"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iluminacion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTR-Y4-BGt">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iluminación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTR-Y4-BGt">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1941,7 +1941,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9P8-CS-phS" userLabel="Descrip">
                                                 <rect key="frame" x="0.0" y="901" width="374" height="203"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-5M-EEk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-5M-EEk">
                                                         <rect key="frame" x="0.0" y="18" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2448,7 +2448,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giH-qJ-cbN" userLabel="Nombre2">
                                                 <rect key="frame" x="0.0" y="181" width="374" height="90"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Cientifico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTQ-2u-2h4">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Científico" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTQ-2u-2h4">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2502,7 +2502,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDg-2w-jaa" userLabel="Ilumina">
                                                 <rect key="frame" x="0.0" y="721" width="374" height="90"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iluminacion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7R-8E-VPc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iluminación" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7R-8E-VPc">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2574,7 +2574,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3u-P6-yxL" userLabel="Descrip">
                                                 <rect key="frame" x="0.0" y="901" width="374" height="203"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAi-qW-9Fi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAi-qW-9Fi">
                                                         <rect key="frame" x="0.0" y="18" width="374" height="24"/>
                                                         <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="20"/>
                                                         <color key="textColor" red="0.7093848586" green="0.55288010840000001" blue="0.51373147959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2634,7 +2634,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ro-I6-IBY">
                                                 <rect key="frame" x="34.5" y="1415" width="305" height="65"/>
                                                 <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="31"/>
-                                                <state key="normal" title="Añadir Planta">
+                                                <state key="normal" title="Editar Planta">
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
                                                 </state>
                                                 <connections>
@@ -3003,10 +3003,10 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="fje-lS-EUV"/>
         <segue reference="1mR-Mc-MPg"/>
         <segue reference="lKP-Pc-pEa"/>
-        <segue reference="Uu3-NM-hN1"/>
-        <segue reference="pj7-El-Tbw"/>
+        <segue reference="SmO-8P-1ag"/>
+        <segue reference="2hA-NA-5xL"/>
         <segue reference="3ax-3M-Poz"/>
-        <segue reference="ZAY-MP-pt5"/>
+        <segue reference="8GC-Fh-LXc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>

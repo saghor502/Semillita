@@ -32,6 +32,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         }
     
     @IBAction func logInUser(_ sender: UIButton) {
+        sender.isEnabled = false
         self.error.text = ""
         logInServicio.logIn(username: username.text!, password: password.text!) { (result) in
             guard result == "Usuario autenticado" else { self.error.text = "Usuario o contraseña incorrectos"; return }
