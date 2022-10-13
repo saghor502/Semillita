@@ -119,7 +119,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Se te olvidó la contraseña?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-Jk-QUL" userLabel="Contraseña">
                                         <rect key="frame" x="80.5" y="1" width="174" height="41"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
-                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bi8-b2-7fI">
@@ -2965,9 +2964,9 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="8Kd-iV-SRC"/>
         <segue reference="lKP-Pc-pEa"/>
         <segue reference="Uu3-NM-hN1"/>
-        <segue reference="pj7-El-Tbw"/>
+        <segue reference="FtU-cB-plq"/>
         <segue reference="Hxs-8d-YJl"/>
-        <segue reference="d7c-tB-d22"/>
+        <segue reference="ZAY-MP-pt5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
