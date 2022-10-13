@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class BuscarQRViewController: UIViewController {
+class BuscarQRViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var buscarPlanta: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
@@ -18,8 +18,16 @@ class BuscarQRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         self.errorLabel.text = ""
         // Do any additional setup after loading the view.
+        self.buscarPlanta.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            self.view.endEditing(true)
+            return false
         }
     
     @IBAction func buscarQR(_ sender: UIButton) {
@@ -42,4 +50,10 @@ class BuscarQRViewController: UIViewController {
             secondViewController.plant = plant
             }
         }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     }

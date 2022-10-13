@@ -37,7 +37,6 @@
 		8423D88C28DD375A00EB1E7C /* PlantaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D88B28DD375A00EB1E7C /* PlantaService.swift */; };
 		8423D89428DD51C200EB1E7C /* Imagen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423D89328DD51C200EB1E7C /* Imagen.swift */; };
 		842F974228DF947300E524EC /* CatalogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974128DF947300E524EC /* CatalogoService.swift */; };
-		842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974628DF95F400E524EC /* CatalogoViewController.swift */; };
 		842F974C28DF998200E524EC /* listaPlantas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F974B28DF998200E524EC /* listaPlantas.swift */; };
 		842F975C28DFAC7900E524EC /* TipoClasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F975B28DFAC7900E524EC /* TipoClasesTest.swift */; };
 		843267DD28E5135B00D41840 /* CatalagoTodasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */; };
@@ -117,7 +116,6 @@
 		8423D88B28DD375A00EB1E7C /* PlantaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantaService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8423D89328DD51C200EB1E7C /* Imagen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagen.swift; sourceTree = "<group>"; };
 		842F974128DF947300E524EC /* CatalogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoService.swift; sourceTree = "<group>"; };
-		842F974628DF95F400E524EC /* CatalogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoViewController.swift; sourceTree = "<group>"; };
 		842F974B28DF998200E524EC /* listaPlantas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaPlantas.swift; sourceTree = "<group>"; };
 		842F975B28DFAC7900E524EC /* TipoClasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoClasesTest.swift; sourceTree = "<group>"; };
 		843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalagoTodasViewController.swift; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 				8423D87828DD2A3B00EB1E7C /* DetallesPlantaViewController.swift */,
 				4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
-				842F974628DF95F400E524EC /* CatalogoViewController.swift */,
 				843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */,
 				841D410628E6750100209DAD /* EditarViewController.swift */,
 			);
@@ -481,7 +478,6 @@
 				D130DF6128C7F81700ADFD25 /* AppDelegate.swift in Sources */,
 				D130DF6328C7F81700ADFD25 /* SceneDelegate.swift in Sources */,
 				8423D87928DD2A3B00EB1E7C /* DetallesPlantaViewController.swift in Sources */,
-				842F974728DF95F400E524EC /* CatalogoViewController.swift in Sources */,
 				405A415E28E39EEC0060C69C /* UsosService.swift in Sources */,
 				8E74CC6528DD5AD700521310 /* AnaliticosService.swift in Sources */,
 				4062597A28DFB3E70057EEE9 /* ImprimirQRService.swift in Sources */,

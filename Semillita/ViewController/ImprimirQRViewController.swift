@@ -24,6 +24,8 @@ class ImprimirQRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            view.addGestureRecognizer(tap)
         self.errorLabel.text = ""
         // Do any additional setup after loading the view.
         nombre_tradicional.text = plant?.nombre_tradicional
@@ -38,6 +40,7 @@ class ImprimirQRViewController: UIViewController {
                 self.errorLabel.text = "No se pudo generar el QR"
                 return
             }
+            print(imagenRecibida)
             self.qrImage.image = self.imagefunctions.convert(base64: imagenRecibida)
             self.image_string = imagenRecibida
         }
@@ -52,5 +55,9 @@ class ImprimirQRViewController: UIViewController {
             // Perform segue
             self.performSegue(withIdentifier: "ImprimirQR_To_BuscarQR", sender: self)
         }
+    }
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }

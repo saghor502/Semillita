@@ -71,4 +71,8 @@ class PlantaTableViewController: UITableViewController {
             self.viewController.performSegue(withIdentifier: "Detail_To_Catalogo", sender: self)
         }
     }
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 }
