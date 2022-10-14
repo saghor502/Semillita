@@ -316,6 +316,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9y-db-xEi">
                                                         <rect key="frame" x="79.5" y="11" width="48" height="43"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="BotonAnaliticos"/>
                                                         <state key="normal" image="about"/>
                                                         <connections>
                                                             <segue destination="ETG-bY-pk6" kind="show" identifier="Catalogo_To_Contabilidad" id="Uu3-NM-hN1"/>
@@ -530,6 +531,7 @@
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-bO-bfm">
                                                                     <rect key="frame" x="8" y="4" width="47" height="45.5"/>
+                                                                    <accessibility key="accessibilityConfiguration" identifier="BotonEditarPlanta"/>
                                                                     <state key="normal" image="editar"/>
                                                                     <connections>
                                                                         <action selector="editPlanta:" destination="JWs-h3-blB" eventType="touchUpInside" id="fDW-c5-dUu"/>
@@ -538,6 +540,7 @@
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-Qd-cda">
                                                                     <rect key="frame" x="323" y="4" width="42" height="45.5"/>
+                                                                    <accessibility key="accessibilityConfiguration" identifier="BorrarPlantas"/>
                                                                     <state key="normal" image="basura"/>
                                                                     <connections>
                                                                         <action selector="deletePlant:" destination="JWs-h3-blB" eventType="touchUpInside" id="TIR-jL-S9s"/>
@@ -1555,6 +1558,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las Plantas mas Populares        " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTQ-EI-L8Y">
                                                             <rect key="frame" x="-19" y="-54" width="278" height="84"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="Prueba3"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                             <color key="textColor" red="0.64313725489999995" green="0.47843137250000001" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -2446,6 +2450,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese info sobre el riego" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Cz5-Wc-AOV">
                                                         <rect key="frame" x="8" y="40" width="358" height="34"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="RiegoPlanta"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -2650,6 +2655,7 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ro-I6-IBY">
                                                 <rect key="frame" x="34.5" y="1415" width="305" height="65"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="ConfirmarEdicion"/>
                                                 <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="31"/>
                                                 <state key="normal" title="Editar Planta">
                                                     <color key="titleColor" systemColor="systemGrayColor"/>
@@ -3020,10 +3026,10 @@ YW50YSBTdHVmZiAtIFN0dWZmIFN0dWZmA
         <segue reference="fje-lS-EUV"/>
         <segue reference="1mR-Mc-MPg"/>
         <segue reference="lKP-Pc-pEa"/>
-        <segue reference="SmO-8P-1ag"/>
-        <segue reference="2hA-NA-5xL"/>
+        <segue reference="Uu3-NM-hN1"/>
+        <segue reference="pj7-El-Tbw"/>
         <segue reference="3ax-3M-Poz"/>
-        <segue reference="8GC-Fh-LXc"/>
+        <segue reference="UMy-zH-Leg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="15e4acf2-925a-4af1-9261-0d0a62789ac5-removebg-preview" width="576" height="433"/>
