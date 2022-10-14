@@ -16,6 +16,12 @@ class SemillitaTests: XCTestCase {
     let add = AddPlantService()
     let logIn = LogInService()
     let imprimir = ImprimirQRService()
+    let addPlanta = AddPlantService()
+    let editar = EditService()
+    let eliminar = DeletePlantService()
+    
+    var idPPlanta:Planta? =  nil
+    var plantaID = 0
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -287,59 +293,222 @@ func testCatalogo() throws {
                 }
     }
     
-    
-    
-    
-    
-    
-    
-    
-
-
-
-}
-
-
-
-/*
-    
-    func testAddPlanta() throws {
+    func testAddAndDeleatePlanta() throws {
         //Given
-        let new_plant = AddPlanta(especie: "Prueba", fertilizante: "Fertilizante prueba", iluminacion: "Iluminacion prueba", nombre_cientifico: "Planta mamastrosa", nombre_tradicional: "Plantototototota", origen: "Peru", riego: "3 veces al dia", temporada: "Invierno", usos: ["1", "2"], desc: "hola"
+        let conversionExpectation = expectation(description: "Conversion Terminada")
+        logIn.logIn(username: "equipo", password: "semillita1738") { (result) in
+            conversionExpectation.fulfill()
+            }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+        
+    }
+        let new_plant = AddPlanta(
+            especie: "Prueba",
+            fertilizante: "Fertilizante prueba",
+            iluminacion: "Iluminacion prueba",
+            nombre_cientifico: "Planta nueva",
+            nombre_tradicional: "Plantototototota",
+            origen: "Peru",
+            riego: "3 veces al dia",
+            temporada: "Invierno",
+            usos: ["1", "2"],
+            desc: "hola"
+            
         )
+        
+        
+       
         //When
-        add.addPlant(planta: new_plant) {
+        let conversionExpectation2 = expectation(description: "Conversion Terminada")
+        addPlanta.addPlant(planta: new_plant){
             (plantaRecibida) in
+            conversionExpectation2.fulfill()
             //Then
-            XCTAssertEqual(plantaRecibida, "Planta Agregada")
+            self.idPPlanta = plantaRecibida!
+            XCTAssertEqual(plantaRecibida!.nombre_cientifico, "Planta nueva")
+            XCTAssertEqual(plantaRecibida!.nombre_tradicional, "Plantototototota")
+            XCTAssertEqual(plantaRecibida!.especie, "Prueba")
+            XCTAssertEqual(plantaRecibida!.origen, "Peru")
+            XCTAssertEqual(plantaRecibida!.temporada, "Invierno")
+            XCTAssertEqual(plantaRecibida!.descripcion, "hola")
+            XCTAssertEqual(plantaRecibida!.fertilizante, "Fertilizante prueba")
+            XCTAssertEqual(plantaRecibida!.riego, "3 veces al dia")
+            XCTAssertEqual(plantaRecibida!.iluminacion, "Iluminacion prueba")
+            XCTAssertEqual(plantaRecibida!.usos[0], "Medicinal")
+            XCTAssertEqual(plantaRecibida!.usos[1], "Alimento")
             
         }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
 
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
+        
+        
+        let conversionExpectation3 = expectation(description: "Conversion Terminada")
+        eliminar.deletePlant(planta: idPPlanta!){
+            (plantaRecibida) in
+            conversionExpectation3.fulfill()
+            //Then
+            XCTAssertEqual(plantaRecibida!,"Planta Desactivada")
+            
+        }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
+        
     }
     
     
-    func testQR() throws{
+    
+    func testAddAndEditAndDeleatePlanta() throws {
         //Given
-        let plantaID = 75
+        let conversionExpectation = expectation(description: "Conversion Terminada")
+        logIn.logIn(username: "equipo", password: "semillita1738") { (result) in
+            conversionExpectation.fulfill()
+            }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+        
+    }
+        
+        let new_plant = AddPlanta(
+            especie: "Prueba",
+            fertilizante: "Fertilizante prueba",
+            iluminacion: "Iluminacion prueba",
+            nombre_cientifico: "Planta nueva",
+            nombre_tradicional: "Plantototototota",
+            origen: "Peru",
+            riego: "3 veces al dia",
+            temporada: "Invierno",
+            usos: ["1", "2"],
+            desc: "hola"
+            
+        )
         
         //When
-        imprimir.imprimirQR(planta_id: plantaID) {
+        let conversionExpectation2 = expectation(description: "Conversion Terminada")
+        addPlanta.addPlant(planta: new_plant){
             (plantaRecibida) in
+            conversionExpectation2.fulfill()
             //Then
-            XCTAssertEqual(plantaRecibida, "iVBORw0KGgoAAAANSUhEUgAAAZoAAAGaAQAAAAAefbjOAAAC/ElEQVR4nO2cTW7bMBBG31QCspSAHsBHoW7Qs+YG0lF8A2lpgMLXBX+spKvUqaVao0VgkH4wCY9n5pshY+LLz/Tj6ww45JBDDjnkkEOvCVl+2s2MDUsZ3rzaZXkOPR8KkqQ5D9rAahpppJFGQCNJ0kfoectz6PnQkh2AWb+axuVN0EVs6GJ6w9aD/Cd7cuhboHB9E3Q3g8VMurZoPM7yHHo6NPWrMVmL2UUyu9zsH32SQ4eESiToBCwA3YxBE4G1FcubLLzDtpJ18D059A3QZGZmPRCuLYQZbFjeZEOaX5PU2Gt5Dj3bR2wcwHSJKHkLVmPqMX30EIffk0OPQCRVGWYgi8xI1pxdRJqhyNIsQTUefE8OfRcUdMtJZdKcS4vZJWIDoJHVK1QngGpmGVtYfipnlotRc0zZ1DfRwtyX4HHwPTn0CJSjBp2kscuFS42pLlVrll0uV3rUeH1oYxFQv/0wA0ERaW5EUCQZjVvEy0PlZw+kVHJM3iKnlxohmUVKL4NbxKtDVWs0JS7MWWaksWQCNMlvuI94fSh/yUlf1jxCiunPNpy4+jwRZHaRpKuZ2SU3O5n6XIrQ2N0st0J3WZ5D++QRRWGQkomST9YxahA5+J4cegQqWiNlCk1Rn1BlRjkn43nEqaCgGheKU0juYar9ranfb3kO7VCP2AaHe7a5ne2i+4gTQNuoUVtbWX0WwZGtZPY84gxQqUeo+IicR9yP2m7rmO4jTgUlE5j6XLa2YWnLxLyaRsCG/Zbn0HOg6iO0rUFpbjaNr/SEMuc+4gRQlpuK6XQ+UG7wDEC2l8Vv8JwHut/p0kiTTmCnMlV6avwYd1meQ/tEjc9NrtrN2JapPGqcBbqHhNIDT/ojqJapOr/ldwao/TwQxrWF7mZi6dFkoOnXjMFa3nzwPTn0CPSHRUAjC+OKhfcmWhBYuBrifkb/4Hty6BHocx5RLoNTzkd8qFW5+nx9qFaxgXsD9H6qLp+li/UUjVvEi0Pm/5nMIYcccsghhxz6S+g3jFF0itkEv+YAAAAASUVORK5CYII=")
+            self.plantaID = plantaRecibida!.id
+            XCTAssertEqual(plantaRecibida!.nombre_cientifico, "Planta nueva")
+            XCTAssertEqual(plantaRecibida!.nombre_tradicional, "Plantototototota")
+            XCTAssertEqual(plantaRecibida!.especie, "Prueba")
+            XCTAssertEqual(plantaRecibida!.origen, "Peru")
+            XCTAssertEqual(plantaRecibida!.temporada, "Invierno")
+            XCTAssertEqual(plantaRecibida!.descripcion, "hola")
+            XCTAssertEqual(plantaRecibida!.fertilizante, "Fertilizante prueba")
+            XCTAssertEqual(plantaRecibida!.riego, "3 veces al dia")
+            XCTAssertEqual(plantaRecibida!.iluminacion, "Iluminacion prueba")
+            XCTAssertEqual(plantaRecibida!.usos[0], "Medicinal")
+            XCTAssertEqual(plantaRecibida!.usos[1], "Alimento")
+            
         }
-    }
-    
-    func testQRFalso() throws{
-        //Given
-        let plantaID = 0
         
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
+        
+        let new_planta = EditarPlanta(
+            id: self.plantaID,
+            especie: "Pruebaaa",
+            fertilizante: "Fertilizante pruebaaa",
+            iluminacion: "Iluminacion pruebaaa",
+            nombre_cientifico: "Planta nueva",
+            nombre_tradicional: "Plantototototota",
+            origen: "Peruaa",
+            riego: "3 veces al dia",
+            temporada: "Invierno",
+            usos: ["1", "2"],
+            desc: "hola"
+            
+        )
+       
         //When
-        imprimir.imprimirQR(planta_id: plantaID) {
+        let conversionExpectation22 = expectation(description: "Conversion Terminada")
+        editar.addPlant(planta: new_planta){
             (plantaRecibida) in
+            conversionExpectation22.fulfill()
             //Then
-            XCTAssertEqual(plantaRecibida, "Planta no encontrada")
+            self.idPPlanta = plantaRecibida!
+            XCTAssertEqual(plantaRecibida!.nombre_cientifico, "Planta nueva")
+            XCTAssertEqual(plantaRecibida!.nombre_tradicional, "Plantototototota")
+            XCTAssertEqual(plantaRecibida!.especie, "Pruebaaa")
+            XCTAssertEqual(plantaRecibida!.origen, "Peruaa")
+            XCTAssertEqual(plantaRecibida!.temporada, "Invierno")
+            XCTAssertEqual(plantaRecibida!.descripcion, "hola")
+            XCTAssertEqual(plantaRecibida!.fertilizante, "Fertilizante pruebaaa")
+            XCTAssertEqual(plantaRecibida!.riego, "3 veces al dia")
+            XCTAssertEqual(plantaRecibida!.iluminacion, "Iluminacion pruebaaa")
+            XCTAssertEqual(plantaRecibida!.usos[0], "Medicinal")
+            XCTAssertEqual(plantaRecibida!.usos[1], "Alimento")
+            
         }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
+        
+        
+        let conversionExpectation3 = expectation(description: "Conversion Terminada")
+        eliminar.deletePlant(planta: idPPlanta!){
+            (plantaRecibida) in
+            conversionExpectation3.fulfill()
+            //Then
+            XCTAssertEqual(plantaRecibida!,"Planta Desactivada")
+            
+        }
+        
+        waitForExpectations(timeout: 10) {
+                    (error) in
+
+                    if let error = error {
+                        XCTFail("waitForExpectations errored: \(error)")
+                    } else {
+                        XCTAssert(true)
+                    }
+                }
+        
     }
-    
- }*/
+}

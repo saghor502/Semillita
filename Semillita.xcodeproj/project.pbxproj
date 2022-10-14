@@ -232,7 +232,11 @@
 				4013F64D28E11E3D00A85655 /* PlantaTableViewController.swift */,
 				407B4B4028DE94C3004F1A58 /* LogInViewController.swift */,
 				843267DC28E5135B00D41840 /* CatalagoTodasViewController.swift */,
+				843267F128E51E7F00D41840 /* PlantasCollectionViewController.swift */,
 				841D410628E6750100209DAD /* EditarViewController.swift */,
+				843267F628E5213800D41840 /* CollectionViewCell.swift */,
+				84F2A98728E5D7170008026C /* CellCatalogo.swift */,
+				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -281,11 +285,7 @@
 				4059FCCE28E1FDDB00747DEF /* Services */,
 				4013F63628E1001B00A85655 /* Util */,
 				D130DF6028C7F81700ADFD25 /* AppDelegate.swift */,
-				843267F128E51E7F00D41840 /* PlantasCollectionViewController.swift */,
-				84F2A98728E5D7170008026C /* CellCatalogo.swift */,
-				843267F628E5213800D41840 /* CollectionViewCell.swift */,
 				D130DF6228C7F81700ADFD25 /* SceneDelegate.swift */,
-				D130DF6428C7F81700ADFD25 /* ViewController.swift */,
 				D130DF6628C7F81700ADFD25 /* Main.storyboard */,
 				D130DF6928C7F81800ADFD25 /* Assets.xcassets */,
 				D130DF6B28C7F81800ADFD25 /* LaunchScreen.storyboard */,

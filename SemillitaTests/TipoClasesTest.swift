@@ -18,7 +18,7 @@ class TipoClasesTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-   /* func testPlanta() throws{
+   func testPlanta() throws{
         // Given
         let id = 1
         let especie = "Testespecie"
@@ -31,7 +31,7 @@ class TipoClasesTest: XCTestCase {
         let riego = "Riego Test"
         let temporada = "TemporadaTest"
         let usos = ["Uso1","Uso2"]
-        let Pimageness = [Imagen.init(dato:"dato", tipo:"Tipo")]
+    let Pimageness = [Imagen.init(dato:"dato", tipo:"Tipo", planta_id: 2)]
         let descripcion = "DescripcionTest"
         
         //When
@@ -60,7 +60,7 @@ class TipoClasesTest: XCTestCase {
         let tipo = "TipoPrueba"
         
         //When
-        let imagenClase = Imagen.init(dato: dato, tipo: tipo)
+        let imagenClase = Imagen.init(dato: dato, tipo: tipo, planta_id: 2)
         
         //Then
         XCTAssertEqual("DatoPrueba", imagenClase.dato)
@@ -98,8 +98,8 @@ class TipoClasesTest: XCTestCase {
 
     func testListaPlanta() throws{
         // Given
-        let planta1 = Planta.init(id: 1, especie: "1", estatus: true, fertilizante: "fer1", iluminacion: "ilu1", nombre_cientifico: "nombre1", nombre_tradicional: "nombretra1", origen: "origen1", riego: "riego1", temporada: "temporada1", usos: ["uso1.0","usos1.1"], Pimagenes: [Imagen.init(dato: "dato1", tipo: "tipo1")], descripcion: "Des1")
-        let planta2 = Planta.init(id: 2, especie: "2", estatus: true, fertilizante: "fer2", iluminacion: "ilu2", nombre_cientifico: "nombre2", nombre_tradicional: "nombretra2", origen: "origen2", riego: "riego2", temporada: "temporada2", usos: ["uso2.0","usos2.1"], Pimagenes: [Imagen.init(dato: "dato2", tipo: "tipo2")], descripcion: "Des2")
+        let planta1 = Planta.init(id: 1, especie: "1", estatus: true, fertilizante: "fer1", iluminacion: "ilu1", nombre_cientifico: "nombre1", nombre_tradicional: "nombretra1", origen: "origen1", riego: "riego1", temporada: "temporada1", usos: ["uso1.0","usos1.1"], Pimagenes: [Imagen.init(dato: "dato1", tipo: "tipo1", planta_id: 1)], descripcion: "Des1")
+        let planta2 = Planta.init(id: 2, especie: "2", estatus: true, fertilizante: "fer2", iluminacion: "ilu2", nombre_cientifico: "nombre2", nombre_tradicional: "nombretra2", origen: "origen2", riego: "riego2", temporada: "temporada2", usos: ["uso2.0","usos2.1"], Pimagenes: [Imagen.init(dato: "dato2", tipo: "tipo2", planta_id: 2)], descripcion: "Des2")
 
         //When
         let listaClase = listaPlantas.init(results:[planta1,planta2])
@@ -134,5 +134,7 @@ class TipoClasesTest: XCTestCase {
         XCTAssertEqual("tipo2", listaClase.results[1].Pimagenes![0].tipo)
         XCTAssertEqual("Des2", listaClase.results[1].descripcion)
     }
-    */
+    
 }
+
+
