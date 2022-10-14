@@ -66,7 +66,9 @@ class SemillitaUITests: XCTestCase {
         //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
         usernameTextField.tap()
         usernameTextField.typeText("equipo\n")
-        
+        do{
+        sleep(1)
+        }
         passwordTextField.tap()
         passwordTextField.typeText("semillita1738\n")
         
@@ -241,6 +243,161 @@ class SemillitaUITests: XCTestCase {
         XCTAssert(resultadosPrueba)
     }
     
+    func testEditarPlanta() throws {
+        //Inicia el app
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Decimos que objetos vamos a usar, a xcode le vale en cual screen esta el objeto solo busca los objetos cuando los va a usar, recuerda que se busca por ID
+        let usernameTextField = app.textFields["Username"]
+        let passwordTextField = app.secureTextFields["Password"]
+        
+        
+        //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
+        usernameTextField.tap()
+        usernameTextField.typeText("equipo\n")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("semillita1738\n")
+        
+        app.buttons["Ingresar"].tap()
+        
+        //IMPORTANTE FER PON ATENCION, volvi a poner esta comprovacion para darle tiempo al closer a que cargue, sino el app no va a saber a que darle click
+        let pruebaLabel = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        do {
+            sleep(4)
+        }
+        
+        
+        let firstChild = app.collectionViews.children(matching:.any).element(boundBy: 1)
+        if firstChild.exists {
+             firstChild.tap()
+        }
+        
+        let pruebaLabel2 = app.staticTexts.element(matching: .any, identifier: "nombre_tradicional").label
+        resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        
+        app.buttons["BotonEditarPlanta"].tap()
+        
+        let riegoPlantaTextField = app.textFields["RiegoPlanta"]
+        
+        riegoPlantaTextField.tap()
+        riegoPlantaTextField.typeText("Muchisima agua\n")
+        
+        app.buttons["ConfirmarEdicion"].tap()
+        
+        //Si el resultadosPrueba sale true la prueba es un exito, si sale false fallo
+        XCTAssert(resultadosPrueba)
+        
+        
+    }
     
+    func testVisitarAnaliticos() throws {
+        //Inicia el app
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Decimos que objetos vamos a usar, a xcode le vale en cual screen esta el objeto solo busca los objetos cuando los va a usar, recuerda que se busca por ID
+        let usernameTextField = app.textFields["Username"]
+        let passwordTextField = app.secureTextFields["Password"]
+        
+        
+        //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
+        usernameTextField.tap()
+        usernameTextField.typeText("equipo\n")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("semillita1738\n")
+        
+        app.buttons["Ingresar"].tap()
+        
+        //IMPORTANTE FER PON ATENCION, volvi a poner esta comprobacion para darle tiempo al closer a que cargue, sino el app no va a saber a que darle click
+        let pruebaLabel = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        
+        app.buttons["BotonAnaliticos"].tap()
+        
     
+        
+        let prueba3Label = app.staticTexts.element(matching: .any, identifier: "Prueba3").label
+        var resultados3Prueba = false
+        if (prueba3Label == "Las Plantas mas Populares"){
+            resultadosPrueba = true
+        }
+        
+        //Si el resultadosPrueba sale true la prueba es un exito, si sale false fallo
+        XCTAssert(resultadosPrueba)
+    }
+    
+    func testBorrarPlanta() throws {
+        //Inicia el app
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Decimos que objetos vamos a usar, a xcode le vale en cual screen esta el objeto solo busca los objetos cuando los va a usar, recuerda que se busca por ID
+        let usernameTextField = app.textFields["Username"]
+        let passwordTextField = app.secureTextFields["Password"]
+        
+        
+        //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
+        usernameTextField.tap()
+        usernameTextField.typeText("equipo\n")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("semillita1738\n")
+        
+        app.buttons["Ingresar"].tap()
+        
+        //IMPORTANTE FER PON ATENCION, volvi a poner esta comprovacion para darle tiempo al closer a que cargue, sino el app no va a saber a que darle click
+        let pruebaLabel = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        do {
+            sleep(4)
+        }
+        
+        
+        let firstChild = app.collectionViews.children(matching:.any).element(boundBy: 9)
+        if firstChild.exists {
+            firstChild.swipeLeft()
+            firstChild.tap()
+        }
+        
+        let pruebaLabel2 = app.staticTexts.element(matching: .any, identifier: "nombre_tradicional").label
+        resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        
+       //app.buttons["BorrarPlantas"].tap() SOLO CON CIRUELO ( UI TEST DE AGREGAR PLANTA)
+        
+        let pruebaLabel3 = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba3 = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba3 = true
+        }
+    
+        
+        //Si el resultadosPrueba sale true la prueba es un exito, si sale false fallo
+        XCTAssert(resultadosPrueba)
+        
+        
+    }
 }
