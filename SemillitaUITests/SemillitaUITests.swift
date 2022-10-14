@@ -79,6 +79,10 @@ class SemillitaUITests: XCTestCase {
             resultadosPrueba = true
         }
         
+        do {
+            sleep(4)
+        }
+        
         
         let firstChild = app.collectionViews.children(matching:.any).element(boundBy: 0)
         if firstChild.exists {
@@ -97,6 +101,146 @@ class SemillitaUITests: XCTestCase {
         
         
     }
+    
+    func testPlantaQR() throws {
+        //Inicia el app
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Decimos que objetos vamos a usar, a xcode le vale en cual screen esta el objeto solo busca los objetos cuando los va a usar, recuerda que se busca por ID
+        let usernameTextField = app.textFields["Username"]
+        let passwordTextField = app.secureTextFields["Password"]
+        
+        
+        //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
+        usernameTextField.tap()
+        usernameTextField.typeText("equipo\n")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("semillita1738\n")
+        
+        app.buttons["Ingresar"].tap()
+        
+        //IMPORTANTE FER PON ATENCION, volvi a poner esta comprobacion para darle tiempo al closer a que cargue, sino el app no va a saber a que darle click
+        let pruebaLabel = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        
+        app.buttons["SacarQR"].tap()
+        
+        let buscarQRTextField = app.textFields["BuscarQR"]
+        
+        
+        buscarQRTextField.tap()
+        buscarQRTextField.typeText("Romero\n")
+        
+        app.buttons["ImprimirQR"].tap()
+        
+        let prueba2Label = app.staticTexts.element(matching: .any, identifier: "Prueba2").label
+        var resultados2Prueba = false
+        if (prueba2Label == "Mandar QR a correo"){
+            resultadosPrueba = true
+        }
+        
+        //Si el resultadosPrueba sale true la prueba es un exito, si sale false fallo
+        XCTAssert(resultadosPrueba)
+    }
+    
+    func testAgregarPlanta() throws {
+        //Inicia el app
+        let app = XCUIApplication()
+        app.launch()
+        
+        //Decimos que objetos vamos a usar, a xcode le vale en cual screen esta el objeto solo busca los objetos cuando los va a usar, recuerda que se busca por ID
+        let usernameTextField = app.textFields["Username"]
+        let passwordTextField = app.secureTextFields["Password"]
+        
+        
+        //Haces todas las acciones que quieres para llegar al punto final, en este caso le da click al text field username e ingresa equipo\n, \n es para que cierre el keyboard, despues le da click al de password hace lo mismo y finalmente le da click al boton.
+        usernameTextField.tap()
+        usernameTextField.typeText("equipo\n")
+        
+        passwordTextField.tap()
+        passwordTextField.typeText("semillita1738\n")
+        
+        app.buttons["Ingresar"].tap()
+        
+        //IMPORTANTE FER PON ATENCION, volvi a poner esta comprobacion para darle tiempo al closer a que cargue, sino el app no va a saber a que darle click
+        let pruebaLabel = app.staticTexts.element(matching: .any, identifier: "Prueba").label
+        var resultadosPrueba = false
+        if (pruebaLabel == "Todas las Plantas"){
+            resultadosPrueba = true
+        }
+        
+        
+        app.buttons["BotonAgregarP"].tap()
+        
+        let nombreComunTextField = app.textFields["NComun"]
+        let nombrecientificoTextField = app.textFields["NCientifico"]
+        let origenPlantaTextField = app.textFields["OPlanta"]
+        let especiePlantaTextField = app.textFields["EPlanta"]
+        let temporadaPlantaTextField = app.textFields["TPlanta"]
+        let riegoplantaTextField = app.textFields["RPlanta"]
+        let fertilizantePlantaTextField = app.textFields["FPlanta"]
+        let iluminacionPlantaTextField = app.textFields["IPlanta"]
+        let descrpicionPlantaTextView = app.textViews ["DescPlanta"]
+        let usosLabel = app.staticTexts.element(matching: .any, identifier: "usosLabel").label
+        
+        nombreComunTextField.tap()
+        nombreComunTextField.typeText("Ciruelo\n")
+        
+        nombrecientificoTextField.tap()
+        nombrecientificoTextField.typeText("Ciruelus Maximus\n")
+        
+        origenPlantaTextField.tap()
+        origenPlantaTextField.typeText("Dubai\n")
+        
+        especiePlantaTextField.tap()
+        especiePlantaTextField.typeText("Arbol\n")
+        
+        temporadaPlantaTextField.tap()
+        temporadaPlantaTextField.typeText("Primavera\n")
+        
+        riegoplantaTextField.tap()
+        riegoplantaTextField.typeText("Mucha agua\n")
+        
+        fertilizantePlantaTextField.tap()
+        fertilizantePlantaTextField.typeText("De vaca Europea\n")
+        
+        iluminacionPlantaTextField.tap()
+        iluminacionPlantaTextField.typeText("Mucho sol\n")
+        
+        //let loadedPredicate = NSPredicate(format: "value != %@", "Usos")
+        //let loadExpectation = XCTNSPredicateExpectation(predicate: loadedPredicate, object: usosLabel)
+        
+        
+        //wait(for: [loadExpectation], timeout: 10.0)
+        let segments = app.segmentedControls["slider"]
+        print(segments)
+        
+        descrpicionPlantaTextView.tap()
+        descrpicionPlantaTextView.typeText("esta planta da muy buenos ciruelos, recomendada")
+        
+        iluminacionPlantaTextField.tap()
+        iluminacionPlantaTextField.typeText("\n")
+        
+        
+        
+        app.buttons["AgregarPlanta"].tap()
+        
+        /*let prueba2Label = app.staticTexts.element(matching: .any, identifier: "Prueba2").label
+        var resultados2Prueba = false
+        if (prueba2Label == "Mandar QR a correo"){
+            resultadosPrueba = true
+        }*/
+        
+        //Si el resultadosPrueba sale true la prueba es un exito, si sale false fallo
+        XCTAssert(resultadosPrueba)
+    }
+    
     
     
 }

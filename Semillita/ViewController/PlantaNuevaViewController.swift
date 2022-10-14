@@ -32,9 +32,11 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
     var allUsos: listaUsos? = nil
     var height: Int = 855
     var segments: [UISegmentedControl:Int]? = [:]
+    @IBOutlet weak var usosLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.usosLabel.text = "Usos..."
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             view.addGestureRecognizer(tap)
         self.errorLabel.text = ""
@@ -58,11 +60,13 @@ class PlantaNuevaViewController: UIViewController, UIImagePickerControllerDelega
                 control.frame = CGRect(x: 0, y: 0, width: (self.scrollView.frame.width - 300), height: 20)
                 control.center = CGPoint(x: (Int(self.scrollView.frame.width) - 40), y: self.height)
                 control.selectedSegmentIndex = 0
+                control.accessibilityIdentifier = "slider"
                 self.scrollView.addSubview(control)
                 self.segments![control] = uso.id
                 // Increase height to lower next items
                 self.height += 20
             }
+            self.usosLabel.text = "Usos"
             print(self.segments!)
         }
         self.nombre_tradicional.delegate = self
