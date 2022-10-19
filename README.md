@@ -1,6 +1,6 @@
 # Semillita 
 
-<p>Aplicación Web utilizada para la implementación de una aplicación móvil para el Museo Semilla.</p>
+<p>Aplicación Móvil utilizada para una implementación para el Museo Semilla.</p>
 
 <p>
 Nuestro proyecto consiste en una aplicación móvil desarrollada para iOS, dicha aplicación permite administrar la información del huerto del Museo Semilla. Así como una aplicación web, la cual le brinda los servicios necesarios a la aplicación móvil y, además, permite el escaneo de códigos QR para que los usuarios puedan visualizar la información de cada planta.
